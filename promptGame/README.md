@@ -1,0 +1,3 @@
+# Prompt Game
+
+This is a simple game that allows the user to play a prompt injection game over meshtastic, where the user has to try and get the AI to reveal a secret word. The game is designed to be played over meshtastic, and the user can interact with the AI by sending messages to it. The AI will respond with hints and clues to help the user guess the secret word. The game is designed to be fun and engaging, and can be played by anyone with a meshtastic device.  This was heavily inspired by the [Gandalf Prompt Injection Game](https://gandalf.lakera.ai/baseline).  
