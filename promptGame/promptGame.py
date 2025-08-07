@@ -128,7 +128,7 @@ class PromptGame:
         """Callback function for connection established."""
         print("Meshtastic interface connected.")
         
-        interface.sendText("Hello from the AI Village Prompt Injection Game!  Send me a direct message to start your version of the game and score points.  ")
+        self.interface.sendText("Hello from the AI Village Prompt Injection Game!  Send me a direct message to start your version of the game and score points.  ")
 
     def logNodes(self):
         """Logs the current nodes in the network."""
