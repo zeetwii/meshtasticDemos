@@ -45,6 +45,9 @@ class PromptGame:
         pub.subscribe(self.onReceive, "meshtastic.receive.text")
         pub.subscribe(self.onConnection, "meshtastic.connection.established")
 
+        # Send a broadcast message to introduce the game
+        self.interface.sendText("Hello from the AI Village Prompt Injection Game!  Send me a direct message to start your version of the game and score points.  ")
+
 
     def onReceive(self, packet, interface):
         """Callback function for receiving packets."""
@@ -127,8 +130,6 @@ class PromptGame:
     def onConnection(self, interface, topic=pub.AUTO_TOPIC):
         """Callback function for connection established."""
         print("Meshtastic interface connected.")
-        
-        self.interface.sendText("Hello from the AI Village Prompt Injection Game!  Send me a direct message to start your version of the game and score points.  ")
 
     def logNodes(self):
         """Logs the current nodes in the network."""
