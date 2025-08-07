@@ -36,6 +36,8 @@ class PromptGame:
             exit(1)
 
         # preload the ollama model
+        print("Preloading Ollama model...")
+
         response = ollama.chat(model='gemma3n:latest', messages=[{'role': 'system', 'content': f'Say boot up successful'}])
         print(response.message.content)
 
