@@ -23,7 +23,7 @@ class PromptGame:
         os.makedirs("./logs/players", exist_ok=True)
         os.makedirs("./logs/nodes", exist_ok=True)
 
-        self.secretList = ['Okapi', 'Axolotl', 'Saola', 'Quokka', 'Pangolin', 'Fossa', 'Aye-aye', 'Markhor', 'Kakapo', 'Dhole', 'Numbat', 'Tarsier', 'Tuatara', 'Shoebill', 'Gelada', 'Solenodon', 'Vaquita', 'Onager']
+        self.secretList = ['Okapi', 'Axolotl', 'Saola', 'Quokka', 'Pangolin', 'Fossa', 'Aye-aye', 'Markhor', 'Kakapo', 'Dhole', 'Numbat', 'Tarsier', 'Tuatara', 'Shoebill', 'Gelada', 'Solenodon', 'Vaquita']
 
         ports = findPorts(eliminate_duplicates=True)  # returns ['/dev/ttyUSB0', '/dev/ttyUSB2', …]
 
