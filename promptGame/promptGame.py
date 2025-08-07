@@ -35,6 +35,10 @@ class PromptGame:
             print("Multiple or no Meshtastic devices found. Please check your connections.")
             exit(1)
 
+        # preload the ollama model
+        response = ollama.chat(model='gemma3n:latest', messages="Say boot up to confirm the model is loaded.")
+        print(response.message.content)
+
         # Subscribe to receive and connection events
         pub.subscribe(self.onReceive, "meshtastic.receive.text")
         pub.subscribe(self.onConnection, "meshtastic.connection.established")
@@ -160,5 +164,5 @@ if __name__ == '__main__':
 
     while True:
         # Keep the script running to listen for messages
-        promptGame.logNodes()  # Log nodes every minute
-        time.sleep(60)
+        promptGame.logNodes()  # Log nodes every five minutes
+        time.sleep(300) # Sleep for 5 minutes
