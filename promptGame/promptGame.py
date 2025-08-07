@@ -71,7 +71,7 @@ class PromptGame:
 
         # Check if they are a new player or not
         try:
-            with open(f'./logs/players/{packet['from']}.json', "r") as file:
+            with open(f"./logs/players/{packet['from']}.json", "r") as file:
                 print("existing player")
                 playerData = json.load(file)
         except IOError:
