@@ -30,13 +30,13 @@ class PromptGame:
         if len(ports) == 1:  # if only one port found, assume it's the defcon radio
             self.interface = SerialInterface(ports[0])  # connect to the first port
             print("Connected to Meshtastic node on port:", ports[0])
-            print(f'Node ID: {self.interface.getMyNodeInfo()['num']}')
+            print(f"Node ID: {self.interface.getMyNodeInfo()['num']}")
         else:
             print("Multiple or no Meshtastic devices found. Please check your connections.")
             exit(1)
 
         # preload the ollama model
-        response = ollama.chat(model='gemma3n:latest', messages="Say boot up to confirm the model is loaded.")
+        response = ollama.chat(model='gemma3n:latest', messages=[{'role': 'system', 'content': f'Say boot up successful'}])
         print(response.message.content)
 
         # Subscribe to receive and connection events
