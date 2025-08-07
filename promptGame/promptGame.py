@@ -92,7 +92,7 @@ class PromptGame:
             playerData["secretWord"] = random.choice(self.secretList)
             playerData["timesPlayed"] = playerData["timesPlayed"] + 1
 
-            message = f"You win!  You guessed your secret word.  Your score is now {str(playerData["score"])}.  A new secret word has been generated if you want to play again, or come up to the third floor to try hacking some larger models.  "
+            message = f"You win!  You guessed your secret word.  Your score is now {str(playerData['score'])}.  A new secret word has been generated if you want to play again, or come up to the third floor to try hacking some larger models.  "
 
             interface.sendText(text=message, destinationId=packet['from'])
         else:
