@@ -38,7 +38,7 @@ class PromptGame:
         # preload the ollama model
         print("Preloading Ollama model...")
 
-        response = ollama.chat(model='gemma3n:latest', messages=[{'role': 'system', 'content': f'Say boot up successful'}])
+        response = ollama.chat(model='gemma3:latest', messages=[{'role': 'system', 'content': f'Say boot up successful'}])
         print(response.message.content)
 
         # Subscribe to receive and connection events
@@ -109,7 +109,7 @@ class PromptGame:
                 {'role': 'user', 'content': f'{packet["decoded"]["text"]}'},
             ]
 
-            response = ollama.chat(model='gemma3n:latest', messages=messages)
+            response = ollama.chat(model='gemma3:latest', messages=messages)
 
             print(response.message.content)
 
