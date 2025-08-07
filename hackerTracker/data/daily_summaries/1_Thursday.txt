@@ -1,0 +1,282 @@
+From 06:00 to 07:59, Social Gatherings/Events is hosting '' to present 'Defcon.run', which is about 'Title: Defcon.run
+Tags: Event
+When: Thursday, Aug 7, 06:00 - 07:59 PDT
+Where: LVCC West-Level 1-North Lobby - Map
+
+Description:
+Defcon.run is a beloved tradition at DEF CON, bringing together hackers for a refreshing start to the day. Originally known as the DEF CON 4x5K, the event has evolved into a distributed, community-driven experience featuring fun runs and rucks across Las Vegas. Participants can choose from various routes, ranging from simple 5Ks to more ambitious distances.
+
+For DEF CON 33, the gathering point is "The Spot" by the North Entrance of the Las Vegas Convention Center West Hall. Here, the real wild hares gather before the sun has a chance to burn up this city of sin. The runs kick off at 06:00 Thursday through Sunday! But be there early for hype talks and shenanigans. We also have a whole new Meshtastic setup and website features we're adding. There are other runs swag drops and social meetups planned throughout the day and night as well!
+
+Whether you're a seasoned runner or looking for something different, defcon.run offers a unique way to connect with other hackers and kick off your day. For more details and to sign up, visit defcon.run.
+
+'.
+From 08:00 to 18:59, Social Gatherings/Events is hosting '' to present 'Human Registration Open', which is about 'Title: Human Registration Open
+Tags: Misc
+When: Thursday, Aug 7, 08:00 - 18:59 PDT
+Where: LVCCW-Level 1-W101-W102 - Map
+
+Description:
+Our human registration process this year will be very similar to previous years. Please be patient. All of the times listed here are approximate. 
+
+Basics
+
+Who needs a badge?
+
+A badge is required for each human age 8 and older.
+
+Human?
+
+You are a human if you do not know otherwise. People that are not humans include goons, official speaker, village/community/contest/creator staff, press, black badge holders, or similar. If you are not a human, you need to register separately. If you don't know how, see an NFO goon (NFO Node, formerly known as an infobooth, is where you can get help). The remainder of this message applies only to humans.
+
+Lines? Linecon?
+
+Linecon is your optional opportunity to stand (or sit) in line for human registration to open. Doors will open for linecon on Wednesday at approximately 17:00. When human registration opens on Thursday at approximately 08:00, they start working the linecon queue, and the line will start moving quickly. (Please understand that we will begin processing the line on Thursday morning as soon as the cashiers and materials are in place; we will strive for Thursday 08:00, but actual start may be slightly earlier or later.)
+
+Online badge purchase (aka pre-registration) has no impact on linecon. You can join the line on Wednesday (if you wish) regardless of whether you purchased a badge online or intend to pay with cash. There is only one linecon for both types of badge sales. 
+
+Please help us make this a great experience for everyone by following directions given by goons. After human registration opens, there may be one line for all of registration, or there may be two lines (one for online sales (pre-registration) and one for cash sales). This may also change over time, based on available staffing and necessary crowd control. We will strive to make it easily understandable in-person as to which line you should join. 
+
+Ways to buy a badge
+
+
+$560 online purchase until July 18, 2025. Tickets are transferable. Please read the details on the linked page.
+$580 online purchase until August 1, 2025. Tickets are transferable. Please read the details on the linked page.
+$500 cash purchase on-site.
+As part of a BlackHat registration.
+
+
+Online Purchase
+
+You will be emailed a QR code to the email address provided when you bought your badge. Please guard that QR code as though it is cash -- it can only be redeemed once, and anyone can redeem it if they have it (including a photo of it). Badges are picked-up on-site -- they will not be mailed or shipped.
+
+We can scan the QR code either from your phone's display or from a printed copy. You must have the QR code with you in order to obtain your badge. As you approach the front of the line, if you are going to show your QR code on an electronic device, please ensure that your display is set to maximum brightness. 
+
+If you pre-registered, but ultimately are unable to attend DEF CON and want to cancel your purchase, the only way to get a refund is from the original online source. We are unable to provide any refunds on-site at DEF CON. There is a fee to have your badge canceled: $34 before July 18, and $84 on and after July 18.
+
+Online purchases are provided a receipt via email when the purchase is made.
+
+Online purchase -- often referred to as pre-registration -- does not allow you to skip any line/queue to pick up your badge. Once you arrive on-site, you will need to join the existing line for human registration. There may or may not be a dedicated line for pre-registration badge pickup, depending on when you arrive, how long the line is, available staff, etc.
+
+Cash Purchase
+
+Badges will be available for purchase on-site at DEF CON. All badge sales are cash only. No checks, money orders, credit cards, etc., will be accepted. In order to keep the registration line moving as quickly as possible, please have exact change ready as you near the front of the line.
+
+There are no refunds given for cash sales. If you have any doubt about your desire to buy a badge, please refrain from doing so.
+
+We are unable to provide printed receipts at the time of the sale. A generic receipt for the cash sale of a badge will be made available on media.defcon.org after the conference. You are welcome to print your own copy of the receipt on plain paper.
+
+Via BlackHat
+
+If you've purchased a DEF CON badge as part of your Black Hat registration, you're in luck - you will be able to pick up your DEF CON badge at Black Hat on Thursday.  Please bring your Black Hat badge and watch for emails from Black Hat about where exactly the badge pickup will be.  There will be DEF CON goons at Mandalay at the pickup desk to help out and answer questions.
+
+Please note that DEF CON is not able to access or verify Black Hat registration or attendee info.  DEF CON's preregistration list is not the same as Black Hat's.  For help, ask at Black Hat registration or the concierge area. 
+
+Misc
+
+Want to buy multiple badges? No problem! We're happy to sell you however many badges you want to pay for.
+
+If you lose your badge, there is unfortunately no way for us to replace it. You'll have to buy a replacement at full price. Please don't lose your badge. :( 
+
+If you are being accompanied by a full-time caretaker (such as someone who will push your wheelchair, and will accompany you at all times), please ask to speak to a Registration Goon. Your caretaker will receive a paper badge that will permit them to accompany you everywhere you go.
+
+Still need help?
+
+If you have questions about anything regarding human registration that are not addressed here, please ask to speak to a Registration Goon.
+
+'.
+From 10:00 to 17:59, Contests is hosting '' to present 'Code Breaker Challenge', which is about 'Title: Code Breaker Challenge
+Tags: Contest | Code Breaker | Code Breaker Challenge
+When: Thursday, Aug 7, 10:00 - 17:59 PDT
+Where: Unknown
+
+Description:
+The Code Breaker Challenge is an advanced cryptographic puzzle designed for DEF CON attendees who want to push their problem-solving skills to the limit. Anyone who successfully cracks the code will receive an exclusive invite to a private pool party, where they can celebrate their achievement alongside fellow codebreakers.
+
+How It Fits DEF CONâs Theme: Access Everywhere
+
+Usable: The challenge is designed to be solved with logic, pattern recognition, and cryptographic knowledgeâno special equipment or insider access required.
+
+Accessible: Participants from all backgrounds can attempt it, regardless of whether they are seasoned cryptographers or first-time codebreakers.
+
+Private & Secure: The challenge will incorporate modern encryption principles that highlight privacy-preserving technologies, showing the importance of cryptography in maintaining free and open access to information.
+
+Structure
+The challenge will be a multi-layered puzzle, incorporating historical ciphers, steganography, and modern cryptographic techniques.
+
+Participants will have the entire duration of DEF CON to solve it.
+
+Those who succeed will be given a unique code or token to redeem their invitation to the private pool party.
+
+Participant Prerequisites
+
+Code Breakers need to access a computer and internet. Everything else is provided. 
+
+Pre-Qualification
+
+No pre-qual
+
+'.
+From 10:00 to 17:59, Hackers With Disabilities (HDA) is hosting '' to present 'HDA Setup, Meet & Greet, Services available after setup', which is about 'Title: HDA Setup, Meet & Greet, Services available after setup
+Tags: Hackers With Disabilities (HDA) | Creator Event
+When: Thursday, Aug 7, 10:00 - 17:59 PDT
+Where: LVCC West-Level 2-W219 (Hackers With Disabilities) - Map
+
+Description:
+
+
+'.
+From 12:00 to 12:59, Contests is hosting '' to present 'Hac-Man - Remote play available', which is about 'Title: Hac-Man - Remote play available
+Tags: Contest | Virtual | Hac-Man
+When: Thursday, Aug 7, 12:00 - 12:59 PDT
+Where: Unknown
+
+Description:
+This Pac-Man themed set of challenges takes Players on a journey through learning and demonstrating hacker and information security skills to earn points. With multiple subject-matter specific challenge groups and tracks, this hacker challenge game has something for everyone. Contest will continue operation on the Scramble.RogueSignal.io website outside of Contest Area Operating Hours until the Contest is closed.
+
+'.
+From 12:00 to 12:59, Hackers With Disabilities (HDA) is hosting '' to present 'Deck out your Device! Mobility device hacking & modding', which is about 'Title: Deck out your Device! Mobility device hacking & modding
+Tags: Hackers With Disabilities (HDA) | Creator Event
+When: Thursday, Aug 7, 12:00 - 12:59 PDT
+Where: LVCC West-Level 2-W219 (Hackers With Disabilities) - Map
+
+Description:
+
+
+'.
+From 12:00 to 12:59, Social Gatherings/Events is hosting '' to present 'Friends of Bill W', which is about 'Title: Friends of Bill W
+Tags: Meetup | Friends of Bill W
+When: Thursday, Aug 7, 12:00 - 12:59 PDT
+Where: LVCC West-Level 3-W301 (Friends of Bill W) - Map
+
+Description:
+We know DEF CON and Vegas can be a lot. If you're a friend of Bill W who's looking for a meeting or just a place to collect yourself, DEF CON 33 has you covered. Join us throughout the conference in the Friends of Bill W Community Space in W301.
+
+'.
+From 15:00 to 20:59, Social Gatherings/Events is hosting '' to present 'Toxic BBQ', which is about 'Title: Toxic BBQ
+Tags: Event
+When: Thursday, Aug 7, 15:00 - 20:59 PDT
+Where: Other / See Description
+
+Description:
+Join the humans of Vegas at the next inCARNEtion of your Thursday welcome party.  Enjoy fewer walls and more garden as we meet AFK in the shade of Sunset Park. Burgers and dogs are provided; you bring everything else (specialties, drinks, labor, and donations). We're expanding our grills to over 40 sq ft of heat with space for veggies and your own personal creations.
+
+Grab flyers from an Info Booth after Linecon, or watch #ToxicBBQ on the socials for the latest news.
+
+Offsite @ Sunset Park, Foxtail Pavilion (36.0636, -115.1178)
+
+'.
+From 16:00 to 18:59, Data Duplication Village is hosting '' to present 'DDV starts accepting drives for duplication', which is about 'Title: DDV starts accepting drives for duplication
+Tags: Data Duplication Village | Creator Event
+When: Thursday, Aug 7, 16:00 - 18:59 PDT
+Where: LVCC West-Level 2-W225 (Data Duplication Village) - Map
+
+Description:
+We start taking drives at 4: 00pm local time on Thursday - possibly a little earlier. We'll keep accepting drives until we reach capacity (usually late Friday or early Saturday).Â  Then we copy and copy all the things until we just can't copy any more - first come, first served. Note that some sources require 8TB drives now.Â  We run around the clock until we run out of time on Sunday morning with the last possible pickup being before 11:00am on Sunday.
+
+
+
+'.
+From 16:00 to 18:59, Social Gatherings/Events is hosting '' to present 'DEF CON Holland Group Presents: â¨Drinking with the Dutch', which is about 'Title: DEF CON Holland Group Presents: â¨Drinking with the Dutch
+Tags: Meetup
+When: Thursday, Aug 7, 16:00 - 18:59 PDT
+Where: LVCC West-Level 2-Bar Outside W232 - Map
+
+Description:
+"Drinking with the Dutch" at DEF CON is a perfect moment to talk about what your favourite thing is at DEF CON, show your cool handmade badges, impress other hackers about your latest hacks, make new friends, gossip about your boss and show your cat or dog pictures.
+
+'.
+From 17:00 to 17:59, Social Gatherings/Events is hosting '' to present 'Friends of Bill W', which is about 'Title: Friends of Bill W
+Tags: Meetup | Friends of Bill W
+When: Thursday, Aug 7, 17:00 - 17:59 PDT
+Where: LVCC West-Level 3-W301 (Friends of Bill W) - Map
+
+Description:
+We know DEF CON and Vegas can be a lot. If you're a friend of Bill W who's looking for a meeting or just a place to collect yourself, DEF CON 33 has you covered. Join us throughout the conference in the Friends of Bill W Community Space in W301.
+
+'.
+From 18:00 to 01:59, Hackers With Disabilities (HDA) is hosting '' to present 'R.A.M.P. Room - Resilience, Accessibility, Mentorship & Party', which is about 'Title: R.A.M.P. Room - Resilience, Accessibility, Mentorship & Party
+Tags: Hackers With Disabilities (HDA) | Creator Event
+When: Thursday, Aug 7, 18:00 - 01:59 PDT
+Where: LVCC West-Level 2-W219 (Hackers With Disabilities) - Map
+
+Description:
+
+
+'.
+From 19:30 to 22:30, Queercon Community Lounge is hosting '' to present 'Queercon at The KEVOPS Sellout Pool Party', which is about 'Title: Queercon at The KEVOPS Sellout Pool Party
+Tags: Queercon Community Lounge | Creator Event
+When: Thursday, Aug 7, 19:30 - 22:30 PDT
+Where: Sahara Azul Ultra Pool - Map
+
+Description:
+Queercon has been invited to join the KEVOPS Department for their 1st Annual Sellout Pool Party. Tacos and drinks and music all night! (While tacos last)
+
+'.
+From 19:00 to 20:59, Social Gatherings/Events is hosting '' to present 'DC702 Meetup', which is about 'Title: DC702 Meetup
+Tags: Meetup
+When: Thursday, Aug 7, 19:00 - 20:59 PDT
+Where: LVCC West-Level 2-W237 (DEF CON Groups) - Map
+
+Description:
+Join the local DC702 Group in this year's official DEF CON Meetup! The meetup will be casual and include typical meetup activities (e.g., socializing, "challenges," lockpicking, music, etc.) and maybe a few little surprises.
+
+'.
+From 19:30 to 22:30, Social Gatherings/Events is hosting '' to present 'The KEVOPS Sellout Pool Party', which is about 'Title: The KEVOPS Sellout Pool Party
+Tags: Party
+When: Thursday, Aug 7, 19:30 - 22:30 PDT
+Where: Sahara Azul Ultra Pool - Map
+
+Description:
+Join the KEVOPS Department for our 1st Annual Sellout Pool Party, supported by all of our amazing Exhibitors and Supporters! We'll have tacos and drinks and music all night!
+
+'.
+From 20:00 to 01:59, Social Gatherings/Events is hosting 'heckseven,Fling,N8,Palinuro,Dj Husk3,Stitcharoo' to present 'Music Set / Entertainment (Chillout Stage, Thursday)', which is about 'Title: Music Set / Entertainment (Chillout Stage, Thursday)
+Tags: Entertainment
+When: Thursday, Aug 7, 20:00 - 01:59 PDT
+Where: Unknown
+
+Description:
+
+20:00 - 21:00 - heckseven
+21:00 - 22:00 - Fling
+22:00 - 23:00 - N8
+23:00 - 00:00 - Palinuro
+00:00 - 01:00 - Dj Husk3
+01:00 - 02:00 - Stitcharoo
+
+
+Speakers:heckseven,Fling,N8,Palinuro,Dj Husk3,Stitcharoo
+
+SpeakerBio:  heckseven
+Genre: Progressive House
+
+filthy basslines, mangled handsets, walls of DIY synths, and a telephone exchange of patch cables
+
+SpeakerBio:  Fling
+Genre: Drum & Bass
+
+Emerging from the underground scene, Fling is quickly becoming one of the most exciting and compelling talents in the us drum and bass scene.  Notably, Fling's unique blend of dark and rolling basslines with high intensity jump up and jungle is sure to shake up the dance floor and keep the crowd on their toes!
+
+SpeakerBio:  N8
+Genre: Drum & Bass
+
+N8 has been obliterating eardrums with filthy drum&bass since he first played the Seattle club scene in the early 2000's. A staunch advocate against laptop DJ's and for getting TF off his lawn, the pandemic finally made him break down & switch to digital. He rides to Valhalla, shiny & chrome!
+
+SpeakerBio:  Palinuro
+Genre: Techno
+
+Parrot Security Director by day, Techno DJ at night
+
+SpeakerBio:  Dj Husk3
+Genre: Hardstyle / Gabber
+
+Coming from the furry side of Defcon it's Dj Husk3 in the kitchen cookin up some Uk Hardcore, J-core, and some all American Happy hardcore
+
+SpeakerBio:  Stitcharoo
+Genre: House
+
+This is an All-Points Bulletin for the Las Vegas DEFCON area. Caution. A UFO has been spotted crashing into the nearby landscape. Be on the lookout for an unidentified creature. It is considered unarmed and incredibly dangerous. Eye-witness testimony indicates the space invader answers to "Stitcharoo" or "Experiment #696". The monster appears to be keen on projecting electronic music at uncomfortably loud bass-filled volumes, primarily consisting of the genre Vocal House. Under no circumstances is the alien to be allowed near electronic devices such as turntables, mixers, or other DJ equipment. The creature seems to have a preference for ice cream. Message Repeat. This is an All-Points Bulletin for the Las Vegas DEFCON area. Caution.
+
+
+'.

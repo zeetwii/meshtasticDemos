@@ -1,0 +1,962 @@
+From 08:00 to 16:59, DEF CON Training is hosting 'Abhinav Singh' to present 'AI SecureOps: Attacking & Defending AI Applications and Services', which is about 'Title: AI SecureOps: Attacking & Defending AI Applications and Services
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Can prompt injections lead to complete infrastructure takeovers? Could AI applications be exploited to compromise backend services? Can data poisoning in AI copilots impact a company's stock? Can jailbreaks create false crisis alerts in security systems? This immersive, CTF-styled training in GenAI and LLM security dives into these pressing questions. Engage in realistic attack and defense scenarios focused on real-world threats, from prompt injection and remote code execution to backend compromise. Tackle hands-on challenges with actual AI applications to understand vulnerabilities and develop robust defenses. Youâll learn how to create a comprehensive security pipeline, mastering AI red and blue team strategies, building resilient defenses for LLMs, and handling incident response for AI-based threats. Additionally, implement a Responsible AI (RAI) program to  enforce ethical AI standards across enterprise services, fortifying your organizationâs AI security foundation.
+
+By 2026, Gartner, Inc. predicts that over 80% of enterprises will engage with GenAI models, up from less than 5% in 2023. This rapid adoption presents a new challenge for security professionals. To bring you up to speed from intermediate to advanced level, this training provides essential GenAI and LLM security skills through an immersive CTF-styled framework. Delve into sophisticated techniques for mitigating LLM threats, engineering robust defense mechanisms, and operationalizing LLM agents, preparing them to address the complex security challenges posed by the rapid expansion of GenAI technologies.  You will be provided with access to a live playground with custom built AI applications replicating real-world attack scenarios covering use-cases defined under the OWASP LLM top 10 framework and mapped with stages defined in MITRE ATLAS. This dense training will navigate you through areas like the red and blue team strategies, create robust LLM defenses, incident response in LLM attacks, implement a Responsible AI(RAI) program and enforce ethical AI standards across enterprise services, with the focus on improving the entire GenAI supply chain.
+
+This training will also cover the completely new segment of Responsible AI(RAI), ethics and trustworthiness in GenAI services. Unlike traditional cybersecurity verticals, these unique challenges such as bias detection, managing risky behaviors, and implementing mechanisms for tracking information are going to be the key challenges for enterprise security teams.
+
+By the end of this training, you will be able to:
+
+
+Exploit vulnerabilities in AI applications to achieve code and command execution, uncovering scenarios such as cross-site scripting, injection attacks, insecure agent designs, and remote code execution for infrastructure takeover.
+Conduct GenAI red-teaming using adversary simulation, OWASP LLM Top 10, and MITRE ATLAS frameworks, while applying AI security and ethical principles in real-world scenarios.
+Execute and defend against adversarial attacks, including prompt injection, data poisoning, model inversion, and agentic attacks.
+Perform advanced AI red and blue teaming through multi-agent auto-prompting attacks, implementing a 3-way autonomous system consisting of attack, defend and judge models.
+Implement LLM security scanners to detect and protect against injections, jailbreaks, manipulations, and risky behaviors, as well as defending LLMs with LLMs.
+Build and deploy enterprise-grade LLM defenses, including custom guardrails for input/output protection, security benchmarking, and penetration testing of LLM agents.
+Establish a comprehensive LLM SecOps process to secure the supply chain from adversarial attacks and create a robust threat model for enterprise applications.
+Implement an incident response and risk management plan for enterprises developing or using GenAI services.
+
+
+SpeakerBio:  Abhinav Singh
+Abhinav Singh is an esteemed cybersecurity leader & researcher with over a decade of experience across technology leaders, financial institutions, and as an independent trainer and consultant. Author of "Metasploit Penetration Testing Cookbook" and "Instant Wireshark Starter," his contributions span patents, open-source tools, and numerous publications. Recognized in security portals and digital platforms, Abhinav is a sought-after speaker & trainer at international conferences like Black Hat, RSA, DEFCON, BruCon and many more, where he shares his deep industry insights and innovative approaches in cybersecurity. He also leads multiple AI security groups at CSA, responsible for coming up with cutting-edge whitepapers and industry reports around safety and security of GenAI.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Tom Cross,Greg Conti' to present 'Adversarial Thinking: The Art of Dangerous Ideas', which is about 'Title: Adversarial Thinking: The Art of Dangerous Ideas
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Hackers have a unique perspective on the world and in particular on the technological artifacts within it. When most people look at a high tech system, they see what they were meant to see by the people who created it. Hackers see technology as it truly is, not as it was meant to be, and this way of looking at things enables hackers to discover possibilities that were never intended in the first place.
+
+For centuries, military and intelligence strategists have sought to view the world from a similar perspective - a perspective that can see the hidden possibilities and weaknesses in things and take advantage of them to create unexpected results. 
+
+This unique course draws lessons from both the hacker community and from military thinking in order to deepen your ability to understand adversaries and see things the way that adversaries see them. 
+
+Honing this skill is particularly valuable for people who are building technological systems that might be subject to misuse and need to be able to anticipate that misuse. Whether you are an aspiring red teamer, a hardware engineer, software developer or product owner striving to understand how your product will be abused, or you work in fraud detection, risk analysis, election security, or any other domain where you face an adversary, youâll find this course a valuable addition to your skill set.
+
+We willâ¦
+
+
+Survey adversarial thinking in a wide range of domains
+Review the history of hacking and phone phreaking and understand how they influenced the development of a way of thinking about technology
+Explore lock picking and physical security
+Iteratively decompose an organization or complex system to find its most critical dependencies and develop methods of attacking those dependencies successfully
+Consider how one might creatively steal from your employer and what controls are necessary to prevent this from happening
+Examine how and why you might be targeted by foreign intelligence 
+Practice cheating on a test
+Understand how the mental models we develop for how things work can prevent us from seeing how they actually work
+See how levels of abstraction in computer technology can hide vulnerabilities
+Learn how to read technical standards and see the things that they fail to say
+Practice fooling your customers by offering products with unstated capabilities
+Explore how state cyber operations are organized and could target your organization
+Study the crowdsourcing of adversaries, as seen in Ukraine
+Explore dangerous security assumptions
+Investigate deception techniques
+Practice detecting and role-playing insider threats
+And much moreâ¦
+
+
+After completing the course youâll leave with:
+
+
+An improved offensive mindset and ability to identify weaknesses and other unintended characteristics of systems.
+Heightened awareness of non-obvious threats and threat actors across the spectrum of the cyber, information, cognitive, and physical domains. 
+Practical tools and techniques to better assess security risk and employ security controls.
+A deeper understanding of threat actor TTPs and countermeasures in areas such as: state-level cyberspace operations, electronic warfare and surveillance, supply chain compromise, hardware implants, deception operations, human intelligence collection, physical security, influence operations, targeting methodologies, and novel threat intelligence analytic techniques, among numerous other topics.
+Improved critical thinking techniques via an understanding of how the world, its threat actors, and the enterprise security environment behave in practice, not how defenders assume it to be.
+An enhanced ability to fluidly shift from the mindset of a defender into that of an attacker, and back again.
+Diverse sources of additional information to aid participantsâ continued self-development.
+
+
+This interesting and fast-moving class will include hands-on exercises to apply and reinforce the skills learned. Youâll leave this course with a fresh perspective and a toolkit of techniques to better accomplish your mission. Come join us.
+
+Speakers:Tom Cross,Greg Conti
+
+SpeakerBio:  Tom Cross
+Tom Cross is an entrepreneur and technology leader with three decades of experience in the hacker community. Tom attended the first DefCon in 1993 and he ran bulletin board systems and listservs in the early 1990âs that served the hacker community in the southeastern United States. He is currently Head of Threat Research at GetReal Security, Principal at Kopidion, and creator of FeedSeer, a news reader for Mastodon. Previously he was CoFounder and CTO of Drawbridge Networks, Director of Security Research at Lancope, and Manager of the IBM Internet Security Systems X-Force Advanced Research team. He has written papers on collateral damage in cyber conflict, vulnerability disclosure ethics, security issues in internet routers, encrypting open wireless networks, and protecting Wikipedia from vandalism. He has spoken at numerous security conferences, including Black Hat Briefings, Defcon, CyCon, HOPE, Source Boston, FIRST, and Security B-Sides. He has a B.S. in Computer Engineering from the Georgia Institute of Technology. He can be found on Linkedin as https://www.linkedin.com/in/tom-cross-71455/, on Mastodon as https://ioc.exchange/@decius, and on Bluesky as https://bsky.app/profile/decius.bsky.social.
+
+SpeakerBio:  Greg Conti, Co-Founder and Principal at Kopidion
+Greg Conti is a hacker, maker, and computer scientist. He is a nine-time DEF CON speaker, a seven-time Black Hat speaker, and has been a Black Hat Trainer for 10 years. Heâs taught Adversarial Thinking techniques at West Point, Stanford University bootcamps, NSA/U.S. Cyber Command, and for private clients in the financial and cybersecurity sectors. Greg is Co-Founder and Principal at Kopidion, a cyber security training and professional services firm. 
+
+Formerly he served on the West Point faculty for 16 years, where he led their cybersecurity research and education programs. During his U.S. Army and Military Intelligence career he co-created U.S. Cyber Commandâs Joint Advanced Cyberwarfare Course, deployed to Iraq as Officer-in-Charge of U.S. Cyber Commandâs Expeditionary Cyber Support Element, and was the first Director of the Army Cyber Institute. 
+
+Greg is co-author of On Cyber: Towards an Operational Art for Cyber Operations, and approximately 100 articles and papers covering hacking, online privacy, usable security, cyber conflict, and security visualization. Greg holds a B.S. from West Point, an M.S. from Johns Hopkins University, and a Ph.D. from the Georgia Institute of Technology, all in computer science. His work may be found at gregconti.com (https://www.gregconti.com/), kopidion.com (https://www.kopidion.com/) and LinkedIn (https://www.linkedin.com/in/greg-conti-7a8521/).
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Abhijith "Abx" B R' to present 'Offensive Cyber Security Operations: Mastering Breach and Adversarial Attack Simulation Engagements', which is about 'Title: Offensive Cyber Security Operations: Mastering Breach and Adversarial Attack Simulation Engagements
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+This hands-on workshop has been created to provide participants with a better understanding of  offensive security operations, breach and adversary simulation engagements. The goal is to enable participants to simulate their adversaries based on the industry which their organization is in, including both known and unknown adversaries. 
+
+Participants will learn to emulate various threat-actors safely in a controlled, enterprise level  environment. Also, the training will help participants learn to simulate unknown adversaries by choosing a wide variety of offensive tradecraft, TTPs and planning attack simulation engagements effectively. 
+
+All machines in the lab environment will be equipped with AV, Web proxy, EDR and other Defense systems. The training management platform will have modules/videos of each attack vector used in the lab environment and step-by-step walkthrough of the attack path. The training is intended to help the attendees to assess the defenses and evaluate the security controls deployed in their organization against motivated adversaries. 
+
+This training will provide participants access to a breach simulation lab range, where they will be able to perform a full red team-attack simulation scenario in guided mode. Each step of the attack chain will be explained, along with the TTPs used, starting from initial access to  exfiltration.
+
+SpeakerBio:  Abhijith "Abx" B R, Founder at Adversary Village
+Abhijith B R, also known by the pseudonym Abx, has more than a decade of experience in the offensive cyber security industry. Currently he is involved with multiple organizations as a consulting specialist, to help them build offensive security operations programs, improve their current security posture, assess cyber defense systems, and bridge the gap between business leadership and cyber security professionals. Abhijithâs professional exposure is stretched across multiple industries and various other sectors. As the founder of Adversary Village, Abhijith spearheads a community driven initiative exclusively focused on adversary simulation, adversary tactics, purple teaming, threat-actor/ransomware research-emulation, and offensive security-adversary tradecraft.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Giorgio "gbyolo" Bernardinetti,Dimitri "GlenX" Di Cristofaro' to present 'Dodging the EDR bullet: A Training on Malware Stealth Tactics', which is about 'Title: Dodging the EDR bullet: A Training on Malware Stealth Tactics
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+"Dodging the EDR bullet" Training is an intensive, hands-on course designed to equip cybersecurity professionals with cutting-edge skills in malware evasion techniques. Dive deep into Windows security components, antivirus systems, and EDRs while mastering the full malware lifecycleâfrom initial access to advanced in-memory evasion and kernel-level persistence. Through a systematic approach to memory management and process manipulation, participants will learn how to bypass modern detection strategies and build stealthy malware components. The course focuses on cultivating a research-driven mindset, enabling attendees to understand and analyze detection strategies provided by the Windows OS and then craft their own techniques to evade them.
+
+By the end of the training, participants will have gained a solid foundation in malware analysis and development, enabling them to craft sophisticated command-and-control (C2) payloads and maintain persistence while remaining undetected.
+
+* All students are expected to sign an NDA with the trainer to avoid unauthorized sharing of training materials *
+
+Speakers:Giorgio "gbyolo" Bernardinetti,Dimitri "GlenX" Di Cristofaro
+
+SpeakerBio:  Giorgio "gbyolo" Bernardinetti, Lead Researcher at System Security division of CNIT
+Giorgio "gbyolo" Bernardinetti is lead researcher at the System Security division of CNIT. His research activities are geared towards Red Teaming support activities, in particular design and development of advanced evasion techniques in strictly monitored environments, with emphasis on (but not limited to) the Windows OS, both in user-space and kernel-space. He has been a speaker for DEFCON32 Workshops and Red Team Village HacktivityCon 2021.
+
+SpeakerBio:  Dimitri "GlenX" Di Cristofaro, Security Consultant and Researcher at SECFORCE LTD
+Dimitri "GlenX" Di Cristofaro is a security consultant and researcher at SECFORCE LTD where he performs Red Teams on a daily basis. The main focus of his research activities is about Red Teaming and in particular on identifying new ways of attacking operating systems and looking for cutting edge techniques to increase stealthiness in strictly monitored environments. He enjoys malware writing and offensive tools development as well as producing electronic music in his free time.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Zubin Devnani,Dhiraj Mishra' to present 'Deep Dive into Fuzzing', which is about 'Title: Deep Dive into Fuzzing
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Fuzzing is a technique of identifying software vulnerabilities by automated corpus generation. It has produced immense results and attracted a lot of visibility from security researchers and professionals in the industry, today fuzzing can be utilized in various ways which can be incorporated into your secure SDLC to discover vulnerabilities in advance and fix them. Attendees will be emulating techniques which will provide a comprehensive understanding of "Crash, Detect & Triage" of fuzzed binaries or software. In "Deep dive into fuzzing" we will be covering a detailed overview of fuzzing and how it can be beneficial to professionals in uncovering security vulnerabilities with a hands-on approach through focus on labs.
+
+Finding vulnerabilities in software requires in-depth knowledge of different technology stacks. Modern day softwares have a huge codebase and may contain vulnerabilities, manually verifying such vulnerabilities is a tedious task and may not be possible in all cases. This training is designed in such a way that it introduces the concept of fuzzing and vulnerability discovery in softwareâs covering multiple platforms such as Linux & Windows and triage analysis for those vulnerabilities.
+
+Speakers:Zubin Devnani,Dhiraj Mishra
+
+SpeakerBio:  Zubin Devnani
+Zubin Devnani is a red teamer by trade, who has identified multiple vulnerabilities in commonly used software. He is a trainer at Blackhat and has delivered multiple workshops, including PHDays and Hacktivity. Utilizes his fuzzing skills in his day to day trade to identify new ways of breaking into enterprises! Blogging at devtty0.io and tweets on @p1ngfl0yd.
+
+SpeakerBio:  Dhiraj Mishra
+Dhiraj Mishra is an active speaker who has discovered multiple zero-days in modern web browsers and an open-source contributor. He is a trainer at Blackhat, BruCON, 44CON and presented in conferences such as Ekoparty, NorthSec, Hacktivity, PHDays, Hack in Paris & HITB. In his free time, he blogs at www.inputzero.io/www.fuzzing.at and tweets on @RandomDhiraj.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Jake Mayhew,Greg Hatcher' to present 'Offensive Development Practitioner Certification (On-Site) by White Knight Labs', which is about 'Title: Offensive Development Practitioner Certification (On-Site) by White Knight Labs
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Dive deep into cutting edge techniques that bypass or neuter modern endpoint defenses. Learn how these solutions work to mitigate their utility and hide deep within code on the endpoint. The days of downloading that binary from the internet and pointing it at a remote machine are over. Todayâs defenses oftentimes call for multiple bypasses within a single piece of code. 
+
+This course is designed to take you deep into defensive and offensive tooling â an apex attacker must know the own indicators of compromise (IOCs) theyâre creating and the artifacts theyâre leaving behind.
+
+Imagine, you are a novice red teamer and you have been tasked with leading a 16-week full-scope red team engagement against a highly mature Fortune 50 company. No, Metapsloit and Mimikatz are not going to work. Do you take your ball and go home? Nope, it's time to build a lab and see what is going to bypass their tech stack.
+
+Do you phish from the external? Maybe an illicit consent grant in Azure? What loader do I use? Is process injection even going to be necessary?  Stop being lost in the offensive cyber sauce; get informed and get to work. WKL's flagship course, Offensive Development, is meant to prepare red teamers and blue teamers for the present day cyberwar. These are not last year's TTPs, WKL will be teaching hyper-current tools and techniques that are being used in current red team operations. 
+
+The Offensive Development course is not focused on theory, students will be given a Terraform script that spins up their own isolated AWS lab environment that has several fully patched Windows virtual machines that have various EDR products installed and a fully licensed version of the Cobalt Strike C2 framework.
+
+The pace of finding new offensive cyber techniques that bypass modern detection moves slightly faster than the defense can handle. This course will help red teamers and blue teamers understand the current state of the red/blue war and where the community is heading next, the kernel.
+
+Your lab environment is yours to keep continuing honing your skills. Although the EDR and Cobalt Strike licenses will expire, and the Earth may turn to dust, your AWS lab environment will live forever.  
+
+Although the OD course comes with Cobalt Strike, students are free to install whichever C2 framework they're most comfortable with. Students will receive an additional Ubuntu workstation in their lab environment to install whatever additional tooling they feel is necessary.
+
+Speakers:Jake Mayhew,Greg Hatcher
+
+SpeakerBio:  Jake Mayhew
+Jake Mayhew is an experienced cybersecurity professional with a particular emphasis on offensive security, especially internal & assumed breach penetration tests. In addition to several years in consulting performing penetration tests & offensive security engagements for clients in a wide range of industries, he has also served on internal red teams and currently leads the red team at UPMC.
+
+SpeakerBio:  Greg Hatcher
+Greg Hatcher served seven years as a green beret in the United States Armyâs 5th Special Forces Group. During that time, Greg went on multiple combat deployments, working on small teams in austere locations to serve Americaâs best interests. After Greg transitioned from the military in 2017, he devoted himself to developing a deep understanding of networking and then pivoted quickly to offensive cyber security. He has taught at the NSA and led red teams while contracting for CISA. He has led training at Wild West Hackinâ Fest and virtually on the AntiSyphon platform. Greg has spoken at GrrCON and is an active member of the West Michigan Technology Council. He enjoys spending time with his family, lifting heavy things, and running long distances.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Dawid Czagan' to present 'Full-Stack Pentesting Laboratory: 100% Hands-On + Lifetime LAB Access', which is about 'Title: Full-Stack Pentesting Laboratory: 100% Hands-On + Lifetime LAB Access
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Modern IT systems are complex and itâs all about full-stack nowadays. To become a pentesting expert, you need to dive into full-stack exploitation and gain a lot of practical skills. Thatâs why I created the Full-Stack Pentesting Laboratory.
+
+For each attack, vulnerability and technique presented in this training there is a lab exercise to help you master full-stack pentesting step by step. Whatâs more, when the training is over, you can take the complete lab environment home to hack again at your own pace.
+
+I found security bugs in many companies including Google, Yahoo, Mozilla, Twitter and in this training Iâll share my experience with you. The content of this training has been carefully selected to cover the topics most frequently requested by professional penetration testers.
+
+Note: This training was sold out at DEF CON 2024 and received very positive feedback from students. Thatâs why we're bringing it back to Las Vegas for DEF CON 2025.
+
+SpeakerBio:  Dawid Czagan, Founder and CEO at Silesia Security Lab
+Dawid Czagan is an internationally recognized security researcher and trainer. He is listed among top hackers at HackerOne. Dawid Czagan has found security bugs in Apple, Google, Mozilla, Microsoft and many others. Due to the severity of many bugs, he received numerous awards for his findings.
+
+Dawid Czagan shares his offensive security experience in his hands-on trainings. He delivered trainings at key industry conferences such as DEF CON (Las Vegas), Hack In The Box (Amsterdam), CanSecWest (Vancouver), 44CON (London), Hack In Paris (Paris), NorthSec (Montreal), HITB GSEC (Singapore), BruCON (Ghent) and for many corporate clients. His students include security specialists from Oracle, Adobe, ESET, ING, Red Hat, Trend Micro, Philips and government sector (references are attached to Dawid Czagan's LinkedIn profile (https://www.linkedin.com/in/dawid-czagan-85ba3666/). They can also be found here: https://silesiasecuritylab.com/services/training/#opinions).
+
+Dawid Czagan is the founder and CEO at Silesia Security Lab. To find out about the latest in his work, you are invited to subscribe to his newsletter (https://silesiasecuritylab.com/newsletter) and follow him on Twitter (@dawidczagan), YouTube (https://www.youtube.com/channel/UCG-sIlaM1xXmetFtEfqtOqg), and LinkedIn (https://www.linkedin.com/in/dawid-czagan-85ba3666/).
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Kenny Hess,Jayson E. Street' to present 'Simulated Adversary: Tactics & Tools Training', which is about 'Title: Simulated Adversary: Tactics & Tools Training
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Ever wondered what itâs like to be the Villian? Have a propensity for chaos and a penchant for mischief? Seize the opportunity to unleash your inner âbad guyâ in a legal and controlled environment. This class, led by Adversary for Hire, Jason E. Street, will teach you how to think and attack like an adversary. 
+
+You will learn advanced intelligence gathering techniques and explore non-traditional tactics from one of the most twisted minds in the industry. Using real-world examples along with hands-on practical training, Jaysonâs approach highlights the human side of cyber compromise. He will introduce you to the Security Awareness Engagement methodology, which he uses in the field to reveal real-world threats without negative impacts to targets. This methodology employs practical simulations of social engineering attacks.
+
+In addition to simulating remote attacks like phishing and vishing, students will learn how to craft and deploy physical attack payloads with the Hak5 Bash Bunny. Each student will receive a Bash Bunny to take home and use in their new life as a simulated adversary. 
+
+This class focuses on the paramount threat to any person or organization: other humans. It provides in-depth understanding of each element in a social engineering attack and where social engineering falls on the kill chain. More importantly, you will leave with an in-depth understanding of how simulated adversaries and social engineering awareness can help people and organizations protect themselves. Sign up for DEF CON's most mischievous training and leave with new skills you will use for life.
+
+Speakers:Kenny Hess,Jayson E. Street
+
+SpeakerBio:  Kenny Hess, Advanced Security Engineer at Secure Yeti
+Kenny Hess is an Advanced Security Engineer at Secure Yeti. He is a trusted security consultant who has built a career around developing and testing secure, mission-critical systems for national governments, state agencies, and international corporations. Additionally, he has been able to help businesses of all sizes develop security policies and programs for classified and unclassified systems. Kenny has a B.A. in Journalism and Broadcasting and an M.S. in Telecommunications Management from Oklahoma State University. Because of this diverse educational background, he is able to connect with his clients through clear communication backed by technical expertise. When he's not desperately urging people to use a password manager, you might find him in the kitchen trying a new recipe, or at the airport lounge en route to adventure. Whether he's hacking people, systems, or ingredients, Kenny Hess is always ready to add a dash of fun to everything he does.
+
+SpeakerBio:  Jayson E. Street, Chief Adversarial Officer at Secure Yeti
+Jayson E. Street referred to in the past as: a "notorious hacker" by FOX25 Boston, "World Class Hacker" by National Geographic Breakthrough Series, and described as a "paunchy hacker" by Rolling Stone Magazine. He however prefers if people refer to him simply as a Hacker, Helper & Human.  
+
+He is the Chief Adversarial Officer at Secure Yeti and the author of the "Dissecting the hack: Series" (which is currently required reading at 5 colleges in 3 countries that he knows of). Jayson is also the DEF CON Groups Global Ambassador. He's spoken at DEF CON, DEF CON China, GRRCon, SAINTCON & at several other CONs & colleges on a variety of Information Security subjects. He was also a guest lecturer for the Beijing Institute of Technology for 10 years. 
+
+He loves to explore the world & networks as much as he can. He has successfully robbed banks, hotels, government facilities, Biochemical companies, etc. on five continents (Only successfully robbing the wrong bank in Lebanon once, all others he was supposed to)! 
+
+He is a highly carbonated speaker who has partaken of Pizza from Bulgaria to Brazil & China to The Canary Islands. He does not expect anybody to still be reading this far, but if they are please note he was proud to be chosen as one of Time's persons of the year for 2006.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Anant Shrivastava' to present 'Attack and Defend Software Supply Chain', which is about 'Title: Attack and Defend Software Supply Chain
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+In today's interconnected world, software development relies heavily on third-party components---up to 80% of your code could come from external sources. This reliance creates a complex web of dependencies, making your software supply chain a prime target for cybercriminals. Securing it is no longer optional; it's essential.
+
+This hands-on course takes a comprehensive approach to attacking and securing the software supply chain. In the first section, you'll assume the role of a sophisticated attacker, infiltrating an enterprise through its supply chain partners. You'll learn how to compromise developer laptops, code repositories, CI/CD pipelines, internal registries, and even production environments. Once you've seen how vulnerabilities can be exploited, we'll pivot to defense.
+
+In the second section, we'll build and secure a GitHub organization, configure repositories, and implement best practices to mitigate risks. You'll learn how to secure IaC (Infrastructure as Code) assets, validate third-party code, and remediate vulnerabilities to ensure end-to-end protection.
+
+Through practical exercises, you'll apply these strategies to safeguard your developer environments, CI/CD pipelines, and production systems. By the end of the course, you'll have the knowledge and tools to turn your software supply chain into a security strength rather than a liability.
+
+SpeakerBio:  Anant Shrivastava
+Anant Shrivastava is a highly experienced information security professional with over 15 years of corporate experience. He is a frequent speaker and trainer at international conferences, and is the founder of Cyfinoid Research, a cyber security research firm. He leads open source projects such as Tamer Platform and CodeVigilant, and is actively involved in information security communities such as null, OWASP and various BSides Chapters and DefCon groups.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'John McIntosh' to present 'Everyday Ghidra: Practical Windows Reverse Engineering', which is about 'Title: Everyday Ghidra: Practical Windows Reverse Engineering
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Reverse engineering is the process of uncovering the principles, architecture, and internal structure of a piece of software or hardware. It can be used for various purposes, such as improving compatibility, enhancing security, understanding program behaviour, and even vulnerability research. However, reverse engineering can also be challenging, especially when dealing with complex and modern Windows binaries.
+
+Thatâs why you need Ghidra, a powerful and open-source software reverse engineering framework developed by the National Security Agency (NSA). Ghidra can help you perform in-depth analysis of Windows binaries, using its rich set of features and tools. Whether you want to reverse engineer malware, understand software internals, or find vulnerabilities, Ghidra can handle it and this course will guide your steps.
+
+In this course, you will learn how to use Ghidra effectively to reverse engineer Windows binaries. While Ghidra is at the heart of our curriculum, we go far beyond a simple user manual. This course is designed to help you master Windows reverse engineering techniques by using Ghidra as your primary tool.  You will start with the basics of Ghidra, such as creating projects, importing and analyzing binaries, and using Ghidraâs native tools. You will then learn how to customize Ghidra to suit your needs, such as building custom data types and configuring optimal analysis. From there, you will complete progressive labs that will teach you to apply both static and dynamic analysis techniques to dive deep into Windows application behavior using Ghidraâs Windows-specific features and scripts.
+
+Practical Exercises:
+- Reverse Engineering Windows Malware - Learn to statically analyze a Windows malware sample and identify its malicious behavior.
+- Dynamically Debugging a Windows RPC Server - Gain insight to into Windows RPC and learn how to dynamically inspect a Windows servers with Ghidraâs Debugger
+- Patch Diffing and Root Cause Analysis of a Windows CVE - Learn how to use Ghidraâs Patch Diffing to compare two versions of a Windows binary and identify the changes made to fix a vulnerability and find its root cause.
+
+SpeakerBio:  John McIntosh, Security Researcher and Lead Instructor at @clearseclabs
+John McIntosh @clearbluejar is a security researcher and lead instructor @clearseclabs, a company that offers hands-on training and consulting for reverse engineering and offensive security. He is passionate about learning and sharing knowledge on topics such as binary analysis, patch diffing, and vulnerability discovery. He has created several open-source security tools and courses, which are available on his GitHub page. He regularly blogs about his research projects and experiments on his [website] (https://clearbluejar.github.io), where you can find detailed write-ups on reversing recent CVEs and building RE tooling with Ghidra. With over a decade of offensive security experience, speaking and teaching at security conferences worldwide, he is always eager to learn new things and collaborate with other security enthusiasts.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Arnaud SoulliÃ©' to present 'Hack the Connected Plant!', which is about 'Title: Hack the Connected Plant!
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Tired of legacy ICS systems? Attend this training to hack the next generation of Industrial Control Systems! No more Modbus, no more standard PLC, no more Purdue model!
+
+This training is designed to show what the future might look like for Industrial Control Systems, and how it will impact cybersecurity.
+
+Weâll bring a realistic ICS setup that features all the fancy current and future trends: SD-WAN and Zero Trust, OPC-UA, MQTT, Edge device and soft-PLCs to control a small-scale industrial process simulation.
+
+The first day will be dedicated to introducing the new cybersecurity challenges faced by modern Industrial Control Systems, and doing hands-on exercises on AWS pentesting, soft-PLC exploitation
+
+On the second day weâll reflect on the updated threat models and then weâll spend the full day working on a realistic Capture-the-Flag exercise, where weâll have to go from 0 to impacting a small industrial setup. The CTF will be guided, with answers given on a regular basis, so that all attendees can capture all the flags. Weâll end this exciting day with the takeaways of the exercise, and what could be done to prevent & detect the attacks we performed.
+
+SpeakerBio:  Arnaud SoulliÃ©, Senior Manager at Wavestone
+Arnaud SoulliÃ© is a Senior Manager at Wavestone, a global consulting company. For 15 years, he has been performing security assessments and pentests on all types of targets. He started specializing in ICS cybersecurity 10 years ago. He has spoken at numerous security conferences on ICS topics, including: BlackHat Europe, BruCon, 4SICS, BSides Las Vegas, and DEFCON. He is also the creator of the DYODE project, an open source data diode aimed at ICS. He has taught ICS cybersecurity trainings since 2015.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Kamel Ghali' to present 'Hands-on Car Hacking & Automotive Cybersecurity', which is about 'Title: Hands-on Car Hacking & Automotive Cybersecurity
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+As automobiles increase their reliance on advanced connectivity and autonomy systems, they become more vulnerable to cyber-attacks. This class introduces participants to car hacking with in-depth case studies of automotive security research and guided, hands-on activities to instill mastery in the use of automotive technologies such as CAN and diagnostic protocols such as UDS and XCP. All hardware and software needed for the course is supplied by the instructor.
+
+Participants will learn:
+
+
+In-depth details of the automotive cybersecurity industry and car hacking incidents from the past
+In-depth understanding of vehicle attack surfaces and how they have been exploited by researchers in the past, including in-depth case studies
+Details of in-vehicle networking technologies used in the automotive industry and how they have been used to hack vehicles
+Hands-on operation of CAN bus networking equipment to hack cars including
+Reading CAN bus data
+Sending CAN bus data
+Reverse engineering CAN bus data
+Executing attacks on a vehicle CAN bus
+Using vehicle diagnostic protocols to read and write information to vehicle ECUs
+
+
+SpeakerBio:  Kamel Ghali
+Kamel Ghali is an 8 year veteran of the automotive cybersecurity industry and the VP of international affairs of the Defcon Car Hacking Village. He has extensive cyber physical systems security experience and has worked as a vehicle penetration tester, security consultant, and trainer in the United States and Japan. He speaks fluent English, Arabic, and Japanese, and volunteers in cybersecurity communities around the world spreading awareness for the need for cybersecurity in transportation systems.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Nikhil' to present 'Azure Cloud Attacks for Red & Blue Teams - Beginner Edition', which is about 'Title: Azure Cloud Attacks for Red & Blue Teams - Beginner Edition
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+More than 95 percent of Fortune 500 use Azure today! A huge number of organizations use Azure AD (Entra ID) as an Identity and Access Management platform. This makes it imperative to understand the risks associated with Azure as it contains an enterprises infrastructure, apps, identities and a lot more!
+
+In addition to cloud-only identity, the ability to connect on-prem Active Directory, applications and infrastructure to Azure brings some very interesting opportunities and risks too. Often complex to understand, this setup of components, infrastructure and identity is a security challenge.
+
+This hands-on training aims towards abusing Azure and a number of services offered by it. We will cover multiple complex attack lifecycles against a lab containing multiple live Azure tenants.
+
+All the phases of Azure red teaming and pentesting â Recon, Initial access, Enumeration, Privilege Escalation, Lateral Movement, Persistence and Data mining are covered. We will also discuss detecting and monitoring for the techniques we use.
+
+The course is a mixture of fun, demos, exercises, hands-on and lecture. The training focuses more on methodology and techniques than tools.
+If you are a security professional trying to improve your skills in Azure cloud security, Azure Pentesting or Red teaming the Azure cloud this is the right class for you!
+
+Following topics are covered:
+
+
+Introduction to Azure
+Discovery and Recon of services and applications
+Enumeration
+Initial Access Attacks (Enterprise Apps, App Services, Function Apps, Insecure Storage, Phishing, Consent Grant Attacks)
+Enumeration post authentication (Storage Accounts, Key vaults, Blobs, Automation Accounts, Deployment Templates etc.)
+Privilege Escalation (RBAC roles, Azure AD Roles, Across subscriptions)
+Lateral Movement (Pass-the-PRT, Pass-the-Certificate, Across Tenant, cloud to on-prem, on-prem to cloud)
+Lateral Movement (Across Tenant, cloud to on-prem, on-prem to cloud)
+Persistence techniques
+Data Mining
+Defenses, Monitoring and Auditing (CAP, PIM, Microsoft Defender for Cloud, JIT, Risk policies, MFA, MTPs, Azure Sentinel)
+Bypassing Defenses
+Defenses, Monitoring and Auditing 
+
+
+Attendees will get free two months access to an Azure environment comprising of multiple tenants and a Certified by AlteredSecurity Red Team Professional for Azure (CARTP) certification attempt.
+
+SpeakerBio:  Nikhil, Founder at Altered Security
+Nikhilâs areas of interest include red teaming, Azure and active directory security, attack research, defense strategies and post exploitation research. He has 15+ years of experience in red teaming.
+
+He specializes in assessing security risks in secure environments that require novel attack vectors and "out of the box" approach. He has worked extensively on Azure, Active Directory attacks, defense and bypassing detection mechanisms. Nikhil has held trainings and bootcamps for various corporate clients (in US, Europe and SE Asia), and at the world's top information security conferences. 
+
+He has spoken/trained at conferences like DEF CON, BlackHat, BruCON and more. 
+
+Nikhil is the founder of Altered Security - a company focusing on hands-on enterprise security learning - https://www.alteredsecurity.com/
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Rey "Privesc" Bango,Kevin Clark' to present 'Windows Payload Development: EDR Evasion and Initial Access Tradecraft', which is about 'Title: Windows Payload Development: EDR Evasion and Initial Access Tradecraft
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+This training is a hands-on, immersive course designed to teach participants the art of crafting evasive Windows payloads while navigating and bypassing modern Endpoint Detection and Response (EDR) systems. Through a blend of theory and practical exercises, attendees will gain a deep understanding of payload development, focusing on techniques that enhance stealth, modularity, and effectiveness in offensive operations.
+
+Key topics include payload formats, memory-resident execution, process injection, and advanced evasion strategies. Participants will explore the use of living off the land binaries (LOLBins), design modular implants with secure communication, and develop packers to obfuscate payloads and evade detection. By the end of the course, students will possess the knowledge and skills to craft realistic initial access vectors and deploy sophisticated payloads capable of evading modern defensive controls.
+
+Speakers:Rey "Privesc" Bango,Kevin Clark
+
+SpeakerBio:  Rey "Privesc" Bango, Security Consultant at BC Security
+Rey "Privesc" Bango is a Principal Cloud Advocate at Microsoft and a Security Consultant specializing in red teaming at BC Security. At Microsoft, he focuses on empowering organizations to leverage transformative technologies such as Artificial Intelligence and Machine Learning, prioritizing trust, security, and responsible use. He is an experienced trainer and speaker, presenting and teaching at cybersecurity conferences, including Black Hat and DEF CON. His work continues to bridge the gap between cutting-edge technological advancements and the critical need for secure, ethical implementation in today's world.
+
+SpeakerBio:  Kevin Clark, Red Team Instructor at BC Security
+Kevin Clark is a Security Consultant with TrustedSec and a Red Team Instructor with BC Security, with a diverse background in software development, penetration testing, and offensive security operations. Kevin specializes in initial access techniques and Active Directory exploitation. He has contributed to open-source projects such as PowerShell Empire and developed custom security toolkits, including Badrats and Ek47. A skilled trainer and speaker, Kevin has delivered talks and conducted training sessions all over the country at cybersecurity conferences, including Black Hat and DEF CON, and authors a cybersecurity blog at https://henpeebin.com/kevin/blog.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Nikhil,Manthan' to present 'Active Directory Attacks for Red and Blue Teams - Advanced Edition', which is about 'Title: Active Directory Attacks for Red and Blue Teams - Advanced Edition
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+More than 95% of Fortune 500 companies use Active Directory! Enterprises are managed using Active Directory (AD) and it often forms the backbone of the complete enterprise network. Therefore, to secure an enterprise from an adversary, it is inevitable to secure its AD environment. To secure AD, you must understand different techniques and attacks used by adversaries against it. Often burdened with maintaining backward compatibility and interoperability with a variety of products, AD environments lack ability to tackle latest threats.
+
+This training is aimed towards attacking modern AD with focus on OPSEC and Stealth. The training is based on real world penetration tests and Red Team engagements for highly secured environments.  Some of the techniques used in the course:
+
+
+Introduction to OPSEC and Stealth used in the class.
+Offensive .NET and PowerShell tradecraft
+Extensive AD Enumeration
+Active Directory trust mapping and abuse.
+Privilege Escalation (User Hunting, Delegation issues, LAPS abuse, gMSA abuse, SPN Hijacking, Shadow Credentials and more)
+Advanced Kerberos Attacks and Defense (Diamond, Golden, Silver ticket, Kerberoast and more)
+Advanced cross forest trust abuse (Lateral movement across forest, PrivEsc and more)
+Credentials Replay Attacks (Over-PTH, Token Replay, Certificate Replay etc.)
+Attacking Entra ID integration (Hybrid Identity)
+Abusing trusts for MS products (AD CS, SQL Server etc.)
+Persistence (WMI, GPO, Domain and Host ACLs and more)
+Monitoring Active Directory
+Defenses (JEA, PAW, LAPS, Selective Authentication, Deception, App Allowlisting, MDE EDR, Microsoft Defender for Identity etc.)
+Bypassing defenses (MDE, MDI and Elastic)
+
+
+The course is a mixture of fun, demos, exercises, hands-on and lecture. You start from compromise of a user desktop and work your way up to multiple forest pwnage. The training focuses more on methodology and techniques than tools.
+
+Attendees will get free two months access to an Active Directory environment comprising of multiple domains and forests, during and after the training and a Certified Red Team Expert Exam (CRTE) certification attempt.
+
+Speakers:Nikhil,Manthan
+
+SpeakerBio:  Nikhil, Founder at Altered Security
+Nikhilâs areas of interest include red teaming, Azure and active directory security, attack research, defense strategies and post exploitation research. He has 15+ years of experience in red teaming.
+
+He specializes in assessing security risks in secure environments that require novel attack vectors and "out of the box" approach. He has worked extensively on Azure, Active Directory attacks, defense and bypassing detection mechanisms. Nikhil has held trainings and bootcamps for various corporate clients (in US, Europe and SE Asia), and at the world's top information security conferences. 
+
+He has spoken/trained at conferences like DEF CON, BlackHat, BruCON and more. 
+
+Nikhil is the founder of Altered Security - a company focusing on hands-on enterprise security learning - https://www.alteredsecurity.com/
+
+SpeakerBio:  Manthan, Security Researcher at Altered Security
+Manthan is a security researcher with a strong passion for enterprise security, red teaming and Active Directory security. He specializes in testing enterprise security defences with a deep understanding of offensive strategies, including EDR evasion and Active Directory attacks. He continuously researches emerging threats, attack techniques, and mitigation strategies to stay ahead of evolving adversaries.
+
+He works as a Security Researcher at Altered Security - a company focusing on hands-on enterprise security learning - https://www.alteredsecurity.com/
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Korstiaan Stam' to present 'Advanced Cloud Incident Response in Azure and Microsoft 365', which is about 'Title: Advanced Cloud Incident Response in Azure and Microsoft 365
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+This hands-on two-day training offers a comprehensive guide to incident response in the Microsoft cloud, covering various topics essential for handling threats and attacks. The course starts with an overview of the concepts of the Microsoft cloud that are relevant for incident response. Participants will learn how to scope an incident in the Microsoft cloud and how to leverage it to set up an incident response capability. On the first day you will be immersed in the world of Azure attacks, we cover the different phases of an attack focusing on the evidence an attack leaves and how you can identify attacks based on the available evidence. On the second day we will shift our focus to Microsoft 365. The training covers the different types of evidence available in a Microsoft 365 environment. Participants will gain an understanding of how to acquire data from a Microsoft 365 environment using multiple methods and tools, and how to parse, enrich, and analyze the Microsoft 365 Unified Audit Log (UAL). The best part of the training is that everything you learn you'll apply with hands-on labs in a CTF like environment. Additionally we have created two full attack scenarios in both Azure & M365 and you're tasked in the CTF to solve as many pieces of the puzzle as you can.
+
+SpeakerBio:  Korstiaan Stam, Founder and CEO at Invictus Incident Response
+Korstiaan Stam is the Founder and CEO of Invictus Incident Response & SANS Trainer - FOR509: Cloud Forensics and Incident Response. Korstiaan is a passionate incident responder, preferably in the cloud. He developed and contributed to many open-source tools related to cloud incident response. Korstiaan has gained a lot of knowledge and skills over the years which he is keen to share.  
+
+Way before the cloud became a hot topic, Korstiaan was already researching it from a forensics perspective. âBecause I took this approach I have an advantage, because I simply spent more time in the cloud than others. More so, because I have my own IR consultancy company, I spent a lot of time in the cloud investigating malicious behavior, so I donât just know one cloud platform, but I have knowledge about all of them.â That equips him to help students with the challenge of every cloud working slightly or completely different. âIf you understand the main concepts, you can then see that thereâs also a similarity among all the clouds. That is why I start with the big picture in my classes and then zoom in on the details. Korstiaan also uses real-life examples from his work to discuss challenges heâs faced with students to relate with their day-to-day work. âTo me, teaching not only means sharing my knowledge on a topic, but also applying real-life implications of that knowledge. I always try to combine the theory with the everyday practice so students can see why itâs important to understand certain concepts and how the newly founded knowledge can be applied.â
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Abraham Aranguren,Anirudh Anand,Ashwin Shenoi' to present 'Hacking Modern Web Apps: Master the Future of Attack Vectors', which is about 'Title: Hacking Modern Web Apps: Master the Future of Attack Vectors
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+This course is a 100% hands-on deep dive into the OWASP Security Testing Guide and relevant items of the OWASP Application Security Verification Standard (ASVS), so this course covers and goes beyond the OWASP Top Ten.
+
+Long are the days since web servers were run by perl scripts apps written in Delphi. What is common between Walmart, eBay, PayPal, Microsoft, LinkedIn, Google and Netflix? They all use Node.js: JavaScript on the server.
+
+Modern Web apps share traditional attack vectors and also introduce new opportunities to threat actors. This course will teach you how to review modern web apps, showcasing Node.js but using techniques that will also work against any other web app platform. Ideal for Penetration Testers, Web app Developers as well as everybody interested in JavaScript/Node.js and Modern app stack security.
+
+Get a FREE taste for this training, including access to video recording, slides and vulnerable apps to play with:
+
+1 hour workshop - https://7asecurity.com/free-workshop-web-apps   
+
+All action, no fluff, improve your security analysis workflow and immediately apply these gained skills in your workplace, packed with exercises, extra mile challenges and CTF, self-paced and suitable for all skill levels, with continued education via unlimited email support, lifetime access, step-by-step video recordings and interesting apps to practice, including all future updates for free.
+
+Speakers:Abraham Aranguren,Anirudh Anand,Ashwin Shenoi
+
+SpeakerBio:  Abraham Aranguren
+After 17 years in itsec and 24 in IT, Abraham Aranguren is now the CEO of 7ASecurity (7asecurity.com), a company specializing in penetration testing of web/mobile apps, infrastructure, code reviews and training. Co-Author of the Mobile, Web and Desktop (Electron) app 7ASecurity courses. Security Trainer at Blackhat USA, HITB, OWASP Global AppSec and many other events. OWASP OWTF project leader, an OWASP flagship project (owtf.org), Major degree and Diploma in Computer Science, some certs: CISSP, OSCP, GWEB, OSWP, CPTS, CEH, MCSE:Security, MCSA:Security, Security+. As a shell scripting fan trained by unix dinosaurs, Abraham wears a proud manly beard. He writes on Twitter as @7asecurity @7a_ @owtfp or https://7asecurity.com/blog. Multiple presentations, pentest reports and recordings can be found at https://7asecurity.com/publications.
+
+SpeakerBio:  Anirudh Anand
+Anirudh Anand is a security researcher with a primary focus on Web and Mobile Application Security. He is currently working as a Principal Security Engineer at CRED and also Security Trainer at 7asecurity. He has been submitting bugs and contributing to security tools for over 9 years. In his free time, he participates in CTF competitions along with Team bi0s (#1 security team in India according to CTFtime). His bounties involve vulnerabilities in Google, Microsoft, LinkedIn, Zendesk, Sendgrid, Gitlab, Gratipay and Flipboard.
+
+Anirudh is an open source enthusiast and has contributed to several OWASP projects with notable contributions being in OWTF and Hackademic Challenges Project. He has presented/trained in a multitude of conferences including BlackHat US 2020, OWASP NZ 2021, HackFest CA 2021, c0c0n 2019, BlackHat Arsenal 2019, BlackHat Europe Arsenal 2018, HITB Dubai 2018, Offzone Moscow 2018, Ground Zero Summit Delhi 2015 and Xorconf 2015.
+
+SpeakerBio:  Ashwin Shenoi
+Ashwin Shenoi is an avid application security enthusiast who currently works as a Senior Security Engineer at CRED and likes to break into applications and automate stuff. He is part of team bi0s, the top ranked CTF team according to CTFTime. He heads the Web Security team at team bi0s and is also the core challenge setter and organiser of the various editions of InCTF and the other CTFs organised by team bi0s. He has also presented talks in various security meet-ups and conferences including BlackHat Asia and BlackHat USA. He does a fair share of breaking into open source applications services and has also been awarded several CVEs for the same.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Loudmouth Security' to present 'Loudmouth Security - Offensive IoT Exploitation', which is about 'Title: Loudmouth Security - Offensive IoT Exploitation
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+As IoT becomes more integrated and integral into personal and work lives, there is a growing need to understand the inner workings of IoT devices and ensure these devices are secure. This course teaches security professionals and hackers how to identify and exploit security vulnerabilities in IoT devices. Participants will learn to interact with hardware debug capabilities, communicate with memory devices, and virtualize and analyze firmware. The course also covers various hardware attacks including glitching and side channel attacks, as well as diving into communications protocols, including Bluetooth, Zigbee, Thread and Matter. Participants will gain hands-on experience with industry tools and techniques. This course is suitable for security professionals, penetration testers, and hackers with basic programming and computer system knowledge, and equips them with skills to discover new vulnerabilities in IoT devices.
+
+SpeakerBio:  Loudmouth Security, Loudmouth Security
+The Loudmouth Security team consists of renowned security consultants and researchers with extensive experience in the cybersecurity industry. Collectively, they bring decades of expertise, with team members holding prestigious Black Badges from the IoT CTF at DEF CON 26. Several team members have been regular contributors to IoT Village and are now founders of the new Embedded Systems Village, where they continue to push the boundaries of security research.
+
+The team excels at explaining complicated technical findings to executive management teams and has spent years mentoring younger hackers entering the field. Their teaching abilities stem from a shared passion for cybersecurity and dedication to continuous learning. They constantly seek out new information and insights, which they incorporate into their courses to provide the most up-to-date and relevant training possible.
+
+Loudmouth Security's experts bring diverse specializations to the table. The team includes accomplished PCB designers with extensive hardware knowledge, professionals with backgrounds in IT administration for industrial and manufacturing companies, and specialists in the virtualization of embedded devices. Key team members have performed research on some of the most unusual and advanced embedded systems, discovering and disclosing significant bugs in the process.
+
+As highly skilled trainers, the Loudmouth team is always eager to share their collective knowledge and experience, helping organizations stay ahead of the latest cyber threats.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Sam Bowne,Kaitlyn Handelman,Irvin Lemus,Elizabeth Biddlecome' to present 'Beginner's Guide to Attacks and Defenses', which is about 'Title: Beginner's Guide to Attacks and Defenses
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Please note: This is a four-day training that will be held Saturday-Tuesday (August 9-12). Participants will receive a DEF CON Human Badge with their registration
+
+We will survey modern attack and defense techniques at an introductory level. We will demonstrate all the techniques, and participants will perform hands-on projects practicing with the tools. We will provide beginner-friendly instructions, a live CTF scoreboard, and personal assistance.
+
+Speakers:Sam Bowne,Kaitlyn Handelman,Irvin Lemus,Elizabeth Biddlecome
+
+SpeakerBio:  Sam Bowne, City College San Francisco
+Sam Bowne has been teaching computer networking and security classes at City College San Francisco since 2000. He has given talks and hands-on trainings at DEF CON, DEF CON China, Black Hat USA, HOPE, BSidesSF, BSidesLV, RSA, and many other conferences and colleges. He founded Infosec Decoded, Inc., and does corporate training and consulting for several Fortune 100 companies, on topics including Incident Response and Secure Coding.
+
+SpeakerBio:  Kaitlyn Handelman, Offensive Security Engineer at Amazon
+Kaitlyn Handelman is an offensive security engineer at Amazon. Her focus is cybersecurity in space. In addition to traditional penetration testing, Kaitlyn works on physical devices and RF signals. In her free time, she enjoys ham radio, astronomy, and her cat, Astrocat.
+
+SpeakerBio:  Irvin Lemus, Cyber Range Engineer at By Light IT Professional Services
+Irvin Lemus, CISSP is a Cyber Range Engineer at By Light IT Professional Services, training military personnel through international cyber security exercises. Irvin has been in the field since 2006, involved with cybersecurity competitions since 2015 as a trainer, coach, and mentor. He also has taught IT and Cybersecurity courses at Coastline and Cabrillo Colleges. He is the BACCC Cyber Competitions Regional Coordinator, Board member at Pacific Hackers and is a speaker at DEFCON. He describes himself as, "A professional troublemaker who loves hacking all the things."
+
+SpeakerBio:  Elizabeth Biddlecome, Consultant and Instructor
+Elizabeth Biddlecome is a consultant and instructor, delivering technical training and mentorship to students and professionals. She leverages her enthusiasm for architecture, security, and code to design and implement comprehensive information security solutions for business needs. Elizabeth enjoys wielding everything from soldering irons to cripting languages in cybersecurity competitions, hackathons, and CTFs.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Rod Soto' to present 'SOC 101 - SOC 1 Analyst Bootcamp', which is about 'Title: SOC 101 - SOC 1 Analyst Bootcamp
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+This course introduces students to Security Operations Center (SOC) skills and tools, providing a comprehensive foundation in the essential skills required for SOC analysts. Through extensive hands-on exercises and labs that mirror real-life SOC tasks and technologies, students will gain a practical, skill-based understanding of modern security operations.
+
+Key areas of focus will include text handling, packet dissection, and analysis, adversarial simulation, and detection engineering, equipping students with the expertise needed for various SOC tasks. The course emphasizes practical, foundational skills to ensure students are prepared to excel at core SOC tasks, this course will also introduce students to AI tools that improve SOC efficiency, accuracy, and response time in a rapidly evolving security landscape.
+
+SpeakerBio:  Rod Soto, Detection Engineer and Researcher at Splunk Threat Research Team
+Rod Soto has over 15 years of experience in information technology and security. He has worked in Security Operations Centers as a support engineer, soc engineer, security emergency response, and incident response. He is currently working as a detection engineer and researcher at Splunk Threat Research Team and has previously worked at Prolexic/AKAMAI, Splunk UBA, JASK (SOC Automation). 
+
+Rod Soto was the winner of the 2012 BlackHat Las Vegas CTF competition and Red Alert ICS CTF at DEFCON 2022 contest. He has spoken at ISSA, ISC2, OWASP, DEFCON,  RSA Conference,Hackmiami, DerbyCon, Splunk .CONF, Black Hat,BSides, Underground Economy and also been featured in Rolling Stone Magazine, Pentest Magazine, Univision, BBC, Forbes, VICE, Fox News and CNN.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting '' to present 'Medical Device Penetration Testing', which is about 'Title: Medical Device Penetration Testing
+Tags: DEF CON Training (Paid) | Biohacking Village
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Please note: This is a four-day training that will be held Saturday-Tuesday (August 9-12). Participants will receive DEF CON Human Badge with their registration
+
+The topic of the course is offensive security testing of medical devices and the impact this has on the future of medical device production. The course is a seasoned entry/mid level to advanced course. The students will be learning all that the trainers know about Medical Device hacking and the things they have learned in their interactions as testers with these devices. This is inclusive of skills such as:
+
+
+Network attacks against medical protocols
+Reverse engineering binaries for exploitation
+Attacking medical devices using peripheral devices
+Defense bypasses to common defenses used in medical devices
+And more
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Richard Shmel' to present 'Software Defined Radios 101', which is about 'Title: Software Defined Radios 101
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Software Defined Radios (SDRs) are a powerful tool that has made the once-obfuscated domain of the electromagnetic spectrum open to anyone with a low-cost laptop and radio. From both an offensive and defensive perspective, an enormous attack surface, with many legacy devices and protocols, is open for exploitation. SDR 101 is a course designed for cyber security professionals of all skill levels who want to start working with RF signals and SDRs.
+
+This class is a beginner's introduction to practical Software Defined Radio applications and development with an emphasis on hands-on learning. If you have ever been curious about the invisible world of radio waves and signals all around you, but didn't know where to begin, then this course is for you. Students can expect to learn about basic RF theory and SDR architecture before moving on to hands-on development with real radios. Over the two-day course, the instructor will guide students through progressively more complicated RF concepts and waveforms, culminating in a small capstone exercise. Students will be provided with a HackRF SDR for the duration of the class but will need to bring their own laptop to interface with the radio. VMs will be made available to students to download before class, along with an OS setup guide for those that prefer a bare-metal install. The VM/OS will have all the required drivers and frameworks to interface with the radio hardware, allowing us to jump right into hands-on exercises. My intent for this course is to lower the barrier of entry associated with RF hacking and give beginning students a practical understanding of RF and DSP applications with SDRs.
+
+SpeakerBio:  Richard Shmel
+Richard Shmel is an experienced research and development engineer focusing on radio communications and digital signals processing applications. He has over a decade of experience as an RF engineer and embedded software developer working on prototype radio systems and DSP frameworks. Disappointed by the lack of introductory SDR material he could give to new engineers, he decided to write his own training courses to help fill the gap. Richard has had the privilege of teaching SDR workshops and training at various local and national cyber security conferences - including DEF CON - for many years now. He is passionate about teaching RF/DSP and wireless technology, and will happily talk for hours on the subject if given the chance. Learn more at https://www.rnstechsolutions.com/.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting '' to present 'Medical Device Penetration Testing', which is about 'Title: Medical Device Penetration Testing
+Tags: DEF CON Training (Paid) | Biohacking Village
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Please note: This is a four-day training that will be held Saturday-Tuesday (August 9-12). Participants will receive DEF CON Human Badge with their registration
+
+The topic of the course is offensive security testing of medical devices and the impact this has on the future of medical device production. The course is a seasoned entry/mid level to advanced course. The students will be learning all that the trainers know about Medical Device hacking and the things they have learned in their interactions as testers with these devices. This is inclusive of skills such as:
+
+
+Network attacks against medical protocols
+Reverse engineering binaries for exploitation
+Attacking medical devices using peripheral devices
+Defense bypasses to common defenses used in medical devices
+And more
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Deviant Ollam,Bryan Black,Babak Javadi' to present 'RFID and Electronic Physical Access Control System Hacking', which is about 'Title: RFID and Electronic Physical Access Control System Hacking
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Practical security is the foundation of any security model.  Beyond firewalls and network hardening, government and enterprise alike must consider how security infrastructure safeguards digital, material, and human assets. Physical security is foundational to the ability to resist unauthorized access or malicious threat.
+
+In this training developed by world-renowned access-control expert Babak Javadi, students will be immersed in the mysteries of PACS tokens, RFID credentials, readers, alarm contacts, tamper switches, door controllers, and back-haul protocols that underpin Physical Access Control Systems (PACS) across the globe. The course provides a holistic and detailed view of modern access control and outlines common design limitations that can be exploited. Penetration testers will gain a practical understanding of what PACS looks like in the field, and how to intercept, clone, downgrade, replay, and bypass one's way through the system. Defenders, designers, and directors will come with away with best practices and techniques that will resist attacks.
+
+Participation will include hands-on practical experience with tools, exploits, and refined methods for compromising modern Physical Access Control Systems.
+
+Speakers:Deviant Ollam,Bryan Black,Babak Javadi
+
+SpeakerBio:  Deviant Ollam, Director of Education at Red Team Alliance
+While paying the bills as a physical penetration specialist with The CORE Group and the Director of Education for Red Team Alliance, Deviant Ollam also sat on the Board of Directors of the US division of TOOOL -- The Open Organisation Of Lockpickers -- for 14 years... acting as the the nonprofit's longest-serving Boardmember. His books Practical Lock Picking and Keys to the Kingdom are among Syngress Publishing's best-selling pen testing titles. In addition to being a lockpicker, Deviant is also a SAVTA certified Professional Safe Technician, a GSA certified Safe and Vault Inspector, member of the International Association of Investigative Locksmiths, a Life Safety and ADA consultant, and an NFPA Fire Door Inspector. At multiple annual security conferences Deviant started Lockpick Village workshop areas, and he has conducted physical security training sessions for Black Hat, the SANS Institute, DeepSec, ToorCon, HackCon, ShakaCon, HackInTheBox, ekoparty, AusCERT, GovCERT, CONFidence, the FBI, the NSA, DARPA, the National Defense University, Los Alamos National Lab, the United States Naval Academy at Annapolis, and the United States Military Academy at West Point.
+
+In his limited spare time, Deviant enjoys loud moments with lead acceleration and quiet times with podcasts. He arrives at airports too early and shows up at parties too late, but will promptly appear right on time for tacos or whiskey.
+
+SpeakerBio:  Bryan Black, Red Team Alliance
+Bryan Black is a seasoned physical security professional and esteemed assessment specialist with a comprehensive expertise spanning various facets of site security. His areas of specialization encompass video surveillance, intrusion detection/prevention, access control, network infrastructure, and penetration testing. With an illustrious track record of over a decade, he has collaborated closely with local and state law enforcement, federal and intelligence agencies, as well as prominent private sector corporations. Through these partnerships, he has been instrumental in advising clients and businesses on navigating the constantly evolving threat landscape. He is frequently acknowledged for his discerning critique of prevailing installations and practices within the industry. During his leisure hours, he leverages his engineering background and personal maker space to engage in product development. His endeavors encompass the meticulous design and refinement of innovative tools and procedures aimed at optimizing the efficiency and efficacy of both red and blue team engagement protocols.
+
+SpeakerBio:  Babak Javadi, Red Team Alliance
+Babak Javadi is the President and Founder of The CORE Group, and one of the original co-founding Directors of TOOOL, The Open Organisation of Lockpickers. As a keystone member of the security industry, he is well-recognized expert in professional circles hacker community. Babak's expertise extends to a wide range of security disciplines ranging from high security mechanical cylinders to alarm systems & physical access control systems. Over the past fifteen years Babak has presented and provided trainings a wide range of commercial and government agencies, including Black Hat, The SANS Institute, the USMA at West Point, and more.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting '' to present 'Medical Device Penetration Testing', which is about 'Title: Medical Device Penetration Testing
+Tags: DEF CON Training (Paid) | Biohacking Village
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Please note: This is a four-day training that will be held Saturday-Tuesday (August 9-12). Participants will receive DEF CON Human Badge with their registration
+
+The topic of the course is offensive security testing of medical devices and the impact this has on the future of medical device production. The course is a seasoned entry/mid level to advanced course. The students will be learning all that the trainers know about Medical Device hacking and the things they have learned in their interactions as testers with these devices. This is inclusive of skills such as:
+
+
+Network attacks against medical protocols
+Reverse engineering binaries for exploitation
+Attacking medical devices using peripheral devices
+Defense bypasses to common defenses used in medical devices
+And more
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Raunak Parmar' to present 'Attacking & Securing CI/CD Pipeline Certification (ASCPC) by White Knight Labs', which is about 'Title: Attacking & Securing CI/CD Pipeline Certification (ASCPC) by White Knight Labs
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+The Attacking and Securing CI/CD course is an on-demand and self-paced program designed to equip participants with the knowledge and skills to identify vulnerabilities and implement security measures within Continuous Integration and Continuous Deployment (CI/CD) pipelines. This course combines theoretical knowledge with practical, hands-on labs that simulate real-world scenarios in a CI/CD environment.
+
+SpeakerBio:  Raunak Parmar, Senior Cloud Security Engineer at White Knight Labs
+Raunak Parmar works as a senior cloud security engineer at White Knight Labs. His areas of interest include web penetration testing, Azure/AWS security, source code review, scripting, and development. He enjoys researching new attack methodologies and creating open-source tools that can be used during cloud red team activities. He has worked extensively on Azure and AWS and is the author of Vajra, an offensive cloud security tool. He has spoken at multiple respected security conferences like Black Hat, Defcon, Nullcon, RootCon, and also at local meetups.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Ruben Gonzalez,Benjamin Walny' to present 'Hacking Cryptography: Attacks, Tools, and Techniques', which is about 'Title: Hacking Cryptography: Attacks, Tools, and Techniques
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Crypto related bugs are super common. OWASP even ranks "Cryptographic Failure" as the second most common security vulnerability class in software. Yet, very often these vulnerabilities are overlooked by developers, code auditors, blue teamers and penetration testers alike. Because, let's face it: Nobody knows how cryptography works.
+
+During the course you will:
+
+
+understand how modern cryptography works.
+find common crypto vulnerabilities in real software.
+write crypto exploits for real software (and an IoT device).
+
+
+Using case studies from our own pentesting and red teaming engagements, we'll introduce core concepts of applied cryptography and how they fail in practice.
+
+This course turns you into a powerful weapon. You will know how applied cryptography works, how it's commonly misused in the field and how this leads to exploitable bugs. That means, by the end of the course you will be among the very selected group of people that can identify, avoid and exploit vulnerabilities in code using crypto.
+
+No prior knowledge required!
+
+Learning Objectives
+
+
+Learn how modern cryptography operates. Learn what kind of guarantees are given by certain primitives, and which aren't.
+Understand how crypto primitives are combined into protocols.
+Learn how cryptography is often misused in practice and how this misuse can be exploited.
+Write exploits for systems using cryptography in an inappropriate way.
+Evaluate program code that uses cryptography for proper usage.
+Identify cryptographic schemes and potential vulnerabilities in black-box tests.
+
+
+Speakers:Ruben Gonzalez,Benjamin Walny
+
+SpeakerBio:  Ruben Gonzalez, Security Researcher and Trainer at Neodyme
+
+10 years in offensive security research
+Security Researcher and Trainer at Neodyme
+Auditor of crypto code for multiple large industry projects
+Part-time PhD candidate for applied cryptography at the Max Planck Institute
+Multi-time DEFCON CTF, Hack-A-Sat, HITB ProCTF and Google CTF finalist
+Founder and Chair of the RedRocket Hacking Club
+Linkedin: https://www.linkedin.com/in/rugond/
+
+
+SpeakerBio:  Benjamin Walny, Senior Penetration Tester at Cure53
+
+5 years in offensive security research
+Senior Penetration Tester at Cure53
+Code auditor for countless (web) applications
+Profound interest in real-world attacks on cryptography
+Multi-time DEFCON CTF finalist
+
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Will McCardell,Garrett Freibott,Cody Hein,Aaron Wasserman' to present 'BRIDGING THE GAP - An Introduction to IoT Security from Serial to Bluetooth', which is about 'Title: BRIDGING THE GAP - An Introduction to IoT Security from Serial to Bluetooth
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Dive into the world of hardware hacking with this intensive, hands-on class that bridges the gap between software security and physical hardware. Over the course of two action-packed days, you'll learn to identify and exploit vulnerabilities common in IoT devices, medical equipment, and embedded systems. Starting with hardware basics and circuit board analysis, you'll quickly progress to mastering essential interfaces like UART, SPI, and JTAG. Get hands-on experience with industry software tools while learning to extract firmware, bypass authentication systems, and analyze Bluetooth Low Energy (BLE) implementations. Perfect for security professionals, researchers, and hardware enthusiasts, this course combines real-world case studies with practical exercises using actual devices. You'll leave equipped with a solid foundation in hardware security assessment, understanding common attack vectors, and knowing how to integrate hardware security testing into your product development lifecycle. Bring your curiosity - we'll provide the hardware!
+
+Speakers:Will McCardell,Garrett Freibott,Cody Hein,Aaron Wasserman
+
+SpeakerBio:  Will McCardell, Lead Offensive Security Engineer at Praetorian
+Will McCardell is a Lead Offensive Security Engineer at Praetorian and a member of the IoT Penetration Testing team. He has a decade of software engineering and offensive security experience as well as a deep passion for hardware testing.
+
+SpeakerBio:  Garrett Freibott, Senior Security Engineer at Praetorian
+Garrett Freibott is a Senior Security Engineer at Praetorian and a member of the IoT Penetration Testing team. He has experience in open-source software development, application penetration testing, and enterprise software security. Garrett has a B.S. in Computer Science from Arizona State University and the OSCP.
+
+SpeakerBio:  Cody Hein, Senior Security Engineer at Praetorian
+Cody Hein is a Senior Security Engineer at Praetorian and a member of the IoT Penetration Testing team. His background includes audio video systems engineering and US Army Space operations, including SATCOM and other RF communications. He specializes in hardware reverse engineering, firmware analysis, and RF wireless communications with a focus on securing connected devices. Cody is passionate about lifelong learning and dedicated to sharing knowledge with others.
+
+SpeakerBio:  Aaron Wasserman, Senior Security Engineer at Praetorian
+Aaron Wasserman is an accomplished IoT penetration tester with a passion for uncovering hardware vulnerabilities. He is a Senior Security Engineer at Praetorian and a member of the IoT Penetration Testing team. Aaron is dedicated to advancing cybersecurity practices and sharing knowledge within the community. He holds both a Masters and Bachelorâs from Georgia Tech's School of Electrical and Computer Engineering and also several offensive security certifications including the ACIP and OSCP.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Kyle Smathers,Bobby Thomas' to present 'Hunting for Hackers by Deloitte', which is about 'Title: Hunting for Hackers by Deloitte
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+The âHunting for Hackersâ course provides a baseline level of knowledge designed to train cybersecurity professionals to actively defend critical computer systems. The course exposes participants to a âThink like the Adversaryâ mindset to actively detect sophisticated and tailored adversary attacks. This course is designed to prepare cybersecurity professionals to Hunt within their network for evidence of adversary presence not previously detected by automated enterprise security devices and software.
+
+Rather than simply reacting to network attacks, participants of this cyber threat hunting training learn methods to interrogate systems and analyze data proactively and remotely. This empowers participants to proactively discover systems targeted by an adversary. Participants learn how to discover malicious code, and evidence of adversary presence and lateral movement within a network. Throughout the program, instructors share their experience in cybersecurity, operations, and tool development. This provides participants an appreciation of the challenges they may face in countering the cyber adversary.
+
+
+Students will receive 6 months of access to our virtual lab environment to continue practicing concepts learned during this course.
+
+
+Speakers:Kyle Smathers,Bobby Thomas
+
+SpeakerBio:  Kyle Smathers, Deloitte
+Kyle Smathers is a Specialist Master at Deloitte Risk & Financial Advisory and a seasoned cybersecurity professional with a knack for problem-solving and developing capabilities. He has served as an Air Force officer and continues his service as a reservist, bringing over a decade of experience with cutting-edge cybersecurity platforms, training, and missions. His innovative contributions have gained significant recognition, earning him an invitation to contribute to the design of the Air Force's âInterceptorâ cyber threat hunting platform. In his free time, he is either with his family, riding his bicycle or working on a house project.
+
+SpeakerBio:  Bobby Thomas, Deloitte
+Bobby Thomas has over 20 years of experience in cyber operations, network analysis, exploitation, and incident response. He possesses a comprehensive background in cyber network operations from planning to execution, intelligence operations, management, technical training course development and revision. Bobby currently works on Deloitteâs Advanced Cyber Training Team, Cyber Assessment Team, and Threat Hunting Team. He has his masterâs degree in cyber security and multiple industry leading certifications to include: CISSP, GCFA, GNFA, GCFE, CEH, and Security+. During his off time he enjoys trying new restaurants and traveling with his family.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Sajan Shetty,Monnappa "Monnappa22" K A' to present 'A Complete Practical Approach to Malware Analysis & Threat Hunting Using Memory Forensics', which is about 'Title: A Complete Practical Approach to Malware Analysis & Threat Hunting Using Memory Forensics
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+This 2-day hands-on training teaches the concepts, tools, and techniques to analyze, investigate, and hunt malware by combining two powerful techniques: malware analysis and memory forensics. This course will introduce attendees to the basics of malware analysis, reverse engineering, Windows internals, and memory forensics. Then it gradually progresses into more advanced concepts of malware analysis & memory forensics. Attendees will learn to perform static, dynamic, code, and memory analysis. To keep the training completely practical, it consists of various scenario-based hands-on labs after each module which involves analyzing real-world malware samples and investigating malware-infected memory images (crimewares, APT malwares, Fileless malwares, Rootkits, etc.). This hands-on training is designed to help attendees gain a better understanding of the subject in a short period. Throughout the course, the attendees will learn the latest techniques used by adversaries to compromise and persist on the system. In addition, it also covers various code injection, hooking, and rootkit techniques used by adversaries to bypass forensic tools and security products. In this training, you will also understand how to integrate malware analysis and memory forensics techniques into a custom sandbox to automate malware analysis. After taking this course, attendees will be better equipped with the skills to analyze, investigate, hunt, and respond to malware-related incidents.
+
+Whether you are a beginner interested in learning malware analysis, threat hunting, and memory forensics from scratch or an experienced professional who would like to enhance your existing skills to perform a forensic investigation to respond to an incident or for fun, this training will help you accomplish your goals.
+
+Note: Students will be provided with real-world malware samples, malware-infected memory images, course material, lab solution manual, video demos, custom scripts, and a Linux VM.
+
+Attendees should walk away with the following skills:
+
+
+How malware and Windows internals work
+How to create a safe and isolated lab environment for malware analysis
+Tools and techniques to perform malware analysis
+How to perform static analysis to determine the metadata associated with malware
+How to perform dynamic analysis of the malware to determine its interaction with process, file system, registry, and network
+How to perform code analysis to determine the malware functionality
+How to debug malware using tools like IDA Pro and x64dbg
+How to analyze downloaders, droppers, keyloggers, fileless malwares, HTTP backdoors, etc.
+Understanding various persistence techniques used by the attackers
+Understanding different code injection techniques used to bypass security products
+What is Memory Forensics and its use in malware and digital investigation
+Ability to acquire a memory image from suspect/infected systems
+How to use open source advanced memory forensics framework (Volatility)
+Understanding of the techniques used by the malwares to hide from Live forensic tools
+Understanding of the techniques used by Rootkits(code injection, hooking, etc.)
+Investigative steps for detecting stealth and advanced malware
+How memory forensics helps in malware analysis and reverse engineering
+How to incorporate malware analysis and memory forensics in the sandbox
+How to determine the network and host-based indicators (IOC)
+Techniques to hunt malware
+Note: Students will be provided with real-world malware samples, malware-infected memory images, course material, lab solution manual, video demos, custom scripts, and a Linux VM.
+
+
+Speakers:Sajan Shetty,Monnappa "Monnappa22" K A
+
+SpeakerBio:  Sajan Shetty
+Sajan Shetty is a Cyber Security enthusiast. He is an active member of Cysinfo, an open Cyber Security Community (https://www.cysinfo.com) committed to educating, empowering, inspiring, and equipping cybersecurity professionals and students to better fight and defend against cyber threats. He has conducted training sessions at Black Hat Asia, Black Hat USA, Black Hat Europe, Black Hat SecTor, Black Hat Middle East, Black Hat Spring, BruCON, HITB, and his primary fields of interest include machine learning, malware analysis, and memory forensics. He has various certifications in machine learning and is passionate about applying machine learning techniques to solve cybersecurity problems.
+
+SpeakerBio:  Monnappa "Monnappa22" K A, Co-Founder at Cysinfo
+Monnappa K A is a Security professional with over 17 years of experience in incident response and investigation. He previously worked for Microsoft & Cisco as a threat hunter, mainly focusing on threat hunting, investigation, and research of advanced cyber attacks. He is the author of the best-selling book "Learning Malware Analysis." He is a review board member for Black Hat Asia, Black Hat USA, and Black Hat Europe. He is the creator of the Limon Linux sandbox and the winner of the Volatility Plugin Contest 2016. He co-founded the cybersecurity research community "Cysinfo" (https://www.cysinfo.com). He has conducted training sessions on malware analysis, reverse engineering, and memory forensics at Black Hat Asia, Black Hat USA, Black Hat Europe, Black Hat SecTor, Black Hat Middle East, Black Hat Spring, BruCON, HITB, FIRST, SEC-T, OPCDE, and 4SICS-SCADA/ICS cybersecurity summit. He has presented at various security conferences, including Black Hat, FIRST, SEC-T, 4SICS-SCADA/ICS summit, DSCI, National Cyber Defence Summit, and Cysinfo meetings on various topics related to memory forensics, malware analysis, reverse engineering, and rootkit analysis. He has also authored various articles in eForensics and Hakin9 magazines. You can find some of his contributions to the community on his YouTube channel (http://www.youtube.com/c/MonnappaKA), and you can read his blog posts at https://cysinfo.com.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Sam Bowne,Kaitlyn Handelman,Irvin Lemus,Elizabeth Biddlecome' to present 'Beginner's Guide to Attacks and Defenses', which is about 'Title: Beginner's Guide to Attacks and Defenses
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Please note: This is a four-day training that will be held Saturday-Tuesday (August 9-12). Participants will receive a DEF CON Human Badge with their registration
+
+We will survey modern attack and defense techniques at an introductory level. We will demonstrate all the techniques, and participants will perform hands-on projects practicing with the tools. We will provide beginner-friendly instructions, a live CTF scoreboard, and personal assistance.
+
+Speakers:Sam Bowne,Kaitlyn Handelman,Irvin Lemus,Elizabeth Biddlecome
+
+SpeakerBio:  Sam Bowne, City College San Francisco
+Sam Bowne has been teaching computer networking and security classes at City College San Francisco since 2000. He has given talks and hands-on trainings at DEF CON, DEF CON China, Black Hat USA, HOPE, BSidesSF, BSidesLV, RSA, and many other conferences and colleges. He founded Infosec Decoded, Inc., and does corporate training and consulting for several Fortune 100 companies, on topics including Incident Response and Secure Coding.
+
+SpeakerBio:  Kaitlyn Handelman, Offensive Security Engineer at Amazon
+Kaitlyn Handelman is an offensive security engineer at Amazon. Her focus is cybersecurity in space. In addition to traditional penetration testing, Kaitlyn works on physical devices and RF signals. In her free time, she enjoys ham radio, astronomy, and her cat, Astrocat.
+
+SpeakerBio:  Irvin Lemus, Cyber Range Engineer at By Light IT Professional Services
+Irvin Lemus, CISSP is a Cyber Range Engineer at By Light IT Professional Services, training military personnel through international cyber security exercises. Irvin has been in the field since 2006, involved with cybersecurity competitions since 2015 as a trainer, coach, and mentor. He also has taught IT and Cybersecurity courses at Coastline and Cabrillo Colleges. He is the BACCC Cyber Competitions Regional Coordinator, Board member at Pacific Hackers and is a speaker at DEFCON. He describes himself as, "A professional troublemaker who loves hacking all the things."
+
+SpeakerBio:  Elizabeth Biddlecome, Consultant and Instructor
+Elizabeth Biddlecome is a consultant and instructor, delivering technical training and mentorship to students and professionals. She leverages her enthusiasm for architecture, security, and code to design and implement comprehensive information security solutions for business needs. Elizabeth enjoys wielding everything from soldering irons to cripting languages in cybersecurity competitions, hackathons, and CTFs.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Michael "Bluescreenofwin" Glass' to present 'Solving Modern Cybersecurity Problems with AI', which is about 'Title: Solving Modern Cybersecurity Problems with AI
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Since our sold out class in 2024, we have refreshed the material to incorporate not only Agentic AI but Content Augmentation Generation (CAG)!
+
+Have you ever wondered how the pros use AI to solve their complex cybersecurity problems? Come find out!
+
+Artificial Intelligence (AI) and Large Language Models (LLMs) have emerged as robust and powerful tools that have redefined how many approach problem solving. The last few years have seen industry AI interest surge while Cybersecurity experts struggle not only to threat model LLMs but to leverage them effectively. Our training presents a comprehensive educational framework aimed at equipping students with the necessary skills to not only build their own LLM toolkits but to leverage AI and LLMs to build elegant solution to solve complex problems unique to their own environments.
+
+This class will teach students how to build their own AI frameworks to ingest data from either SaaS or on-prem data lakes. We will provide both the tools for data data consumption but as well as data warehousing. From there we will walk students through transforming this data and making it operationally effective and efficient for their AI. We will cover various types of data common to Cybersecurity environments, protentional issues with certain data types, and how to make the most of opensource to help transform the data. We will also touch on training and LoRA for model customization.
+
+As Cybersecurity experts, we also need to understand the risk that comes with the use of AI. For this purpose, we will discuss foundational knowledge to conduct both red and blue team exercises regarding AI. We will discuss risk analysis of the disparate components used to make AI functional, a holistic and functional approach to defending the supply chain, understanding vulnerability analysis, and modern day adversary attacks and techniques that you will encounter. Understanding modern security policy frameworks is just as important and we will cover a few of the popular frameworks used to secure and apply policy to your AI environment. We will cap this section of class off with a practicum of both attacking and defending our AI deployed in class.
+
+Using the tools created in class, we will use the SOCMAN DEF CON model to solve hand-picked operational problems we have seen teams struggle with all over the world. You will learn how to use LLMs with agentic AI, how to augment our queries with our own data in two different methods (RAG/CAG), generate high quality YARA/SIGMA rules using your own data, tune your model to hunt complex patterns, improve application observability by adding context to "weird" behavior, how to hunt for APTs using real world scenarios and logs (Stuxnet), filter out noise to increase signal in your environment (SNR), and much more! All of these labs will be performed by students and will leverage AI as middleware to add contextual data between disparate platforms to solve your complex cybersecurity problems. All use cases will be performed by students live and in-class.
+
+By the end of this training you will be able to:
+
+
+Build their own AI-powered cybersecurity framework, including custom tooling, ingestion pipelines, and LLM orchestration
+Ingest and warehouse data from SaaS and on-prem sources, transforming it for AI readiness using open-source tools
+Apply Agentic AI and Content Augmentation Generation (CAG) to real-world cybersecurity challenges
+Select, train, and fine-tune models, including LoRA customization for environment-specific detection and automation
+Generate high-quality YARA and SIGMA rules using real-world data and AI-assisted pattern matching
+Augment detection logic using RAG/CAG, enhancing context-awareness and improving incident triage
+Understand foundational knowledge to defend your AI deployments, including threat modeling, adversary simulation, and defending AI infrastructure
+Analyze and enrich logs using AI, identify complex behavioral patterns, and detect APT activity using real-world examples like Stuxnet
+Improve observability by adding AI-generated context to anomalous or hard-to-interpret behaviors
+Increase signal-to-noise ratio (SNR) by using AI to reduce false positives and highlight meaningful security events
+Solve complex cybersecurity problems!
+
+
+SpeakerBio:  Michael "Bluescreenofwin" Glass, Founder at Glass Security Consulting
+Michael Glass AKA "Bluescreenofwin" is currently a Principal Security Engineer providing security leadership for one of the largest streaming technology companies in the world specializing in Blue Team, SecOps, and Cloud. Michael has been in the hacking and security scene for over 15 years working for a wide variety of organizations including government, private, and non-profit. Using this diverse background he has founded the company "Glass Security Consulting" in order to provide world class Cybersecurity instruction for Information Security Professionals and Hackers alike.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Sam Bowne,Kaitlyn Handelman,Irvin Lemus,Elizabeth Biddlecome' to present 'Beginner's Guide to Attacks and Defenses', which is about 'Title: Beginner's Guide to Attacks and Defenses
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+Please note: This is a four-day training that will be held Saturday-Tuesday (August 9-12). Participants will receive a DEF CON Human Badge with their registration
+
+We will survey modern attack and defense techniques at an introductory level. We will demonstrate all the techniques, and participants will perform hands-on projects practicing with the tools. We will provide beginner-friendly instructions, a live CTF scoreboard, and personal assistance.
+
+Speakers:Sam Bowne,Kaitlyn Handelman,Irvin Lemus,Elizabeth Biddlecome
+
+SpeakerBio:  Sam Bowne, City College San Francisco
+Sam Bowne has been teaching computer networking and security classes at City College San Francisco since 2000. He has given talks and hands-on trainings at DEF CON, DEF CON China, Black Hat USA, HOPE, BSidesSF, BSidesLV, RSA, and many other conferences and colleges. He founded Infosec Decoded, Inc., and does corporate training and consulting for several Fortune 100 companies, on topics including Incident Response and Secure Coding.
+
+SpeakerBio:  Kaitlyn Handelman, Offensive Security Engineer at Amazon
+Kaitlyn Handelman is an offensive security engineer at Amazon. Her focus is cybersecurity in space. In addition to traditional penetration testing, Kaitlyn works on physical devices and RF signals. In her free time, she enjoys ham radio, astronomy, and her cat, Astrocat.
+
+SpeakerBio:  Irvin Lemus, Cyber Range Engineer at By Light IT Professional Services
+Irvin Lemus, CISSP is a Cyber Range Engineer at By Light IT Professional Services, training military personnel through international cyber security exercises. Irvin has been in the field since 2006, involved with cybersecurity competitions since 2015 as a trainer, coach, and mentor. He also has taught IT and Cybersecurity courses at Coastline and Cabrillo Colleges. He is the BACCC Cyber Competitions Regional Coordinator, Board member at Pacific Hackers and is a speaker at DEFCON. He describes himself as, "A professional troublemaker who loves hacking all the things."
+
+SpeakerBio:  Elizabeth Biddlecome, Consultant and Instructor
+Elizabeth Biddlecome is a consultant and instructor, delivering technical training and mentorship to students and professionals. She leverages her enthusiasm for architecture, security, and code to design and implement comprehensive information security solutions for business needs. Elizabeth enjoys wielding everything from soldering irons to cripting languages in cybersecurity competitions, hackathons, and CTFs.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Madhu "madhuakula" Akula' to present 'A Practical Approach to Breaking & Pwning Kubernetes Clusters', which is about 'Title: A Practical Approach to Breaking & Pwning Kubernetes Clusters
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+The adoption of Kubernetes use in production has increased to 83% from a survey by CNCF. Still, most security teams struggle to understand these modern technologies.
+
+In this real-world scenario-based training, each participant will be learning Tactics, Techniques, and Procedures (TTPs) to attack and assess Kubernetes clusters environments at different layers like Supply chain, Infrastructure, Runtime, and many others. Starting from simple recon to gaining access to microservices, sensitive data, escaping containers, escalating to clusters privileges, and even its underlying cloud environments.
+
+By end of the training, participants will be able to apply their knowledge to perform architecture reviews, security assessments, red team exercises, and pen-testing engagements on Kubernetes Clusters and Containersed environments successfully. Also, the trainer will provide step by step guide (Digital Book) with resources and references to further your learning.
+
+SpeakerBio:  Madhu "madhuakula" Akula, Pragmatic Security Leader
+Madhu Akula is a pragmatic security leader and creator of Kubernetes Goat, an intentionally vulnerable by design Kubernetes Cluster to learn and practice Kubernetes Security. Also published author and Cloud Native Security Architect with extensive experience. Also, he is an active member of the international security, DevOps, and Cloud Native communities (null, DevSecOps, AllDayDevOps, AWS, CNCF, USENIX, etc). He holds industry certifications like CKA (Certified Kubernetes Administrator), CKS (Certified Kubernetes Security Specialist), OSCP (Offensive Security Certified Professional), etc.
+
+Madhu frequently speaks and runs training sessions at security events and conferences around the world including DEFCON 24, 26, 27, 28, 29 & 30, BlackHat 2018, 19, 21 & 22, USENIX LISA 2018, 19 & 21, SANS Cloud Security Summit 2021 & 2022, OâReilly Velocity EU 2019, Github Satellite 2020, Appsec EU (2018, 19 & 22), All Day DevOps (2016, 17, 18, 19, 20 & 21), DevSecCon (London, Singapore, Boston), DevOpsDays India, c0c0n(2017, 18), Nullcon 2018, 19, 21 & 22, SACON, Serverless Summit, null and multiple others.
+
+His research has identified vulnerabilities in over 200+ companies and organizations including; Google, Microsoft, LinkedIn, eBay, AT&T, WordPress, NTOP, Adobe, etc. and is credited with multiple CVEâs, Acknowledgements, and rewards. He is co-author of Security Automation with Ansible2 (ISBN-13: 978-1788394512), which is listed as a technical resource by Red Hat Ansible. He is the technical reviewer for Learn Kubernetes Security, Practical Ansible2 books by Packt Pub. Also won 1st prize for building an Infrastructure Security Monitoring solution at InMobi flagship hackathon among 100+ engineering teams.
+
+
+'.
+From 08:00 to 16:59, DEF CON Training is hosting 'Seth Law,Ken "cktricky" Johnson' to present 'Harnessing LLMs for Application Security', which is about 'Title: Harnessing LLMs for Application Security
+Tags: DEF CON Training (Paid)
+When: Tuesday, Aug 12, 08:00 - 16:59 PDT
+Where: LVCC North-Level 2 - Map
+
+Description:
+This comprehensive course is designed for developers and cybersecurity professionals seeking to harness the power of Generative AI and Large Language Models (LLMs) to enhance software security and development practices. Participants will gain a deep understanding of LLM functionality, strengths, and weaknesses, and learn to craft effective prompts for diverse use cases. The curriculum covers essential topics such as embeddings, vector stores, and Langchain, offering insights into document loading, code analysis, and custom tool creation using Agent Executors.
+
+Course highlights:
+
+
+Hands-on techniques like Retrieval-Augmented Generation(RAG) and Few-Shot Prompting for secure code analysis and threat modeling.
+Integration of AI into security tasks to identify vulnerabilities and improve overall application security.
+
+
+Speakers:Seth Law,Ken "cktricky" Johnson
+
+SpeakerBio:  Seth Law, Founder & Principal at Redpoint Security
+Seth Law is the Founder and Principal Consultant of Redpoint Security (redpointsecurity.com). Over the last 20 years, Seth has worked within multiple security disciplines, including application development, cloud architecture, and network protection, both as a manager and individual contributor. Seth has honed his security skills using offensive and defensive techniques, including tool development and security research. His understanding of the software development lifecycle and ability to equate security issues to development tasks has allowed him to speak at conferences ranging from Blackhat and DEF CON to local security meetups. In his spare time, Seth revels in deep-level analysis of programming languages and inherent flaws, develops the iOS version of HackerTracker, and co-hosts the Absolute AppSec podcast with Ken Johnson.
+
+Seth utilizes LLMs heavily in his work and has a wealth of real world applicable skills to share in applying LLMs to the application security domain.
+
+SpeakerBio:  Ken "cktricky" Johnson, Co-Founder and CTO at DryRun Security
+Ken Johnson, has been hacking web applications professionally for 16 years. Ken is both a breaker and builder and is the CTO & Co-Founder of DryRun Security. Previously, Ken was a Director with GitHub's Product Security Engineering team and has held both technical and leadership roles both within the consulting world as well as a corporate defender. Previously, Ken has spoken about varying AppSec topics at RSA, You Sh0t the Sheriff, Insomnihack, CERN,  DerbyCon, AppSec USA, AppSec DC, AppSec California, OWASP Global events, DevOpsDays DC, LASCON, RubyNation, and numerous other events. Ken's current passion project is the Absolute AppSec podcast with Seth Law and the practical secure code review course they offer thru DEF CON and other training venues.
+
+Ken utilizes LLMs heavily in his work and has a wealth of real world applicable skills to share in applying LLMs to the application security domain.
+
+
+'.
