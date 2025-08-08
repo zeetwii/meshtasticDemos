@@ -52,16 +52,3 @@ Genre: House
 
 
 '.
-From 18:59 to 19:58, Social Gatherings/Events is hosting '' to present 'Lost & Found', which is about 'Title: Lost & Found
-Tags: Misc
-When: Wednesday, Aug 6, 18:59 - 19:58 PDT
-Where: 
-
-Description:
-If you find something that seems to have been lost, please take that item to the nearest NFO Node. The item will enter the DEF CON Lost & Found system. 
-
-If you've lost something, the only way to check on it (or reclaim it) is by going to the Lost & Found department yourself. The Lost & Found department is in room LVCC - L2 - W238. You may also call Lost & Found at +1 (702) 477-5019.
-
-The Lost & Found department plans to be open Thursday - Saturday, during all hours that the conference operates. On Sunday, the Lost & Found department will open with the venue at 08:00, but will close at the beginning of DEF CON 33 Closing Ceremonies (15:00). Shortly thereafter, all remaining lost items will be transferred to the LVCC. If you need to reach LVCC's Lost & Found, you may call LVCC Dispatch at +1 (702) 892-7400.
-
-'.

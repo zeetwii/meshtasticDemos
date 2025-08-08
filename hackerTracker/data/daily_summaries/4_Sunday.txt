@@ -333,15 +333,6 @@ Adversary Simulator booth has hands-on adversary emulation plans specific to a w
 Adversary Simulator booth will be having a lab environment focused on recreating enterprise infrastructure, aimed at simulation and emulating various adversaries. Visitors will be able to view, simulate and control various TTPs used by adversaries. The simulator is meant to be a learning experience, irrespective of whether one is hands-on with highly sophisticated attack tactics or from the management.
 
 '.
-From 10:00 to 11:59, Adversary Village is hosting '' to present 'Cyberjutsu Path to a Digital Martial Art', which is about 'Title: Cyberjutsu Path to a Digital Martial Art
-Tags: Adversary Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 11:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-702 (Adversary Village)-Hands-On Activity Area - Map
-
-Description:
-CyberjÅ«tsu is a new way to teach cybersecurity inspired from martial arts trainings. It is an educational way which allows everyone (novice to expert) to practice together and improve themselves in cybersecurity through confrontation. It follows budÅ (judo, jujitsu, karate...) principles and ethical code. The goal is to reach "maximum-efficient use of computer" in a "mutual benefit" of a human confrontation. It's a digital martial art fight e-sport using linux shell.
-
-'.
 From 10:00 to 11:59, Adversary Village is hosting '' to present 'Breach and attack simulation exercises - Guided breach and offensive attack simulation hands-on exercises', which is about 'Title: Breach and attack simulation exercises - Guided breach and offensive attack simulation hands-on exercises
 Tags: Adversary Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 11:59 PDT
@@ -349,6 +340,15 @@ Where: LVCC West-Level 1-Exhibit Hall 2-702 (Adversary Village)-Hands-On Activit
 
 Description:
 This area will feature guided breach simulation exercises for participants to engage with. There will be two activities, "Breach-the-Hospital" and "Breach-the-Office," based on two LEGO sets. A simulated cyber range will be available for each scenario, providing an exact replica of an enterprise production environment. We will provide a detailed walkthrough of the attack scenarios, including Tools-Techniques-and-Procedures (TTPs) commands and how-to guides, demonstrating how to atatck and breach the hospital's infrastructure or the office environment. This exercise will give participants a clear understanding of how adversaries infiltrate corporate environments.
+
+'.
+From 10:00 to 11:59, Adversary Village is hosting '' to present 'Cyberjutsu Path to a Digital Martial Art', which is about 'Title: Cyberjutsu Path to a Digital Martial Art
+Tags: Adversary Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 11:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-702 (Adversary Village)-Hands-On Activity Area - Map
+
+Description:
+CyberjÅ«tsu is a new way to teach cybersecurity inspired from martial arts trainings. It is an educational way which allows everyone (novice to expert) to practice together and improve themselves in cybersecurity through confrontation. It follows budÅ (judo, jujitsu, karate...) principles and ethical code. The goal is to reach "maximum-efficient use of computer" in a "mutual benefit" of a human confrontation. It's a digital martial art fight e-sport using linux shell.
 
 '.
 From 10:00 to 10:59, Adversary Village is hosting 'Gordon "Fizzle" Boom,Bret Fowler,Rob Mendoza,Joe Head,Gregory Carpenter' to present 'Modern warfare and nation state sponsored cyber threat actors', which is about 'Title: Modern warfare and nation state sponsored cyber threat actors
@@ -395,13 +395,15 @@ Description:
 Experience the thrill of flying a drone in our custom-built cage right on the showroom floor. This activity is designed for everyone to enjoy, from kids to adults. Fly mini drones around the cage and see how well you can control these agile little machines. It's a fun, interactive way to learn the basics of drone piloting in a safe environment.
 
 '.
-From 10:00 to 13:59, Aerospace Village is hosting '' to present 'F-35 Joint Strike Fighter Badge Challenge', which is about 'Title: F-35 Joint Strike Fighter Badge Challenge
+From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Defend the Airport CTF', which is about 'Title: Defend the Airport CTF
 Tags: Aerospace Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
 
 Description:
-Prove your air combat superiority. Only the sharpest contenders will win the limited edition F-35 PCB badge, a symbol of your elite technical skills. Test your wits, and aerospace savvy in this exclusive showdown to earn your wings in the ultimate test of aerospace analytic problem solving. Challenges drop all weekend long.
+As a participant your first step is to register ahead and read the rules at: https://aviationcyberctf.com/ and bring your own laptop to the venue.
+
+Chaos at a major international airport. Flight info displays flicker with false data. Baggage systems fail. Aircraft controls are compromised. Even the skies are no longer safe. Your mission: investigate the breach, neutralize the threats, and take back control of the airport. The airport depends on you. The clock is ticking!
 
 '.
 From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Drone Hacking Workshop', which is about 'Title: Drone Hacking Workshop
@@ -411,6 +413,42 @@ Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
 
 Description:
 Join our Drone Hacking Workshop and get hands-on experience with hacking into drone microcontrollers. This three-step in-depth activity is designed to teach you about the vulnerabilities and security of autonomous systems. Using sample drones, participants will learn techniques used in government pen tests. This workshop is suitable for all skill levels, from beginners to advanced hackers. Come and test your skills in a real-world scenario and understand the intricacies of drone security.
+
+'.
+From 10:00 to 13:59, Aerospace Village is hosting '' to present 'DA-62 GPS Spoofing Challenge', which is about 'Title: DA-62 GPS Spoofing Challenge
+Tags: Aerospace Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 13:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Participants fly a simulated DA-62 complete with realistic Garmin instruments on approach into KDAB while encountering randomized GPS-spoof related scenarios. You can successfully complete the scenario by safely landing on your cleared runway. This challenge typically takes about 7 minutes, with a maximum of 20 minutes.
+
+'.
+From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Aircraft onboard AI cyber detection', which is about 'Title: Aircraft onboard AI cyber detection
+Tags: Aerospace Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 13:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+While the Cyber Demonstrator challenge is occurring, folks will be able to see what's happening inside the avionics on the aircraft and how their logging and reporting interacts with AI analysis systems to generate cyber alerts.
+
+'.
+From 10:00 to 13:59, Aerospace Village is hosting '' to present 'F-35 Joint Strike Fighter Badge Challenge', which is about 'Title: F-35 Joint Strike Fighter Badge Challenge
+Tags: Aerospace Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 13:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Prove your air combat superiority. Only the sharpest contenders will win the limited edition F-35 PCB badge, a symbol of your elite technical skills. Test your wits, and aerospace savvy in this exclusive showdown to earn your wings in the ultimate test of aerospace analytic problem solving. Challenges drop all weekend long.
+
+'.
+From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Cyber Demonstrator Challenge', which is about 'Title: Cyber Demonstrator Challenge
+Tags: Aerospace Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 13:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Participants fly a custom narrow-body airliner with realistic controls and functions on approach to KBZN while encountering various cyber-anomalies. This challenge typically takes about 6 minutes, with a maximum of 15 minutes.
 
 '.
 From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Regional Airport System CTF', which is about 'Title: Regional Airport System CTF
@@ -434,48 +472,6 @@ You start your day exploring OT system vulnerabilities and consider what chaos y
 Success will be determined by the ability to disrupt the control and operations of the Runway Lighting Systems for the IG Labs Regional Airports at the OT level. DoS and DDoS attacks are not permitted as the intent is to demonstrate an understanding of OT systems, their functionality, and protocols.
 
 '.
-From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Defend the Airport CTF', which is about 'Title: Defend the Airport CTF
-Tags: Aerospace Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 13:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-As a participant your first step is to register ahead and read the rules at: https://aviationcyberctf.com/ and bring your own laptop to the venue.
-
-Chaos at a major international airport. Flight info displays flicker with false data. Baggage systems fail. Aircraft controls are compromised. Even the skies are no longer safe. Your mission: investigate the breach, neutralize the threats, and take back control of the airport. The airport depends on you. The clock is ticking!
-
-'.
-From 10:00 to 13:59, Aerospace Village is hosting '' to present 'DA-62 GPS Spoofing Challenge', which is about 'Title: DA-62 GPS Spoofing Challenge
-Tags: Aerospace Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 13:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Participants fly a simulated DA-62 complete with realistic Garmin instruments on approach into KDAB while encountering randomized GPS-spoof related scenarios. You can successfully complete the scenario by safely landing on your cleared runway. This challenge typically takes about 7 minutes, with a maximum of 20 minutes.
-
-'.
-From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Cyber Demonstrator Challenge', which is about 'Title: Cyber Demonstrator Challenge
-Tags: Aerospace Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 13:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Participants fly a custom narrow-body airliner with realistic controls and functions on approach to KBZN while encountering various cyber-anomalies. This challenge typically takes about 6 minutes, with a maximum of 15 minutes.
-
-'.
-From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Space Systems Security CTF â Platform Security', which is about 'Title: Space Systems Security CTF â Platform Security
-Tags: Aerospace Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 13:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Launch into the thrilling world of cybersecurity, specifically designed for space systems! Learn the fundamentals to safeguard ground stations, communication links, and spacecrafts.
-
-Engage in an immersive and fun CTF scenario. Apply your cybersecurity skills in real-time and see the direct impact of your decisions on our Space Systems Demonstrator. In this high-stakes scenario, you'll align with the Aurora Alliance in their critical mission to thwart Count Viktor Thunderclaw and the notorious Nebula Syndicate. The Syndicate threatens to destroy historic monuments around the world with their Space Laser unless their demands are met. Do you have what it takes to dismantle their malevolent plans?
-
-Our beginner-level CTF kicks off as soon as the village opensâno pre-registration necessary. Just bring your laptop to access the CTF platform and your favorite packet decoding software (i.e. Wireshark). Expect the CTF to take you less than 1 hour to complete. Team collaboration is encouraged, and if you encounter obstacles, numerous hints are available to guide you. Excel in the challenge, and you could walk away with a CT Cubed SAO, an exclusive prize while supplies last.
-
-'.
 From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Bricks in the Air', which is about 'Title: Bricks in the Air
 Tags: Aerospace Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
@@ -496,13 +492,17 @@ Hands-on Demonstration â approximately 40 minutes to learn about the protoc
 Participants will learn about the standard satellite communication protocol developed by the Consultative Committee for Space Data Systems (CCSDS). The CCSDS protocols prioritize reliability and efficiency, however those guidelines are often ignored or implemented improperly. We will demonstrate how to detect and protect against vulnerabilities in CCSDS protocols. We want to inform those in the space sector about potential problems in CCSDS protocols and their impacts, along with a method for automating security assessments of these systems.
 
 '.
-From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Aircraft onboard AI cyber detection', which is about 'Title: Aircraft onboard AI cyber detection
+From 10:00 to 13:59, Aerospace Village is hosting '' to present 'Space Systems Security CTF â Platform Security', which is about 'Title: Space Systems Security CTF â Platform Security
 Tags: Aerospace Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
 
 Description:
-While the Cyber Demonstrator challenge is occurring, folks will be able to see what's happening inside the avionics on the aircraft and how their logging and reporting interacts with AI analysis systems to generate cyber alerts.
+Launch into the thrilling world of cybersecurity, specifically designed for space systems! Learn the fundamentals to safeguard ground stations, communication links, and spacecrafts.
+
+Engage in an immersive and fun CTF scenario. Apply your cybersecurity skills in real-time and see the direct impact of your decisions on our Space Systems Demonstrator. In this high-stakes scenario, you'll align with the Aurora Alliance in their critical mission to thwart Count Viktor Thunderclaw and the notorious Nebula Syndicate. The Syndicate threatens to destroy historic monuments around the world with their Space Laser unless their demands are met. Do you have what it takes to dismantle their malevolent plans?
+
+Our beginner-level CTF kicks off as soon as the village opensâno pre-registration necessary. Just bring your laptop to access the CTF platform and your favorite packet decoding software (i.e. Wireshark). Expect the CTF to take you less than 1 hour to complete. Team collaboration is encouraged, and if you encounter obstacles, numerous hints are available to guide you. Excel in the challenge, and you could walk away with a CT Cubed SAO, an exclusive prize while supplies last.
 
 '.
 From 10:30 to 11:59, Aerospace Village is hosting '' to present 'Aranya Open-Source messaging system hands-on workshop', which is about 'Title: Aranya Open-Source messaging system hands-on workshop
@@ -1178,23 +1178,6 @@ Description:
 Adversary Village proudly presents "Adversary Wars CTF", an official contest at DEF CON, where the participants will have to pose as adversaries and replicate adversarial actions against each element of a âtargetâ organization. Adversary Wars would have real world simulation of CTF scenarios and challenges, where the participants can perform various attacks and learn new attack vectors, TTPs, techniques, etc. To visualize the CTF environment, the contest area will feature a miniature model of the city made using interlocking-plastic-bricks. The breached components OR organization buildings will be physically marked in the city model as the CTF progresses.
 
 '.
-From 10:00 to 10:59, Contests is hosting '' to present 'Radio Frequency Capture the Flag', which is about 'Title: Radio Frequency Capture the Flag
-Tags: Contest | Radio Frequency Village | Radio Frequency Capture the Flag
-When: Sunday, Aug 10, 10:00 - 10:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-803 (Radio Frequency Village) - Map
-
-Description:
-In this game capture the flag you will be presented with real configurations of real wireless and radio technologies to attack. Practice your skill and learn new ones from Radio Frequency IDentification (RFID) through Software Defined Radio (SDR) and up to Bluetooth and WiFi. There may even be Infrared, if you have the eye for it.
-
-RF Hackers Sanctuary is once again holding the Radio Frequency Capture the Flag (RFCTF) at DEF CON 32. RFHS runs this game to teach security concepts and to give people a safe and legal way to practice attacks against new and old wireless technologies.
-
-We cater to both those who are new to radio communications as well as to those who have been playing for a long time. We are looking for inexperienced players on up to the SIGINT secret squirrels to play our games. The RFCTF can be played with a little knowledge, a pen tester's determination, and $0 to $$$$$ worth of special equipment. Our virtual RFCTF can be played completely remotely without needing any specialized equipment at all, just using your web browser! The key is to read the clues, determine the goal of each challenge, and have fun learning.
-
-This game doesn't let you sit still either, as there are numerous fox hunts, testing your skill in tracking various signals. If running around the conference looking for WiFi, Bluetooth, or even a Tire Pressure Monitoring System (TPMS) device sounds like fun, we are your source of a higher step count.
-
-There will be clues everywhere, and we will provide periodic updates via discord and twitter. Make sure you pay attention to what's happening at the RFCTF desk, #rfctf on our discord, on Twitter @rf_ctf, @rfhackers, and the interwebz, etc. If you have a question - ASK! We may or may not answer, at our discretion.
-
-'.
 From 10:00 to 11:59, Contests is hosting '' to present 'Cloud Village CTF 101 Workshop', which is about 'Title: Cloud Village CTF 101 Workshop
 Tags: Contest | Cloud Village | Cloud Village CTF
 When: Sunday, Aug 10, 10:00 - 11:59 PDT
@@ -1553,15 +1536,6 @@ Adrien spent his career in various cyber crisis response roles in Thales, the Fr
 
 
 '.
-From 10:00 to 11:59, Embedded Systems Village is hosting '' to present 'Emulating Embedded Devices', which is about 'Title: Emulating Embedded Devices
-Tags: Embedded Systems Village | Creator Workshop
-When: Sunday, Aug 10, 10:00 - 11:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
-
-Description:
-Hack your first embedded system! Sit down at our provided laptops and be guided through exploiting an IP camera, then learn how you can set up the emulated camera (and other devices) at home with Ludus!
-
-'.
 From 10:00 to 11:59, Embedded Systems Village is hosting '' to present '101 Labs: Hardware Lab', which is about 'Title: 101 Labs: Hardware Lab
 Tags: Embedded Systems Village | Creator Workshop
 When: Sunday, Aug 10, 10:00 - 11:59 PDT
@@ -1571,13 +1545,13 @@ Description:
 If you've never popped open an embedded device and tried to get a simple shell, this is the lab for you.  This is a first-come first-served workshop where you can walk through the step by step instructions to finding and connecting to a debug interface on an embedded device.
 
 '.
-From 10:00 to 11:59, Embedded Systems Village is hosting '' to present '101 Labs: Firmware and Software exploitation', which is about 'Title: 101 Labs: Firmware and Software exploitation
+From 10:00 to 11:59, Embedded Systems Village is hosting '' to present 'Emulating Embedded Devices', which is about 'Title: Emulating Embedded Devices
 Tags: Embedded Systems Village | Creator Workshop
 When: Sunday, Aug 10, 10:00 - 11:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
 
 Description:
-This series of self-guided labs will introduce even the most novice hacker to the world of embedded device firmware and software exploitation.  First-come first-served, don't miss a chance try out these labs and get started with embedded device hacking.
+Hack your first embedded system! Sit down at our provided laptops and be guided through exploiting an IP camera, then learn how you can set up the emulated camera (and other devices) at home with Ludus!
 
 '.
 From 10:00 to 11:59, Embedded Systems Village is hosting '' to present 'Hardware Hacking: Glitching Lab', which is about 'Title: Hardware Hacking: Glitching Lab
@@ -1589,7 +1563,16 @@ Description:
 Curious about hacking chips using fault-injection? Take your first steps in our (free) glitching workshops! We provide you with hardware & guidance to conduct your first fault-injection attacks, all you need is a laptop running Python & OpenOCD: Reproduce the nRF52 "AirTag" glitch or learn how to glitch one of the chips used in crypto-wallets to store millions of dollars.
 
 '.
-From 10:00 to 11:59, Embedded Systems Village is hosting '' to present 'Matter Playground', which is about 'Title: Matter Playground
+From 10:00 to 11:59, Embedded Systems Village is hosting '' to present '101 Labs: Firmware and Software exploitation', which is about 'Title: 101 Labs: Firmware and Software exploitation
+Tags: Embedded Systems Village | Creator Workshop
+When: Sunday, Aug 10, 10:00 - 11:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
+
+Description:
+This series of self-guided labs will introduce even the most novice hacker to the world of embedded device firmware and software exploitation.  First-come first-served, don't miss a chance try out these labs and get started with embedded device hacking.
+
+'.
+From 10:00 to 11:59, Embedded Systems Village is hosting '' to present 'Secure Compute Module and Microcontroller Workshop', which is about 'Title: Secure Compute Module and Microcontroller Workshop
 Tags: Embedded Systems Village | Creator Workshop
 When: Sunday, Aug 10, 10:00 - 11:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
@@ -1598,7 +1581,7 @@ Description:
 
 
 '.
-From 10:00 to 11:59, Embedded Systems Village is hosting '' to present 'Secure Compute Module and Microcontroller Workshop', which is about 'Title: Secure Compute Module and Microcontroller Workshop
+From 10:00 to 11:59, Embedded Systems Village is hosting '' to present 'Matter Playground', which is about 'Title: Matter Playground
 Tags: Embedded Systems Village | Creator Workshop
 When: Sunday, Aug 10, 10:00 - 11:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
@@ -1700,37 +1683,30 @@ Description:
 Illumicon is all about Hackers lighting the Way! Throughout the day attendees will be able control the hands on displays with someone knowledgeable in the field nearby to answer any questions. The displays will include 2 professional laser displays controlled either by either analog or digital and several led fixtures all just waiting for attendees to make them shine. Knowledgeable people will be there to answer questions whether it is hardware, software, sourcing or design. We are here to get you on your way to letting your Blink Flag Fly!!
 
 '.
-From 10:00 to 13:59, IOT Village is hosting '' to present 'Bootloader? I hardly know her!', which is about 'Title: Bootloader? I hardly know her!
+From 10:00 to 13:59, IOT Village is hosting '' to present 'Firmware Decryption with Open Source Clues', which is about 'Title: Firmware Decryption with Open Source Clues
 Tags: IOT Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-A practical guide to hardware hacking.
+In this challenge, participants are given an encrypted firmware image for a D-Link access poitn alone with its publicly available GPL release.
 
-Join IoT Village for a hands-on workshop where people can learn step-by-step techniques to gain root access on a smart camera. Some of the methods involved are PCB analysis, power analysis, and exploiting debug interfaces to achieve shell access.
+The objective is to decrypt the firmware using clues from open source files.
+
+This is a realistic test of practical reverse engineering and firmware analysis skills, with a focus on identifying overlooked assumptions in standard tooling.
 
 '.
-From 10:00 to 13:59, IOT Village is hosting '' to present 'From Hexeditor to Root, Multi Stage Approach to Root Access', which is about 'Title: From Hexeditor to Root, Multi Stage Approach to Root Access
+From 10:00 to 13:59, IOT Village is hosting '' to present 'Staring at You, Staring Inside You', which is about 'Title: Staring at You, Staring Inside You
 Tags: IOT Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-This year at Rapid7âs hands-on hardware hacking lab, youâll dive in deep to gain root access on an IoT.
+Step into the IoT Village and challenge those eyes staring at you. Break open real hardware and dive in to uncover vulnerabilities.
 
-Using tools like Flashrom and Hexedit, weâll guid you through dumping SPI flash, modifying firmware dump to force single user mode, and using UART to interact with the target.
+Try your luck to emulate those devices. Whether youâre a hardware hacking pro of just a hardware wrecker, this hands-on experience is your change to push the limits of hardware hacking.
 
-Then weâll rebuild the environment, load drivers, and regain full acess â finishing with modifying the âCORRECTâ root password file to take complete control.
-
-'.
-From 10:00 to 12:30, IOT Village is hosting '' to present 'Wifi security', which is about 'Title: Wifi security
-Tags: IOT Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 12:30 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
-
-Description:
-Kit cost $180
+Ready to see whatâs really watching you?
 
 '.
 From 10:00 to 13:59, IOT Village is hosting '' to present 'Whatâs the Matter with my smart home?', which is about 'Title: Whatâs the Matter with my smart home?
@@ -1748,34 +1724,35 @@ But behind the comfort of voice commands and automated routines lies a tangled w
 Can you disrupt, decode of dominate the smart home?
 
 '.
-From 10:00 to 13:59, IOT Village is hosting '' to present 'Discover GE Appliances!', which is about 'Title: Discover GE Appliances!
+From 10:00 to 13:59, IOT Village is hosting '' to present 'Easy IoT App Hacking', which is about 'Title: Easy IoT App Hacking
 Tags: IOT Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-Join us for a self-guided interactive look at GE Applinces and get hands on with some of our most popular home appliances!
+In this interactive exercise, youâll learn how easy it is nowadays to reverse engineer the apps that are used to configure and interact with IoT devices.
 
-And for all Home Assistant enthusiasts!
-
-Check us out and we will help you get started!
-
-Find anything related to security? Contact our PSIRT by visiting our security webpage:
-
-GEAppliances.comn/security
+IoT hacking with no multimeter or soldering iron required!
 
 '.
-From 10:00 to 13:59, IOT Village is hosting '' to present 'Firmware Decryption with Open Source Clues', which is about 'Title: Firmware Decryption with Open Source Clues
+From 10:00 to 12:30, IOT Village is hosting '' to present 'Wifi security', which is about 'Title: Wifi security
+Tags: IOT Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 12:30 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
+
+Description:
+Kit cost $180
+
+'.
+From 10:00 to 13:59, IOT Village is hosting '' to present 'Keysight CTF Challenge', which is about 'Title: Keysight CTF Challenge
 Tags: IOT Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-In this challenge, participants are given an encrypted firmware image for a D-Link access poitn alone with its publicly available GPL release.
+Defeat the Keysight CTF challenge for a change to win a Riscuberry IoT hacking training kit that comes with a picoscope, a bus pirate, and much more!
 
-The objective is to decrypt the firmware using clues from open source files.
-
-This is a realistic test of practical reverse engineering and firmware analysis skills, with a focus on identifying overlooked assumptions in standard tooling.
+See one of the Keysight staff for details.
 
 '.
 From 10:00 to 13:59, IOT Village is hosting '' to present 'IoT Intro Labs. New to all of this? Youâre in the right spot!', which is about 'Title: IoT Intro Labs. New to all of this? Youâre in the right spot!
@@ -1803,39 +1780,45 @@ Find clues of an attack in OpenWRT firmware
 No Schedule! Just sit down & start learning!
 
 '.
-From 10:00 to 13:59, IOT Village is hosting '' to present 'Staring at You, Staring Inside You', which is about 'Title: Staring at You, Staring Inside You
+From 10:00 to 13:59, IOT Village is hosting '' to present 'Discover GE Appliances!', which is about 'Title: Discover GE Appliances!
 Tags: IOT Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-Step into the IoT Village and challenge those eyes staring at you. Break open real hardware and dive in to uncover vulnerabilities.
+Join us for a self-guided interactive look at GE Applinces and get hands on with some of our most popular home appliances!
 
-Try your luck to emulate those devices. Whether youâre a hardware hacking pro of just a hardware wrecker, this hands-on experience is your change to push the limits of hardware hacking.
+And for all Home Assistant enthusiasts!
 
-Ready to see whatâs really watching you?
+Check us out and we will help you get started!
+
+Find anything related to security? Contact our PSIRT by visiting our security webpage:
+
+GEAppliances.comn/security
 
 '.
-From 10:00 to 13:59, IOT Village is hosting '' to present 'Keysight CTF Challenge', which is about 'Title: Keysight CTF Challenge
+From 10:00 to 13:59, IOT Village is hosting '' to present 'From Hexeditor to Root, Multi Stage Approach to Root Access', which is about 'Title: From Hexeditor to Root, Multi Stage Approach to Root Access
 Tags: IOT Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-Defeat the Keysight CTF challenge for a change to win a Riscuberry IoT hacking training kit that comes with a picoscope, a bus pirate, and much more!
+This year at Rapid7âs hands-on hardware hacking lab, youâll dive in deep to gain root access on an IoT.
 
-See one of the Keysight staff for details.
+Using tools like Flashrom and Hexedit, weâll guid you through dumping SPI flash, modifying firmware dump to force single user mode, and using UART to interact with the target.
+
+Then weâll rebuild the environment, load drivers, and regain full acess â finishing with modifying the âCORRECTâ root password file to take complete control.
 
 '.
-From 10:00 to 13:59, IOT Village is hosting '' to present 'Easy IoT App Hacking', which is about 'Title: Easy IoT App Hacking
+From 10:00 to 13:59, IOT Village is hosting '' to present 'Bootloader? I hardly know her!', which is about 'Title: Bootloader? I hardly know her!
 Tags: IOT Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 13:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-In this interactive exercise, youâll learn how easy it is nowadays to reverse engineer the apps that are used to configure and interact with IoT devices.
+A practical guide to hardware hacking.
 
-IoT hacking with no multimeter or soldering iron required!
+Join IoT Village for a hands-on workshop where people can learn step-by-step techniques to gain root access on a smart camera. Some of the methods involved are PCB analysis, power analysis, and exploiting debug interfaces to achieve shell access.
 
 '.
 From 10:00 to 10:59, La Villa is hosting 'Luis Diego Raga' to present 'Pentesting AI - Hacking the GPTs (ESP)', which is about 'Title: Pentesting AI - Hacking the GPTs (ESP)
@@ -1953,15 +1936,6 @@ Description:
 The DEF CON Memorial Chamber serves as a sacred space within our community â a place where we pause to honor those hackers whose brilliance and dedication have elevated not just our craft, but the entire security ecosystem. Here we remember figures whose generous spirit and willingness to coordinate security fixes demonstrated that true hacking greatness lies in collaboration.  We are here because DEF CON has been the beating heart of the hacker community for over three decades, growing from 100 people in 1993 to the world's largest hacker conference. As Jeff Moss envisioned, DEF CON is what we make of it, this memorial space represents our commitment to ensuring that the legacy of those we've lost continues to inspire future generations of hackers to pursue knowledge, build community, and use their gifts to make the world better.
 
 '.
-From 10:00 to 11:59, Mobile Hacking Community is hosting '' to present 'Demonstration', which is about 'Title: Demonstration
-Tags: Mobile Hacking Community | Creator Event
-When: Sunday, Aug 10, 10:00 - 11:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C106 (Mobile Hacking Community) - Map
-
-Description:
-A dedicated area equipped with the necessary tools, where visitors can experiment with various techniques and concepts under expert guidance.
-
-'.
 From 10:00 to 11:59, Mobile Hacking Community is hosting '' to present 'Mobile CTF', which is about 'Title: Mobile CTF
 Tags: Mobile Hacking Community | Creator Event
 When: Sunday, Aug 10, 10:00 - 11:59 PDT
@@ -1982,6 +1956,15 @@ Bypassing Security Mechanisms
 Exploiting WebViews
 
 '.
+From 10:00 to 11:59, Mobile Hacking Community is hosting '' to present 'Demonstration', which is about 'Title: Demonstration
+Tags: Mobile Hacking Community | Creator Event
+When: Sunday, Aug 10, 10:00 - 11:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C106 (Mobile Hacking Community) - Map
+
+Description:
+A dedicated area equipped with the necessary tools, where visitors can experiment with various techniques and concepts under expert guidance.
+
+'.
 From 10:00 to 12:59, Nix Vegas Community is hosting '' to present 'Nix Vegas Unconference', which is about 'Title: Nix Vegas Unconference
 Tags: Nix Vegas Community | Creator Talk/Panel
 When: Sunday, Aug 10, 10:00 - 12:59 PDT
@@ -1989,15 +1972,6 @@ Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C209 (Nix Vegas Community) -
 
 Description:
 Pick a topic, talk about whatever you want, or just come and chill in the Nix Vegas space for the Unconference.
-
-'.
-From 10:00 to 13:59, Noob Community is hosting '' to present 'Noob Community Open', which is about 'Title: Noob Community Open
-Tags: Beginner | Noob Community | Creator Event
-When: Sunday, Aug 10, 10:00 - 13:59 PDT
-Where: LVCC West-Level 2-W204 (Noob Community) - Map
-
-Description:
-Talks, AMA, CTF, and more
 
 '.
 From 10:00 to 13:59, Noob Community is hosting '' to present 'Noob Community CTF', which is about 'Title: Noob Community CTF
@@ -2025,6 +1999,15 @@ Where: LVCC West-Level 2-W204 (Noob Community) - Map
 
 Description:
 Ongoing AMA booth with volunteers and speakers answering all your DEF CON and cyber questions
+
+'.
+From 10:00 to 13:59, Noob Community is hosting '' to present 'Noob Community Open', which is about 'Title: Noob Community Open
+Tags: Beginner | Noob Community | Creator Event
+When: Sunday, Aug 10, 10:00 - 13:59 PDT
+Where: LVCC West-Level 2-W204 (Noob Community) - Map
+
+Description:
+Talks, AMA, CTF, and more
 
 '.
 From 10:00 to 13:59, Operating Systems Community is hosting '' to present 'Operating System Community', which is about 'Title: Operating System Community
@@ -2060,6 +2043,24 @@ A dedicated contributor to the OWASP community, Jon has shared his expertise at 
 
 
 '.
+From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Wall Of Sheep', which is about 'Title: Wall Of Sheep
+Tags: Packet Hacking Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 12:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+The fabled Wall Of Sheepâ¦
+
+'.
+From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Hardwired', which is about 'Title: Hardwired
+Tags: Packet Hacking Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 12:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Donât know how to make a network cable and want to learn? Has it been years? Or do you think youâre a pro? Come see if you canâ¦ make the best cable at con by cut/wire/crimp.
+
+'.
 From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Packet Detective', which is about 'Title: Packet Detective
 Tags: Packet Hacking Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 12:59 PDT
@@ -2069,15 +2070,6 @@ Description:
 Looking to upgrade your skills or see how you would fare in Capture The Packet? Come check out what Packet Detective has to offer! A step up in difficulty from Packet Inspector, Packet Detective will put your network hunting abilities to the test with real-world scenarios at the intermediate level. Take the next step in your journey towards network mastery in a friendly environment still focused on learning and take another step closer to preparing yourself for the competitive environment of Capture The Packet
 
 '.
-From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Packet AI', which is about 'Title: Packet AI
-Tags: Packet Hacking Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 12:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Use machine learning with Python to detect attacks in network packets including DNS tunneling, FTP brute force, and HTTP scanning. We will be using various Python tools such as iPython notebooks, scapy, and scikit-learn. Some Python experience is recommended, but if you donât know Python, come prepared to start with our Python tutorial!
-
-'.
 From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Packet Inspector', which is about 'Title: Packet Inspector
 Tags: Packet Hacking Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 12:59 PDT
@@ -2085,6 +2077,15 @@ Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
 
 Description:
 The perfect introduction to network analysis, sniffing, and forensics. Do you want to understand the techniques people use to tap into a network, steal passwords and listen to conversations? Packet Inspector is the place to develop these skills! For well over a decade, the Wall of Sheep has shown people how important it is to use end-to-end encryption to keep sensitive information like passwords private. Using a license of the world famous Capture The Packet engine from Aries Security, we have created a unique way to teach hands-on skills in a controlled real-time environment.
+
+'.
+From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Packet AI', which is about 'Title: Packet AI
+Tags: Packet Hacking Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 12:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Use machine learning with Python to detect attacks in network packets including DNS tunneling, FTP brute force, and HTTP scanning. We will be using various Python tools such as iPython notebooks, scapy, and scikit-learn. Some Python experience is recommended, but if you donât know Python, come prepared to start with our Python tutorial!
 
 '.
 From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'NetworkOS', which is about 'Title: NetworkOS
@@ -2105,15 +2106,6 @@ Description:
 Follow real world password attack steps against a mock target in order to better understand how to protect yourself and improve the security of your passwords!
 
 '.
-From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Linux Trainer', which is about 'Title: Linux Trainer
-Tags: Packet Hacking Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 12:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Knowing how to use the Linux command line is a critical skill for any good security practitioner. This trainer will have 10+ problems covering some of the most fundamental Linux commands. This trainer is for people new to field and for those who want to hone their Linux command line-fu.
-
-'.
 From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'RegEx Trainer', which is about 'Title: RegEx Trainer
 Tags: Packet Hacking Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 12:59 PDT
@@ -2123,13 +2115,22 @@ Description:
 Regular Expressions or RegEX are used everywhere! If you aspire to be a Pentester, Threat Hunter, Programmer, Network Engineer, DevOps or really anything in technology today, RegEx is a skill all the greats have and the majority of the industry are terrible at. Come learn or brush up on your RegEx skills in on our live trainer.
 
 '.
-From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Hardwired', which is about 'Title: Hardwired
+From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Linux Trainer', which is about 'Title: Linux Trainer
 Tags: Packet Hacking Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 12:59 PDT
 Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
 
 Description:
-Donât know how to make a network cable and want to learn? Has it been years? Or do you think youâre a pro? Come see if you canâ¦ make the best cable at con by cut/wire/crimp.
+Knowing how to use the Linux command line is a critical skill for any good security practitioner. This trainer will have 10+ problems covering some of the most fundamental Linux commands. This trainer is for people new to field and for those who want to hone their Linux command line-fu.
+
+'.
+From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'BotNet', which is about 'Title: BotNet
+Tags: Packet Hacking Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 12:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Join us for an interactive workshop where we will walk you through the ins and outs of botnet deployment and operation via a command and control web server. Geared towards beginners, this workshop offers a hands-on approach to understanding how botnets function. Youâll also learn an effective defense strategy against the botnet you have created. No experience needed we will give you everything you need!
 
 '.
 From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Capture The Packet', which is about 'Title: Capture The Packet
@@ -2148,24 +2149,6 @@ Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
 
 Description:
 Come sit down and take a self guided journey to learn something hands on with us. We have an array of skills to learn including FleetDM, Linux, NetworkOS, Botnets, and others as well! We have people there to help answer your questions if things get a little dicey and make sure you have the best time while picking up something new.
-
-'.
-From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'BotNet', which is about 'Title: BotNet
-Tags: Packet Hacking Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 12:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Join us for an interactive workshop where we will walk you through the ins and outs of botnet deployment and operation via a command and control web server. Geared towards beginners, this workshop offers a hands-on approach to understanding how botnets function. Youâll also learn an effective defense strategy against the botnet you have created. No experience needed we will give you everything you need!
-
-'.
-From 10:00 to 12:59, Packet Hacking Village is hosting '' to present 'Wall Of Sheep', which is about 'Title: Wall Of Sheep
-Tags: Packet Hacking Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 12:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-The fabled Wall Of Sheepâ¦
 
 '.
 From 10:00 to 11:59, Physical Security Village is hosting '' to present 'Physical Security Village Activities', which is about 'Title: Physical Security Village Activities
@@ -2345,15 +2328,6 @@ Team and people builder for over 20 years, primarily in the offensive security s
 
 
 '.
-From 10:00 to 11:30, Social Engineering Community Village is hosting '' to present 'Social Engineering Community Village - Village Open', which is about 'Title: Social Engineering Community Village - Village Open
-Tags: Social Engineering Community Village | Creator Event
-When: Sunday, Aug 10, 10:00 - 11:30 PDT
-Where: LVCC West-Level 3-W317-W319 (Social Engineering Community Village) - Map
-
-Description:
-Welcome to our last day at DEF CON!
-
-'.
 From 10:00 to 10:45, Social Engineering Community Village is hosting '' to present 'Social Engineering Community Village - Contest Awards', which is about 'Title: Social Engineering Community Village - Contest Awards
 Tags: Social Engineering Community Village | Creator Event
 When: Sunday, Aug 10, 10:00 - 10:45 PDT
@@ -2361,6 +2335,15 @@ Where: LVCC West-Level 3-W317-W319 (Social Engineering Community Village) - Map
 
 Description:
 See who won in our village! During this time weÃ­ll present the SECVC and BOTB winners, as well as the much-coveted Dundies!
+
+'.
+From 10:00 to 11:30, Social Engineering Community Village is hosting '' to present 'Social Engineering Community Village - Village Open', which is about 'Title: Social Engineering Community Village - Village Open
+Tags: Social Engineering Community Village | Creator Event
+When: Sunday, Aug 10, 10:00 - 11:30 PDT
+Where: LVCC West-Level 3-W317-W319 (Social Engineering Community Village) - Map
+
+Description:
+Welcome to our last day at DEF CON!
 
 '.
 From 10:45 to 11:30, Social Engineering Community Village is hosting '' to present 'Cold Calls', which is about 'Title: Cold Calls
@@ -2922,6 +2905,19 @@ We are the home of WosDJCo, a group of DJâs and hackers who love to spin fo
 SpeakerBio:  kampf
 With nearly two decades of experience as a college radio DJ on Nerd Show, and as the music director for SomaFMâs Fluid and Vaporwaves, kampf has waded long and deep through the muddied waters of electronic music. Long-time DEF CON Chillout Lounge, DC801, ACK Stage, and Packet Hacking Village DJ during DEF CON.
 
+
+'.
+From 10:00 to 01:59, Social Gatherings/Events is hosting '' to present 'Lost & Found', which is about 'Title: Lost & Found
+Tags: Misc
+When: Sunday, Aug 10, 10:00 - 01:59 PDT
+Where: LVCCW Level 2-W238 - Map
+
+Description:
+If you find something that seems to have been lost, please take that item to the nearest NFO Node. The item will enter the DEF CON Lost & Found system. 
+
+If you've lost something, the only way to check on it (or reclaim it) is by going to the Lost & Found department yourself. The Lost & Found department is in room LVCC - L2 - W238. You may also call Lost & Found at +1 (702) 477-5019.
+
+The Lost & Found department plans to be open Thursday - Saturday, during all hours that the conference operates. On Sunday, the Lost & Found department will open with the venue at 08:00, but will close at the beginning of DEF CON 33 Closing Ceremonies (15:00). Shortly thereafter, all remaining lost items will be transferred to the LVCC. If you need to reach LVCC's Lost & Found, you may call LVCC Dispatch at +1 (702) 892-7400.
 
 '.
 From 10:00 to 13:59, Social Gatherings/Events is hosting '' to present 'Lost & Found', which is about 'Title: Lost & Found
@@ -3549,7 +3545,7 @@ Chris is a dark web investigator, ethical hacker and systems administrator for a
 From 11:00 to 11:30, Ham Radio Village is hosting 'Steve "hamster" Ball' to present 'It Came From Space', which is about 'Title: It Came From Space
 Tags: Ham Radio Village | Creator Talk/Panel
 When: Sunday, Aug 10, 11:00 - 11:30 PDT
-Where: LVCC West-Level 3-W321 (Ham Radio Village) - Map
+Where: LVCC West-Level 3-W320 (Ham Radio Village) - Map
 
 Description:
 Satellites are constantly orbiting the planet and beaming information back to us. Some of the most interesting information is weather images. As it turns out, it is very easy and cheap to pick up those signals and get a real-time view of your current location. In this talk I will go over what is out there, what you need to get, and the open source software stack to generate amazing images.
@@ -3682,15 +3678,6 @@ SpeakerBio:  Mari Galloway, Founder at Women's Society of Cyberjutsu
 No BIO available
 
 '.
-From 11:00 to 13:59, OWASP Community is hosting '' to present 'OWASP Chapter Meetup', which is about 'Title: OWASP Chapter Meetup
-Tags: OWASP Community | Creator Event
-When: Sunday, Aug 10, 11:00 - 13:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C206 (OWASP Community) - Map
-
-Description:
-This oneâs for the chapter leads, the regulars, the new folks, and everyone who makes OWASP what it is. Join us at DEFCON 33 for a meetup made to foster connection between OWASP chapters. Itâs a chance to share wins, swap challenges, build relationships, and spark ideas that reach beyond our local scenes. Whether youâre repping your city or just curious about how others are building community, pull up. The global OWASP family is realâand this is where we get to feel it.
-
-'.
 From 11:00 to 11:59, OWASP Community is hosting 'Josh Grossman' to present 'Vibe Coding: Security Crisis or Opportunity', which is about 'Title: Vibe Coding: Security Crisis or Opportunity
 Tags: OWASP Community | Creator Talk/Panel
 When: Sunday, Aug 10, 11:00 - 11:59 PDT
@@ -3708,6 +3695,15 @@ Josh is currently CTO for Bounce Security where he helps clients improve and get
 
 In his spare time, he co-leads the OWASP Application Security Verification Standard project and is on the OWASP Israel chapter board and the OWASP Events Committee. In 2025, OWASP recognised his contributions with a Distinguished Lifetime Membership award.
 
+
+'.
+From 11:00 to 13:59, OWASP Community is hosting '' to present 'OWASP Chapter Meetup', which is about 'Title: OWASP Chapter Meetup
+Tags: OWASP Community | Creator Event
+When: Sunday, Aug 10, 11:00 - 13:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C206 (OWASP Community) - Map
+
+Description:
+This oneâs for the chapter leads, the regulars, the new folks, and everyone who makes OWASP what it is. Join us at DEFCON 33 for a meetup made to foster connection between OWASP chapters. Itâs a chance to share wins, swap challenges, build relationships, and spark ideas that reach beyond our local scenes. Whether youâre repping your city or just curious about how others are building community, pull up. The global OWASP family is realâand this is where we get to feel it.
 
 '.
 From 11:15 to 11:59, Quantum Village is hosting 'Large Cardinal' to present 'Quantum Authentication Protocol', which is about 'Title: Quantum Authentication Protocol
@@ -4280,7 +4276,7 @@ Disciple of the darker electronic textures; devoted to the mastery of technology
 From 11:00 to 13:59, Social Gatherings/Events is hosting '' to present 'Free Ham Radio Exams', which is about 'Title: Free Ham Radio Exams
 Tags: Event | Ham Radio Village
 When: Sunday, Aug 10, 11:00 - 13:59 PDT
-Where: LVCC West-Level 3-W320 (Ham Radio Exams) - Map
+Where: LVCC West-Level 3-W321 (Ham Radio Exams) - Map
 
 Description:
 The Ham Radio Village is excited to return to DEF CON 33, offering you the opportunity "Access Everything" by gaining you access to the airwaves though free amateur radio license exams! Ham radio has a long history with ham radio operators being considered the original electronic hackers, innovating long before computers, integrated circuits, or even transistors were invented. The Ham Radio Village keeps this spirit alive by providing free ham radio license exams at DEF CON.
@@ -4771,18 +4767,6 @@ Mike Holcomb is the Fellow of Cybersecurity and the ICS/OT Cybersecurity Global 
 
 He posts regularly on LinkedIn and YouTube to help others learn more about securing ICS/OT and critical infrastructure.
 
-
-'.
-From 12:00 to 12:30, IOT Village is hosting 'Craig Heffner' to present 'Firmware Decryption: For, and By, the Cryptographically Illiterate', which is about 'Title: Firmware Decryption: For, and By, the Cryptographically Illiterate
-Tags: IOT Village | Creator Talk/Panel
-When: Sunday, Aug 10, 12:00 - 12:30 PDT
-Where: LVCC West-Level 2-W231-W232-(Creator Stage 2) W232 - Map
-
-Description:
-It's no secret that embedded devices are rife with security bugs just waiting to be found. However, vendors increasingly encrypt their firmware to prevent analysis by researchers, professionals, and inquisitive minds. In this talk, we examine common encryption techniques in real-world devices and how to crack the codeâwith or without hardware.
-
-SpeakerBio:  Craig Heffner, Senior Staff Enigneer at NetRise
-No BIO available
 
 '.
 From 12:00 to 12:30, IOT Village is hosting 'Matei Josephs' to present 'Smart Devices, Dumb Resets? Testing Firmware Persistence in Commercial IoT', which is about 'Title: Smart Devices, Dumb Resets? Testing Firmware Persistence in Commercial IoT

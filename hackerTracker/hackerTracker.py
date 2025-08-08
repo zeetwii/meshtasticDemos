@@ -51,31 +51,31 @@ class HackerTracker:
         # DEFCON names their days super weird, so we have to do some mapping
 
         if dayOfTheWeek == 0: #Monday
-            f = open("./data/daily_summaries/5_Monday.txt")
+            f = open("./data/daily_summaries/5_Monday.txt", "r", encoding='utf-8', errors='replace')
             self.dayContext = f.read()
             f.close()
         elif dayOfTheWeek == 1: # Tuesday
-            f = open("./data/daily_summaries/6_Tuesday.txt")
+            f = open("./data/daily_summaries/6_Tuesday.txt", "r", encoding='utf-8', errors='replace')
             self.dayContext = f.read()
             f.close()
         elif dayOfTheWeek == 2: # Wednesday
-            f = open("./data/daily_summaries/0_Wednesday.txt")
+            f = open("./data/daily_summaries/0_Wednesday.txt", "r", encoding='utf-8', errors='replace')
             self.dayContext = f.read()
             f.close()
         elif dayOfTheWeek == 3: # Thursday
-            f = open("./data/daily_summaries/1_Thursday.txt")
+            f = open("./data/daily_summaries/1_Thursday.txt", "r", encoding='utf-8', errors='replace')
             self.dayContext = f.read()
             f.close()
         elif dayOfTheWeek == 4: # Friday
-            f = open("./data/daily_summaries/2_Friday.txt")
+            f = open("./data/daily_summaries/2_Friday.txt", "r", encoding='utf-8', errors='replace')
             self.dayContext = f.read()
             f.close()
         elif dayOfTheWeek == 5: # Saturday
-            f = open("./data/daily_summaries/3_Saturday.txt")
+            f = open("./data/daily_summaries/3_Saturday.txt", "r", encoding='utf-8', errors='replace')
             self.dayContext = f.read()
             f.close()
         elif dayOfTheWeek == 6: # Sunday
-            f = open("./data/daily_summaries/4_Sunday.txt")
+            f = open("./data/daily_summaries/4_Sunday.txt", "r", encoding='utf-8', errors='replace')
             self.dayContext = f.read()
             f.close()
         else:

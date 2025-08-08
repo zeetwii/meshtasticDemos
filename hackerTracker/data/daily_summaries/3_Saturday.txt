@@ -384,6 +384,19 @@ Xian is a software engineer at SquareX, contributing to the industry's first bro
 
 
 '.
+From 09:00 to 15:59, Social Gatherings/Events is hosting '' to present 'Merch (formerly swag) Area Open -- README', which is about 'Title: Merch (formerly swag) Area Open -- README
+Tags: Misc
+When: Saturday, Aug 9, 09:00 - 15:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 4-902 (Merch) - Map
+
+Description:
+All merch sales are USD CASH ONLY. No cards will be accepted.
+
+The published hours for the merch area are only an approximation: supplies are limited, and when merch is sold out, the merch area will close for the year. (We intend to update this schedule to reflect their true operating status, but this is strictly best-effort.) 
+
+Note that the closing hours here are when sales must have ended. For example, if sales must end by 18:00, and we estimate that it will take 2 hours to clear the queue, doors are likely to close around 16:00. Because of this dynamic nature, we can't predict the length of the line or when doors will be closed.
+
+'.
 From 09:00 to 18:59, Social Gatherings/Events is hosting '' to present 'Human Registration Open', which is about 'Title: Human Registration Open
 Tags: Misc
 When: Saturday, Aug 9, 09:00 - 18:59 PDT
@@ -516,18 +529,22 @@ Mark Perry is a Lead Applied Cyber Security Engineer at MITRE Corp, where he spe
 
 
 '.
-From 10:00 to 12:59, Aerospace Village is hosting '' to present 'Satellite Hacking', which is about 'Title: Satellite Hacking
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Drone Flying Experience', which is about 'Title: Drone Flying Experience
 Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 12:59 PDT
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
 
 Description:
-Register in-person at the Aerospace Village starting Fri, 8 Aug, space is very limited.
+Experience the thrill of flying a drone in our custom-built cage right on the showroom floor. This activity is designed for everyone to enjoy, from kids to adults. Fly mini drones around the cage and see how well you can control these agile little machines. It's a fun, interactive way to learn the basics of drone piloting in a safe environment.
 
-Six teams of up to four people with prizes for the winning team in each session.
+'.
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Drone Hacking Workshop', which is about 'Title: Drone Hacking Workshop
+Tags: Aerospace Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
 
-First session Saturday, 10am-1pm
-Second session Saturday, 2pm-5pm
+Description:
+Join our Drone Hacking Workshop and get hands-on experience with hacking into drone microcontrollers. This three-step in-depth activity is designed to teach you about the vulnerabilities and security of autonomous systems. Using sample drones, participants will learn techniques used in government pen tests. This workshop is suitable for all skill levels, from beginners to advanced hackers. Come and test your skills in a real-world scenario and understand the intricacies of drone security.
 
 '.
 From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Defend the Airport CTF', which is about 'Title: Defend the Airport CTF
@@ -541,15 +558,6 @@ As a participant your first step is to register ahead and read the rules at: htt
 Chaos at a major international airport. Flight info displays flicker with false data. Baggage systems fail. Aircraft controls are compromised. Even the skies are no longer safe. Your mission: investigate the breach, neutralize the threats, and take back control of the airport. The airport depends on you. The clock is ticking!
 
 '.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Aircraft onboard AI cyber detection', which is about 'Title: Aircraft onboard AI cyber detection
-Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-While the Cyber Demonstrator challenge is occurring, folks will be able to see what's happening inside the avionics on the aircraft and how their logging and reporting interacts with AI analysis systems to generate cyber alerts.
-
-'.
 From 10:00 to 17:59, Aerospace Village is hosting '' to present 'F-35 Joint Strike Fighter Badge Challenge', which is about 'Title: F-35 Joint Strike Fighter Badge Challenge
 Tags: Aerospace Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
@@ -557,66 +565,6 @@ Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
 
 Description:
 Prove your air combat superiority. Only the sharpest contenders will win the limited edition F-35 PCB badge, a symbol of your elite technical skills. Test your wits, and aerospace savvy in this exclusive showdown to earn your wings in the ultimate test of aerospace analytic problem solving. Challenges drop all weekend long.
-
-'.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Automated security assessment for CCSDS protocols', which is about 'Title: Automated security assessment for CCSDS protocols
-Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Hands-on Demonstration â approximately 40 minutes to learn about the protocol and system, the research behind the tool, and the hands-on activity.
-
-Participants will learn about the standard satellite communication protocol developed by the Consultative Committee for Space Data Systems (CCSDS). The CCSDS protocols prioritize reliability and efficiency, however those guidelines are often ignored or implemented improperly. We will demonstrate how to detect and protect against vulnerabilities in CCSDS protocols. We want to inform those in the space sector about potential problems in CCSDS protocols and their impacts, along with a method for automating security assessments of these systems.
-
-'.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Bricks in the Air', which is about 'Title: Bricks in the Air
-Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Bricks in the Air is a hands-on demo to teach the basics of low level protocols seen in aviation. The demo uses the I2C protocol and does not reveal actual security vulnerabilities in avionics or other systems in aviation.
-
-'.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Cyber Demonstrator Challenge', which is about 'Title: Cyber Demonstrator Challenge
-Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Participants fly a custom narrow-body airliner with realistic controls and functions on approach to KBZN while encountering various cyber-anomalies. This challenge typically takes about 6 minutes, with a maximum of 15 minutes.
-
-'.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Space Systems Security CTF â Platform Security', which is about 'Title: Space Systems Security CTF â Platform Security
-Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Launch into the thrilling world of cybersecurity, specifically designed for space systems! Learn the fundamentals to safeguard ground stations, communication links, and spacecrafts.
-
-Engage in an immersive and fun CTF scenario. Apply your cybersecurity skills in real-time and see the direct impact of your decisions on our Space Systems Demonstrator. In this high-stakes scenario, you'll align with the Aurora Alliance in their critical mission to thwart Count Viktor Thunderclaw and the notorious Nebula Syndicate. The Syndicate threatens to destroy historic monuments around the world with their Space Laser unless their demands are met. Do you have what it takes to dismantle their malevolent plans?
-
-Our beginner-level CTF kicks off as soon as the village opensâno pre-registration necessary. Just bring your laptop to access the CTF platform and your favorite packet decoding software (i.e. Wireshark). Expect the CTF to take you less than 1 hour to complete. Team collaboration is encouraged, and if you encounter obstacles, numerous hints are available to guide you. Excel in the challenge, and you could walk away with a CT Cubed SAO, an exclusive prize while supplies last.
-
-'.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Drone Hacking Workshop', which is about 'Title: Drone Hacking Workshop
-Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Join our Drone Hacking Workshop and get hands-on experience with hacking into drone microcontrollers. This three-step in-depth activity is designed to teach you about the vulnerabilities and security of autonomous systems. Using sample drones, participants will learn techniques used in government pen tests. This workshop is suitable for all skill levels, from beginners to advanced hackers. Come and test your skills in a real-world scenario and understand the intricacies of drone security.
-
-'.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'DA-62 GPS Spoofing Challenge', which is about 'Title: DA-62 GPS Spoofing Challenge
-Tags: Aerospace Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
-
-Description:
-Participants fly a simulated DA-62 complete with realistic Garmin instruments on approach into KDAB while encountering randomized GPS-spoof related scenarios. You can successfully complete the scenario by safely landing on your cleared runway. This challenge typically takes about 7 minutes, with a maximum of 20 minutes.
 
 '.
 From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Regional Airport System CTF', which is about 'Title: Regional Airport System CTF
@@ -640,13 +588,78 @@ You start your day exploring OT system vulnerabilities and consider what chaos y
 Success will be determined by the ability to disrupt the control and operations of the Runway Lighting Systems for the IG Labs Regional Airports at the OT level. DoS and DDoS attacks are not permitted as the intent is to demonstrate an understanding of OT systems, their functionality, and protocols.
 
 '.
-From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Drone Flying Experience', which is about 'Title: Drone Flying Experience
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'DA-62 GPS Spoofing Challenge', which is about 'Title: DA-62 GPS Spoofing Challenge
 Tags: Aerospace Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
 
 Description:
-Experience the thrill of flying a drone in our custom-built cage right on the showroom floor. This activity is designed for everyone to enjoy, from kids to adults. Fly mini drones around the cage and see how well you can control these agile little machines. It's a fun, interactive way to learn the basics of drone piloting in a safe environment.
+Participants fly a simulated DA-62 complete with realistic Garmin instruments on approach into KDAB while encountering randomized GPS-spoof related scenarios. You can successfully complete the scenario by safely landing on your cleared runway. This challenge typically takes about 7 minutes, with a maximum of 20 minutes.
+
+'.
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Cyber Demonstrator Challenge', which is about 'Title: Cyber Demonstrator Challenge
+Tags: Aerospace Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Participants fly a custom narrow-body airliner with realistic controls and functions on approach to KBZN while encountering various cyber-anomalies. This challenge typically takes about 6 minutes, with a maximum of 15 minutes.
+
+'.
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Aircraft onboard AI cyber detection', which is about 'Title: Aircraft onboard AI cyber detection
+Tags: Aerospace Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+While the Cyber Demonstrator challenge is occurring, folks will be able to see what's happening inside the avionics on the aircraft and how their logging and reporting interacts with AI analysis systems to generate cyber alerts.
+
+'.
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Automated security assessment for CCSDS protocols', which is about 'Title: Automated security assessment for CCSDS protocols
+Tags: Aerospace Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Hands-on Demonstration â approximately 40 minutes to learn about the protocol and system, the research behind the tool, and the hands-on activity.
+
+Participants will learn about the standard satellite communication protocol developed by the Consultative Committee for Space Data Systems (CCSDS). The CCSDS protocols prioritize reliability and efficiency, however those guidelines are often ignored or implemented improperly. We will demonstrate how to detect and protect against vulnerabilities in CCSDS protocols. We want to inform those in the space sector about potential problems in CCSDS protocols and their impacts, along with a method for automating security assessments of these systems.
+
+'.
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Space Systems Security CTF â Platform Security', which is about 'Title: Space Systems Security CTF â Platform Security
+Tags: Aerospace Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Launch into the thrilling world of cybersecurity, specifically designed for space systems! Learn the fundamentals to safeguard ground stations, communication links, and spacecrafts.
+
+Engage in an immersive and fun CTF scenario. Apply your cybersecurity skills in real-time and see the direct impact of your decisions on our Space Systems Demonstrator. In this high-stakes scenario, you'll align with the Aurora Alliance in their critical mission to thwart Count Viktor Thunderclaw and the notorious Nebula Syndicate. The Syndicate threatens to destroy historic monuments around the world with their Space Laser unless their demands are met. Do you have what it takes to dismantle their malevolent plans?
+
+Our beginner-level CTF kicks off as soon as the village opensâno pre-registration necessary. Just bring your laptop to access the CTF platform and your favorite packet decoding software (i.e. Wireshark). Expect the CTF to take you less than 1 hour to complete. Team collaboration is encouraged, and if you encounter obstacles, numerous hints are available to guide you. Excel in the challenge, and you could walk away with a CT Cubed SAO, an exclusive prize while supplies last.
+
+'.
+From 10:00 to 17:59, Aerospace Village is hosting '' to present 'Bricks in the Air', which is about 'Title: Bricks in the Air
+Tags: Aerospace Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Bricks in the Air is a hands-on demo to teach the basics of low level protocols seen in aviation. The demo uses the I2C protocol and does not reveal actual security vulnerabilities in avionics or other systems in aviation.
+
+'.
+From 10:00 to 12:59, Aerospace Village is hosting '' to present 'Satellite Hacking', which is about 'Title: Satellite Hacking
+Tags: Aerospace Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 12:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-503 (Aerospace Village) - Map
+
+Description:
+Register in-person at the Aerospace Village starting Fri, 8 Aug, space is very limited.
+
+Six teams of up to four people with prizes for the winning team in each session.
+
+First session Saturday, 10am-1pm
+Second session Saturday, 2pm-5pm
 
 '.
 From 10:00 to 11:59, Aerospace Village is hosting '' to present 'StarPWN CTF', which is about 'Title: StarPWN CTF
@@ -975,6 +988,38 @@ As part of their product security programs, their proactive initiatives to test 
 These manufacturers are inviting security researchers to learn and to test their products in dedicated spaces set aside for them. Their staff will answer questions, educate researchers, and triage any potential security issues. Researchers who perform testing should expect to follow the manufacturersâ published coordinated vulnerability disclosure policy and report any potential issues found so they can be addressed. Security researchers must sign the Hippocratic Oath for Hackers and agree to the framework of boundaries and rules of engagement during and post conference engagement.
 
 '.
+From 10:00 to 11:30, Blacks In Cyber Village is hosting 'Jessica Hoffman,Kaleeque Pierce' to present 'Audit This: Breaking Down Bias in the Cyber Stack', which is about 'Title: Audit This: Breaking Down Bias in the Cyber Stack
+Tags: Blacks In Cyber Village | Creator Talk/Panel
+When: Saturday, Aug 9, 10:00 - 11:30 PDT
+Where: LVCC West-Level 3-W322-W324 (Blacks In Cyber Village) - Map
+
+Description:
+Bias doesnât just exist in algorithmsâit shows up across the entire cyber stack. This panel brings together leaders from government, defense, and industry to explore how systemic bias can creep into everything from security controls and threat modeling to hiring pipelines and data governance. Weâll unpack how biasesâhuman and machineâundermine trust, widen attack surfaces, and perpetuate inequality in cybersecurity workflows. Whether youâre building tech, shaping policy, or defending networks, this session challenges you to audit more than just code.
+
+Speakers:Jessica Hoffman,Kaleeque Pierce
+
+SpeakerBio:  Jessica Hoffman
+Dynamic and influential cybersecurity leader serving as Deputy CISO for the City of Philadelphia, host of CISO Stories, and adjunct professor at Harrisburg University and Penn State. With nearly two decades of experience, she specializes in cybersecurity audit & compliance, NIST frameworks, and safeguarding sensitive data such as PII, PHI, and FTI. Highly engaged in the cyber communityâas a speaker, mentor, and advocateâshe champions proactive security culture, diversity, and hands-on learning at conferences and in the classroom. Outside of work, Jessica channels her creativity into photography and networking, earning recognition as a thought leader and role model in cybersecurity.
+
+SpeakerBio:  Kaleeque Pierce
+Accomplished business and technology executive with a 19âyear track record, currently serving as Business Product Manager for Enterprise Cloud Platforms at Bank of America. A CPA candidate and MBA graduate, Kaleeque blends deep financial acumen with cloud and service delivery expertise honed at institutions like Citrix, CAI, and Deloitte. Recognized for his leadership and community involvement, he actively volunteers with Charlotte's Alliance of Black Accountants, promoting thought leadership and innovation in both technology and finance.
+
+
+'.
+From 10:00 to 10:59, Blacks In Cyber Village is hosting 'Tia Pope.' to present 'Petty Proteins: When Molecules Go Rogue â And Why Cyberbiosecurity Needs You', which is about 'Title: Petty Proteins: When Molecules Go Rogue â And Why Cyberbiosecurity Needs You
+Tags: Blacks In Cyber Village | Creator Talk/Panel
+When: Saturday, Aug 9, 10:00 - 10:59 PDT
+Where: LVCC West-Level 3-W322-W324 (Blacks In Cyber Village) - Map
+
+Description:
+For the culture, we will examine how the smallest actors in biology â proteins â can trigger the most significant disruptions, and what that means for biosecurity in the age of AI. We'll explore how molecular misbehavior mirrors threats in digital systems, from micropeptides that hijack cellular machinery to AI-designed proteins with dangerous dual-use potential. Drawing from my research on AI-driven protein design, I'll map how bias, instability, and unintended outcomes at the molecular level are reshaping what we need to secure â and who we need in the room.
+Join us for this thought-provoking session and be part of the conversation shaping the future of biosecurity.
+
+SpeakerBio:  Tia Pope., Dr
+Tia is a 4th-year PhD candidate whose research focuses on evaluating and developing AI tools for protein design, emphasizing dual-use risk and cyberbiosecurity threats. Her work spans MIT Lincoln Laboratory and Johnson & Johnson projects, bridging advanced research with real-world impact. She specializes in transformer-based models for protein engineering and function prediction and contributes to open-source efforts that democratize access to cutting-edge tools. Tia is committed to building secure, ethical, and resilient bio-AI systems at the intersection of machine learning, molecular design, and cybersecurity.
+
+
+'.
 From 10:00 to 10:59, Blacks In Cyber Village is hosting 'Nikkia Henderson,Ebony Grey,Hugh Shepherd,William (Bill) Butler' to present '[Virtual] National Service Panel - CTU,BIC,MCPA', which is about 'Title: [Virtual] National Service Panel - CTU,BIC,MCPA
 Tags: Blacks In Cyber Village | Creator Talk/Panel | Hybrid
 When: Saturday, Aug 9, 10:00 - 10:59 PDT
@@ -994,38 +1039,6 @@ SpeakerBio:  Hugh Shepherd
 No BIO available
 SpeakerBio:  William (Bill) Butler, Dr
 No BIO available
-
-'.
-From 10:00 to 10:59, Blacks In Cyber Village is hosting 'Tia Pope.' to present 'Petty Proteins: When Molecules Go Rogue â And Why Cyberbiosecurity Needs You', which is about 'Title: Petty Proteins: When Molecules Go Rogue â And Why Cyberbiosecurity Needs You
-Tags: Blacks In Cyber Village | Creator Talk/Panel
-When: Saturday, Aug 9, 10:00 - 10:59 PDT
-Where: LVCC West-Level 3-W322-W324 (Blacks In Cyber Village) - Map
-
-Description:
-For the culture, we will examine how the smallest actors in biology â proteins â can trigger the most significant disruptions, and what that means for biosecurity in the age of AI. We'll explore how molecular misbehavior mirrors threats in digital systems, from micropeptides that hijack cellular machinery to AI-designed proteins with dangerous dual-use potential. Drawing from my research on AI-driven protein design, I'll map how bias, instability, and unintended outcomes at the molecular level are reshaping what we need to secure â and who we need in the room.
-Join us for this thought-provoking session and be part of the conversation shaping the future of biosecurity.
-
-SpeakerBio:  Tia Pope., Dr
-Tia is a 4th-year PhD candidate whose research focuses on evaluating and developing AI tools for protein design, emphasizing dual-use risk and cyberbiosecurity threats. Her work spans MIT Lincoln Laboratory and Johnson & Johnson projects, bridging advanced research with real-world impact. She specializes in transformer-based models for protein engineering and function prediction and contributes to open-source efforts that democratize access to cutting-edge tools. Tia is committed to building secure, ethical, and resilient bio-AI systems at the intersection of machine learning, molecular design, and cybersecurity.
-
-
-'.
-From 10:00 to 11:30, Blacks In Cyber Village is hosting 'Jessica Hoffman,Kaleeque Pierce' to present 'Audit This: Breaking Down Bias in the Cyber Stack', which is about 'Title: Audit This: Breaking Down Bias in the Cyber Stack
-Tags: Blacks In Cyber Village | Creator Talk/Panel
-When: Saturday, Aug 9, 10:00 - 11:30 PDT
-Where: LVCC West-Level 3-W322-W324 (Blacks In Cyber Village) - Map
-
-Description:
-Bias doesnât just exist in algorithmsâit shows up across the entire cyber stack. This panel brings together leaders from government, defense, and industry to explore how systemic bias can creep into everything from security controls and threat modeling to hiring pipelines and data governance. Weâll unpack how biasesâhuman and machineâundermine trust, widen attack surfaces, and perpetuate inequality in cybersecurity workflows. Whether youâre building tech, shaping policy, or defending networks, this session challenges you to audit more than just code.
-
-Speakers:Jessica Hoffman,Kaleeque Pierce
-
-SpeakerBio:  Jessica Hoffman
-Dynamic and influential cybersecurity leader serving as Deputy CISO for the City of Philadelphia, host of CISO Stories, and adjunct professor at Harrisburg University and Penn State. With nearly two decades of experience, she specializes in cybersecurity audit & compliance, NIST frameworks, and safeguarding sensitive data such as PII, PHI, and FTI. Highly engaged in the cyber communityâas a speaker, mentor, and advocateâshe champions proactive security culture, diversity, and hands-on learning at conferences and in the classroom. Outside of work, Jessica channels her creativity into photography and networking, earning recognition as a thought leader and role model in cybersecurity.
-
-SpeakerBio:  Kaleeque Pierce
-Accomplished business and technology executive with a 19âyear track record, currently serving as Business Product Manager for Enterprise Cloud Platforms at Bank of America. A CPA candidate and MBA graduate, Kaleeque blends deep financial acumen with cloud and service delivery expertise honed at institutions like Citrix, CAI, and Deloitte. Recognized for his leadership and community involvement, he actively volunteers with Charlotte's Alliance of Black Accountants, promoting thought leadership and innovation in both technology and finance.
-
 
 '.
 From 10:00 to 10:50, Blue Team Village (BTV) is hosting 'Carlo Anez Mazurco' to present 'Cyber Threat Intelligence 101: From Foundations to AIâDriven Defense', which is about 'Title: Cyber Threat Intelligence 101: From Foundations to AIâDriven Defense
@@ -1258,6 +1271,25 @@ Description:
 This Pac-Man themed set of challenges takes Players on a journey through learning and demonstrating hacker and information security skills to earn points. With multiple subject-matter specific challenge groups and tracks, this hacker challenge game has something for everyone. Players will only be able to turn in scavenger hunt items during Contest Area Operating Hours.
 
 '.
+From 10:00 to 17:59, Contests is hosting '' to present 'CMD+CTRL Casual Web App CTF', which is about 'Title: CMD+CTRL Casual Web App CTF
+Tags: Beginner | Contest | Hybrid | AppSec | CMD+CTRL Cloud Cyber Range
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 1-111 (CMD+CTRL) - Map
+
+Description:
+CMD+CTRL is an immersive learning and hacking platform where developers, security professionals, and tech enthusiasts come together to sharpen their skills in web application security. Players compete in a real-world environment, uncovering vulnerabilities and learning security techniques hands-on. With real-time scoring, the experience stays engaging, fostering both collaboration and friendly competition.
+
+At DEF CON 33 come try out some of our classic Cyber Ranges in a casual, non-competitive environment. Learn about web application security and hack into anything from a healthcare platform to an e-commerce site!
+
+Participant Prerequisites
+
+Computer with internet access.
+
+Pre-Qualification
+
+No pre-qualification.
+
+'.
 From 10:00 to 16:59, Contests is hosting '' to present 'CMD+CTRL Cloud Cyber Range Competition', which is about 'Title: CMD+CTRL Cloud Cyber Range Competition
 Tags: Contest | Intermediate | On-site | Cloud | CMD+CTRL Cloud Cyber Range
 When: Saturday, Aug 9, 10:00 - 16:59 PDT
@@ -1279,25 +1311,6 @@ Pre-Qualification
 No pre-qualification. Pre-registration is required for the Cloud Cyber Range competition. Please sign up at defcon33.cmdnctrl.net as spots are limited.
 
 Other cyber ranges will also be available for non-competitive play, no registration required.
-
-'.
-From 10:00 to 17:59, Contests is hosting '' to present 'CMD+CTRL Casual Web App CTF', which is about 'Title: CMD+CTRL Casual Web App CTF
-Tags: Beginner | Contest | Hybrid | AppSec | CMD+CTRL Cloud Cyber Range
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 1-111 (CMD+CTRL) - Map
-
-Description:
-CMD+CTRL is an immersive learning and hacking platform where developers, security professionals, and tech enthusiasts come together to sharpen their skills in web application security. Players compete in a real-world environment, uncovering vulnerabilities and learning security techniques hands-on. With real-time scoring, the experience stays engaging, fostering both collaboration and friendly competition.
-
-At DEF CON 33 come try out some of our classic Cyber Ranges in a casual, non-competitive environment. Learn about web application security and hack into anything from a healthcare platform to an e-commerce site!
-
-Participant Prerequisites
-
-Computer with internet access.
-
-Pre-Qualification
-
-No pre-qualification.
 
 '.
 From 10:00 to 17:59, Contests is hosting '' to present 'DEF CON Scavenger Hunt', which is about 'Title: DEF CON Scavenger Hunt
@@ -1623,25 +1636,6 @@ CTF Starts - 10AM, 8th August.
 CTF Ends - 23:59, 9th August.
 
 '.
-From 10:00 to 10:59, Contests is hosting '' to present 'Bug Bounty CTF', which is about 'Title: Bug Bounty CTF
-Tags: Contest | Bug Bounty Village | Bug Bounty Village CTF
-When: Saturday, Aug 9, 10:00 - 10:59 PDT
-Where: Online
-
-Description:
-Bug Bounty Village CTF: Experience the Thrill of a Real Bug Bounty Experience
-
-This year, for the first time ever, Bug Bounty Village is bringing you a Capture the Flag with a twist. This CTF is designed to feel just like a real bug bounty hunt.
-
-Dive into a vulnerable application and see if you can uncover its hidden weaknesses just like you would on a bug bounty program. The CTF is designed to be accessible for all experience levels, from beginners looking for their first bug to veteran hunters eager for a very interesting challenge. Expect a range of vulnerabilities, from trivial finds to sophisticated ones that will push you to the limit.
-
-But thatâs not all. Weâre adding a unique real-world flavor to the competition. Participants onsite at DEF CON will submit some of their bug reports for those to be validated by real bug bounty triagers volunteering their expertise to make this experience as real as possible. This process will determine scores based not just on technical prowess but on report quality and professionalism, just like in a bug bounty program.
-
-Get ready for a realistic bug bounty experience, a chance to grow your skills, connect with the community, and show what youâre made of.
-
-Please note that you must be present on-site for our award ceremony on Sunday at 13:00 in order to receive any prizes.
-
-'.
 From 10:00 to 17:59, Contests is hosting '' to present 'Blue Team Village CTF', which is about 'Title: Blue Team Village CTF
 Tags: Contest | Blue Team Village (BTV) | Blue Team Village CTF
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
@@ -1661,6 +1655,25 @@ Attendees will be required to use a laptop, tablet, or mobile device. Prior know
 Pre-Qualification
 
 No
+
+'.
+From 10:00 to 10:59, Contests is hosting '' to present 'Bug Bounty CTF', which is about 'Title: Bug Bounty CTF
+Tags: Contest | Bug Bounty Village | Bug Bounty Village CTF
+When: Saturday, Aug 9, 10:00 - 10:59 PDT
+Where: Online
+
+Description:
+Bug Bounty Village CTF: Experience the Thrill of a Real Bug Bounty Experience
+
+This year, for the first time ever, Bug Bounty Village is bringing you a Capture the Flag with a twist. This CTF is designed to feel just like a real bug bounty hunt.
+
+Dive into a vulnerable application and see if you can uncover its hidden weaknesses just like you would on a bug bounty program. The CTF is designed to be accessible for all experience levels, from beginners looking for their first bug to veteran hunters eager for a very interesting challenge. Expect a range of vulnerabilities, from trivial finds to sophisticated ones that will push you to the limit.
+
+But thatâs not all. Weâre adding a unique real-world flavor to the competition. Participants onsite at DEF CON will submit some of their bug reports for those to be validated by real bug bounty triagers volunteering their expertise to make this experience as real as possible. This process will determine scores based not just on technical prowess but on report quality and professionalism, just like in a bug bounty program.
+
+Get ready for a realistic bug bounty experience, a chance to grow your skills, connect with the community, and show what youâre made of.
+
+Please note that you must be present on-site for our award ceremony on Sunday at 13:00 in order to receive any prizes.
 
 '.
 From 10:00 to 17:59, Contests is hosting '' to present 'DEF CON 33 MUD', which is about 'Title: DEF CON 33 MUD
@@ -1710,17 +1723,17 @@ Oh, and we have a Krux.
 
 
 '.
-From 10:00 to 11:50, Cryptocurrency Community is hosting 'Veronika,Chelsea Button' to present 'Cryptocurrency Enforcement Actions', which is about 'Title: Cryptocurrency Enforcement Actions
+From 10:00 to 10:50, Cryptocurrency Community is hosting 'Joseph,Chelsea Button' to present 'AML Cryptocurrency Compliance', which is about 'Title: AML Cryptocurrency Compliance
 Tags: Cryptocurrency Community | Creator Workshop
-When: Saturday, Aug 9, 10:00 - 11:50 PDT
+When: Saturday, Aug 9, 10:00 - 10:50 PDT
 Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C101 (Cryptocurrency Community) - Map
 
 Description:
-Multiple agencies have attempted to regulate cryptocurrencies through various means. This workshop will begin with a short presentation about the different organizations with an interest in regulating cryptocurrency (SEC, CFTC, IRS, and DOJ) and provide examples of enforcement actions. Next, participants will break out into discussion groups to consider the pros and cons of regulation by enforcement. Then, participants will be given a hypothetical cryptocurrency and be assigned a role either as a 'regulator' or as a 'developer.' The participants will engage in a settlement type discussion to determine if the cryptocurrency should be regulated under one agency, multiple agencies, or not at all.
+Students receive exposure to the law side of cryptocurrency business, including certification, regulation, government policy, and risk assessment. Regulators around the world evaluate and implement diverse regulations governing the use and applications of Blockchain reflecting varying degrees of acceptance ranging from blanket prohibition to highly facilitating frameworks. Organisations, in turn, assess the related risks and legal challenges. This workshop considers emerging trends and security essentials vital for business and financial businesses, providing a brief overview of AML and KYC and suggestions to increase security and decrease risk exposure.
 
-Speakers:Veronika,Chelsea Button
+Speakers:Joseph,Chelsea Button
 
-SpeakerBio:  Veronika
+SpeakerBio:  Joseph
 No BIO available
 SpeakerBio:  Chelsea Button, Cryptocurrency Education Initiative
 Chelsea is a lawyer specializing in consumer finance, data and technology. She advises clients on updates in the law and defends them in litigation. She is a cryptocurrency advocate, with multiple professional publications.
@@ -1760,6 +1773,15 @@ Description:
 Come try your hand at being a DDoS attacker and/or defender in this fun cyberwar simulation. No experience or laptop needed!  Sessions run every half hour.
 
 '.
+From 10:00 to 17:59, DEF CON Academy is hosting '' to present 'DEF CON Academy', which is about 'Title: DEF CON Academy
+Tags: Beginner | DEF CON Academy | Creator Event | Intermediate
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 2-W235 (DEF CON Academy) - Map
+
+Description:
+New to hacking? Start here. The DEF CON Academy is your entry point into the world of hacking and Capture the Flag (CTF) competitions. No experience? No problem. Stop by and you'll start with the basics â Linux commands, web security, binary challenges, and reverse engineering â and build up from there at your own pace. Mentors and real CTF pros will be on-site to help you when you get stuck, explain concepts, and cheer you on. Come sit down for a bit, plug in, enjoy our scheduled talks, and start leveling up your skills in a hands-on, no-pressure environment.
+
+'.
 From 10:00 to 10:59, DEF CON Academy is hosting 'f4_u57' to present 'Assembly Alchemy: From Opcodes to Exploits', which is about 'Title: Assembly Alchemy: From Opcodes to Exploits
 Tags: DEF CON Academy | Creator Talk/Panel
 When: Saturday, Aug 9, 10:00 - 10:59 PDT
@@ -1775,15 +1797,6 @@ After the talk, you will have the chance to test your abilities with hands-on ch
 SpeakerBio:  f4_u57, Arizona State University
 f4_u57 is a senior undergraduate at Arizona State University and a security researcher at Research Innovations Incorporated (RII). His interests focuses on vulnerability research in embedded devices, with an emphasis on program analysis and system security. In his spare time, he is an active CTF player.
 
-
-'.
-From 10:00 to 17:59, DEF CON Academy is hosting '' to present 'DEF CON Academy', which is about 'Title: DEF CON Academy
-Tags: Beginner | DEF CON Academy | Creator Event | Intermediate
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 2-W235 (DEF CON Academy) - Map
-
-Description:
-New to hacking? Start here. The DEF CON Academy is your entry point into the world of hacking and Capture the Flag (CTF) competitions. No experience? No problem. Stop by and you'll start with the basics â Linux commands, web security, binary challenges, and reverse engineering â and build up from there at your own pace. Mentors and real CTF pros will be on-site to help you when you get stuck, explain concepts, and cheer you on. Come sit down for a bit, plug in, enjoy our scheduled talks, and start leveling up your skills in a hands-on, no-pressure environment.
 
 '.
 From 10:00 to 17:59, DEF CON Groups (DCG) is hosting 'polomaster,Nitetrain' to present 'DCG LAN Party: Frag You Very Much', which is about 'Title: DCG LAN Party: Frag You Very Much
@@ -2090,13 +2103,13 @@ Kevin is a data scientist specializing in cybersecurity and machine learning, cu
 
 
 '.
-From 10:00 to 17:59, Embedded Systems Village is hosting '' to present 'Emulating Embedded Devices', which is about 'Title: Emulating Embedded Devices
+From 10:00 to 17:59, Embedded Systems Village is hosting '' to present 'Secure Compute Module and Microcontroller Workshop', which is about 'Title: Secure Compute Module and Microcontroller Workshop
 Tags: Embedded Systems Village | Creator Workshop
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
 
 Description:
-Hack your first embedded system! Sit down at our provided laptops and be guided through exploiting an IP camera, then learn how you can set up the emulated camera (and other devices) at home with Ludus!
+
 
 '.
 From 10:00 to 17:59, Embedded Systems Village is hosting '' to present 'Matter Playground', which is about 'Title: Matter Playground
@@ -2108,24 +2121,6 @@ Description:
 
 
 '.
-From 10:00 to 17:59, Embedded Systems Village is hosting '' to present 'Secure Compute Module and Microcontroller Workshop', which is about 'Title: Secure Compute Module and Microcontroller Workshop
-Tags: Embedded Systems Village | Creator Workshop
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
-
-Description:
-
-
-'.
-From 10:00 to 17:59, Embedded Systems Village is hosting '' to present '101 Labs: Firmware and Software exploitation', which is about 'Title: 101 Labs: Firmware and Software exploitation
-Tags: Embedded Systems Village | Creator Workshop
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
-
-Description:
-This series of self-guided labs will introduce even the most novice hacker to the world of embedded device firmware and software exploitation.  First-come first-served, don't miss a chance try out these labs and get started with embedded device hacking.
-
-'.
 From 10:00 to 17:59, Embedded Systems Village is hosting '' to present 'Hardware Hacking: Glitching Lab', which is about 'Title: Hardware Hacking: Glitching Lab
 Tags: Embedded Systems Village | Creator Workshop
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
@@ -2135,6 +2130,15 @@ Description:
 Curious about hacking chips using fault-injection? Take your first steps in our (free) glitching workshops! We provide you with hardware & guidance to conduct your first fault-injection attacks, all you need is a laptop running Python & OpenOCD: Reproduce the nRF52 "AirTag" glitch or learn how to glitch one of the chips used in crypto-wallets to store millions of dollars.
 
 '.
+From 10:00 to 17:59, Embedded Systems Village is hosting '' to present 'Emulating Embedded Devices', which is about 'Title: Emulating Embedded Devices
+Tags: Embedded Systems Village | Creator Workshop
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
+
+Description:
+Hack your first embedded system! Sit down at our provided laptops and be guided through exploiting an IP camera, then learn how you can set up the emulated camera (and other devices) at home with Ludus!
+
+'.
 From 10:00 to 17:59, Embedded Systems Village is hosting '' to present '101 Labs: Hardware Lab', which is about 'Title: 101 Labs: Hardware Lab
 Tags: Embedded Systems Village | Creator Workshop
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
@@ -2142,6 +2146,15 @@ Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
 
 Description:
 If you've never popped open an embedded device and tried to get a simple shell, this is the lab for you.  This is a first-come first-served workshop where you can walk through the step by step instructions to finding and connecting to a debug interface on an embedded device.
+
+'.
+From 10:00 to 17:59, Embedded Systems Village is hosting '' to present '101 Labs: Firmware and Software exploitation', which is about 'Title: 101 Labs: Firmware and Software exploitation
+Tags: Embedded Systems Village | Creator Workshop
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 1-401 (Embedded Systems Village) - Map
+
+Description:
+This series of self-guided labs will introduce even the most novice hacker to the world of embedded device firmware and software exploitation.  First-come first-served, don't miss a chance try out these labs and get started with embedded device hacking.
 
 '.
 From 10:00 to 10:59, Embedded Systems Village is hosting 'Zoltan "zh4ck" Balazs' to present 'How Not to IoT: Lessons in Security Failures', which is about 'Title: How Not to IoT: Lessons in Security Failures
@@ -2176,22 +2189,13 @@ Description:
 Win bug bounty prize by escaping a game sandbox environment
 
 '.
-From 10:00 to 17:59, GameHacking.GG is hosting '' to present 'Game Hacking Intro Game', which is about 'Title: Game Hacking Intro Game
+From 10:00 to 17:59, GameHacking.GG is hosting '' to present 'Mobile Game Hacking', which is about 'Title: Mobile Game Hacking
 Tags: GameHacking.GG | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 1-402 (GameHacking.GG Village) - Map
 
 Description:
-Learn the basics of game hacking by playing a game that teaches you to hack the game itself to progress through levels.
-
-'.
-From 10:00 to 17:59, GameHacking.GG is hosting '' to present 'Hacker Vs Hacker Olympics', which is about 'Title: Hacker Vs Hacker Olympics
-Tags: GameHacking.GG | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 1-402 (GameHacking.GG Village) - Map
-
-Description:
-Rotating real production games to hack in a player vs player competition to create real hacks to win various games. Teams or individuals can win Gold Silver or Bronze or just have fun playing the games
+Mobile game hacking workshop for mobile gamers
 
 '.
 From 10:00 to 17:59, GameHacking.GG is hosting '' to present 'Minecraft Coding Puzzles', which is about 'Title: Minecraft Coding Puzzles
@@ -2203,13 +2207,22 @@ Description:
 Learn game scripting languages through fun minecraft puzzles
 
 '.
-From 10:00 to 17:59, GameHacking.GG is hosting '' to present 'Mobile Game Hacking', which is about 'Title: Mobile Game Hacking
+From 10:00 to 17:59, GameHacking.GG is hosting '' to present 'Hacker Vs Hacker Olympics', which is about 'Title: Hacker Vs Hacker Olympics
 Tags: GameHacking.GG | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 1-402 (GameHacking.GG Village) - Map
 
 Description:
-Mobile game hacking workshop for mobile gamers
+Rotating real production games to hack in a player vs player competition to create real hacks to win various games. Teams or individuals can win Gold Silver or Bronze or just have fun playing the games
+
+'.
+From 10:00 to 17:59, GameHacking.GG is hosting '' to present 'Game Hacking Intro Game', which is about 'Title: Game Hacking Intro Game
+Tags: GameHacking.GG | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 1-402 (GameHacking.GG Village) - Map
+
+Description:
+Learn the basics of game hacking by playing a game that teaches you to hack the game itself to progress through levels.
 
 '.
 From 10:00 to 17:59, Hackers With Disabilities (HDA) is hosting '' to present 'HDA Community Open', which is about 'Title: HDA Community Open
@@ -2258,6 +2271,44 @@ Description:
 Illumicon is all about Hackers lighting the Way! Throughout the day attendees will be able control the hands on displays with someone knowledgeable in the field nearby to answer any questions. The displays will include 2 professional laser displays controlled either by either analog or digital and several led fixtures all just waiting for attendees to make them shine. Knowledgeable people will be there to answer questions whether it is hardware, software, sourcing or design. We are here to get you on your way to letting your Blink Flag Fly!!
 
 '.
+From 10:00 to 17:59, IOT Village is hosting '' to present 'Staring at You, Staring Inside You', which is about 'Title: Staring at You, Staring Inside You
+Tags: IOT Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
+
+Description:
+Step into the IoT Village and challenge those eyes staring at you. Break open real hardware and dive in to uncover vulnerabilities.
+
+Try your luck to emulate those devices. Whether youâre a hardware hacking pro of just a hardware wrecker, this hands-on experience is your change to push the limits of hardware hacking.
+
+Ready to see whatâs really watching you?
+
+'.
+From 10:00 to 17:59, IOT Village is hosting '' to present 'IoT Intro Labs. New to all of this? Youâre in the right spot!', which is about 'Title: IoT Intro Labs. New to all of this? Youâre in the right spot!
+Tags: IOT Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
+
+Description:
+Forget the noise.
+
+Get to JustHacking.com!
+
+2 Mini-Workshops
+
+Only 15 Minutes Each
+
+Talk to Your âThingsâ with MQTT
+
+Learn device comms in a virtual smarthome
+
+Router Ruh Roh!
+
+Find clues of an attack in OpenWRT firmware
+
+No Schedule! Just sit down & start learning!
+
+'.
 From 10:00 to 11:30, IOT Village is hosting '' to present 'Learn BadUSB Hacking With the USB Nugget', which is about 'Title: Learn BadUSB Hacking With the USB Nugget
 Tags: IOT Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 11:30 PDT
@@ -2267,15 +2318,43 @@ Description:
 Kit cost $135
 
 '.
-From 10:00 to 17:59, IOT Village is hosting '' to present 'Bootloader? I hardly know her!', which is about 'Title: Bootloader? I hardly know her!
+From 10:00 to 17:59, IOT Village is hosting '' to present 'Discover GE Appliances!', which is about 'Title: Discover GE Appliances!
 Tags: IOT Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-A practical guide to hardware hacking.
+Join us for a self-guided interactive look at GE Applinces and get hands on with some of our most popular home appliances!
 
-Join IoT Village for a hands-on workshop where people can learn step-by-step techniques to gain root access on a smart camera. Some of the methods involved are PCB analysis, power analysis, and exploiting debug interfaces to achieve shell access.
+And for all Home Assistant enthusiasts!
+
+Check us out and we will help you get started!
+
+Find anything related to security? Contact our PSIRT by visiting our security webpage:
+
+GEAppliances.comn/security
+
+'.
+From 10:00 to 17:59, IOT Village is hosting '' to present 'Keysight CTF Challenge', which is about 'Title: Keysight CTF Challenge
+Tags: IOT Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
+
+Description:
+Defeat the Keysight CTF challenge for a change to win a Riscuberry IoT hacking training kit that comes with a picoscope, a bus pirate, and much more!
+
+See one of the Keysight staff for details.
+
+'.
+From 10:00 to 17:59, IOT Village is hosting '' to present 'Easy IoT App Hacking', which is about 'Title: Easy IoT App Hacking
+Tags: IOT Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
+
+Description:
+In this interactive exercise, youâll learn how easy it is nowadays to reverse engineer the apps that are used to configure and interact with IoT devices.
+
+IoT hacking with no multimeter or soldering iron required!
 
 '.
 From 10:00 to 17:59, IOT Village is hosting '' to present 'From Hexeditor to Root, Multi Stage Approach to Root Access', which is about 'Title: From Hexeditor to Root, Multi Stage Approach to Root Access
@@ -2306,21 +2385,15 @@ But behind the comfort of voice commands and automated routines lies a tangled w
 Can you disrupt, decode of dominate the smart home?
 
 '.
-From 10:00 to 17:59, IOT Village is hosting '' to present 'Discover GE Appliances!', which is about 'Title: Discover GE Appliances!
+From 10:00 to 17:59, IOT Village is hosting '' to present 'Bootloader? I hardly know her!', which is about 'Title: Bootloader? I hardly know her!
 Tags: IOT Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
 
 Description:
-Join us for a self-guided interactive look at GE Applinces and get hands on with some of our most popular home appliances!
+A practical guide to hardware hacking.
 
-And for all Home Assistant enthusiasts!
-
-Check us out and we will help you get started!
-
-Find anything related to security? Contact our PSIRT by visiting our security webpage:
-
-GEAppliances.comn/security
+Join IoT Village for a hands-on workshop where people can learn step-by-step techniques to gain root access on a smart camera. Some of the methods involved are PCB analysis, power analysis, and exploiting debug interfaces to achieve shell access.
 
 '.
 From 10:00 to 17:59, IOT Village is hosting '' to present 'Firmware Decryption with Open Source Clues', which is about 'Title: Firmware Decryption with Open Source Clues
@@ -2334,66 +2407,6 @@ In this challenge, participants are given an encrypted firmware image for a D-Li
 The objective is to decrypt the firmware using clues from open source files.
 
 This is a realistic test of practical reverse engineering and firmware analysis skills, with a focus on identifying overlooked assumptions in standard tooling.
-
-'.
-From 10:00 to 17:59, IOT Village is hosting '' to present 'IoT Intro Labs. New to all of this? Youâre in the right spot!', which is about 'Title: IoT Intro Labs. New to all of this? Youâre in the right spot!
-Tags: IOT Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
-
-Description:
-Forget the noise.
-
-Get to JustHacking.com!
-
-2 Mini-Workshops
-
-Only 15 Minutes Each
-
-Talk to Your âThingsâ with MQTT
-
-Learn device comms in a virtual smarthome
-
-Router Ruh Roh!
-
-Find clues of an attack in OpenWRT firmware
-
-No Schedule! Just sit down & start learning!
-
-'.
-From 10:00 to 17:59, IOT Village is hosting '' to present 'Staring at You, Staring Inside You', which is about 'Title: Staring at You, Staring Inside You
-Tags: IOT Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
-
-Description:
-Step into the IoT Village and challenge those eyes staring at you. Break open real hardware and dive in to uncover vulnerabilities.
-
-Try your luck to emulate those devices. Whether youâre a hardware hacking pro of just a hardware wrecker, this hands-on experience is your change to push the limits of hardware hacking.
-
-Ready to see whatâs really watching you?
-
-'.
-From 10:00 to 17:59, IOT Village is hosting '' to present 'Keysight CTF Challenge', which is about 'Title: Keysight CTF Challenge
-Tags: IOT Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
-
-Description:
-Defeat the Keysight CTF challenge for a change to win a Riscuberry IoT hacking training kit that comes with a picoscope, a bus pirate, and much more!
-
-See one of the Keysight staff for details.
-
-'.
-From 10:00 to 17:59, IOT Village is hosting '' to present 'Easy IoT App Hacking', which is about 'Title: Easy IoT App Hacking
-Tags: IOT Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-605 (IOT Village) - Map
-
-Description:
-In this interactive exercise, youâll learn how easy it is nowadays to reverse engineer the apps that are used to configure and interact with IoT devices.
-
-IoT hacking with no multimeter or soldering iron required!
 
 '.
 From 10:00 to 10:30, La Villa is hosting 'Anchises Moraes' to present 'Privacy is Dead: The Threat of Criminal PII Search Panels (ESP-POR)', which is about 'Title: Privacy is Dead: The Threat of Criminal PII Search Panels (ESP-POR)
@@ -2649,6 +2662,15 @@ Description:
 The DEF CON Memorial Chamber serves as a sacred space within our community â a place where we pause to honor those hackers whose brilliance and dedication have elevated not just our craft, but the entire security ecosystem. Here we remember figures whose generous spirit and willingness to coordinate security fixes demonstrated that true hacking greatness lies in collaboration.  We are here because DEF CON has been the beating heart of the hacker community for over three decades, growing from 100 people in 1993 to the world's largest hacker conference. As Jeff Moss envisioned, DEF CON is what we make of it, this memorial space represents our commitment to ensuring that the legacy of those we've lost continues to inspire future generations of hackers to pursue knowledge, build community, and use their gifts to make the world better.
 
 '.
+From 10:00 to 17:59, Mobile Hacking Community is hosting '' to present 'Demonstration', which is about 'Title: Demonstration
+Tags: Mobile Hacking Community | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C106 (Mobile Hacking Community) - Map
+
+Description:
+A dedicated area equipped with the necessary tools, where visitors can experiment with various techniques and concepts under expert guidance.
+
+'.
 From 10:00 to 17:59, Mobile Hacking Community is hosting '' to present 'Mobile CTF', which is about 'Title: Mobile CTF
 Tags: Mobile Hacking Community | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
@@ -2667,15 +2689,6 @@ Malware Analysis
 Mobile Forensics
 Bypassing Security Mechanisms
 Exploiting WebViews
-
-'.
-From 10:00 to 17:59, Mobile Hacking Community is hosting '' to present 'Demonstration', which is about 'Title: Demonstration
-Tags: Mobile Hacking Community | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C106 (Mobile Hacking Community) - Map
-
-Description:
-A dedicated area equipped with the necessary tools, where visitors can experiment with various techniques and concepts under expert guidance.
 
 '.
 From 10:15 to 11:15, Mobile Hacking Community is hosting 'Subho Halder' to present 'Cracking the Vault: Runtime API Testing in MDM-Locked Apps', which is about 'Title: Cracking the Vault: Runtime API Testing in MDM-Locked Apps
@@ -2725,22 +2738,13 @@ Description:
 Be the Match is returning to DEF CON for its 12th year, to run a registry drive for the National Marrow Donor program! Swing by and check out one of the coolest biohacks out there, and how you could be the next person to save a life!
 
 '.
-From 10:00 to 17:59, Noob Community is hosting '' to present 'Noob Community Open', which is about 'Title: Noob Community Open
+From 10:00 to 17:59, Noob Community is hosting '' to present 'No Stupid Questions', which is about 'Title: No Stupid Questions
 Tags: Beginner | Noob Community | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 2-W204 (Noob Community) - Map
 
 Description:
-Talks, AMA, CTF, and more
-
-'.
-From 10:00 to 17:59, Noob Community is hosting '' to present 'Noob Community CTF', which is about 'Title: Noob Community CTF
-Tags: Beginner | Noob Community | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 2-W204 (Noob Community) - Map
-
-Description:
-Noob-friendly CTF by MetaCTF, 100s of prizes, ticket for each challenge completed, raffle on Sunday at noon, helpers in the village
+Ongoing AMA booth with volunteers and speakers answering all your DEF CON and cyber questions
 
 '.
 From 10:00 to 17:59, Noob Community is hosting '' to present 'Noob Community Buddies', which is about 'Title: Noob Community Buddies
@@ -2752,13 +2756,22 @@ Description:
 Not sure where something is? Our Buddies will help you find it. Look for the folks in the pink safety vests. We're here to help.
 
 '.
-From 10:00 to 17:59, Noob Community is hosting '' to present 'No Stupid Questions', which is about 'Title: No Stupid Questions
+From 10:00 to 17:59, Noob Community is hosting '' to present 'Noob Community CTF', which is about 'Title: Noob Community CTF
 Tags: Beginner | Noob Community | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 2-W204 (Noob Community) - Map
 
 Description:
-Ongoing AMA booth with volunteers and speakers answering all your DEF CON and cyber questions
+Noob-friendly CTF by MetaCTF, 100s of prizes, ticket for each challenge completed, raffle on Sunday at noon, helpers in the village
+
+'.
+From 10:00 to 17:59, Noob Community is hosting '' to present 'Noob Community Open', which is about 'Title: Noob Community Open
+Tags: Beginner | Noob Community | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 2-W204 (Noob Community) - Map
+
+Description:
+Talks, AMA, CTF, and more
 
 '.
 From 10:00 to 17:59, Operating Systems Community is hosting '' to present 'Operating System Community', which is about 'Title: Operating System Community
@@ -2821,42 +2834,6 @@ Description:
 The fabled Wall Of Sheepâ¦
 
 '.
-From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'WalkThrough Workshops', which is about 'Title: WalkThrough Workshops
-Tags: Packet Hacking Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Come sit down and take a self guided journey to learn something hands on with us. We have an array of skills to learn including FleetDM, Linux, NetworkOS, Botnets, and others as well! We have people there to help answer your questions if things get a little dicey and make sure you have the best time while picking up something new.
-
-'.
-From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'BotNet', which is about 'Title: BotNet
-Tags: Packet Hacking Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Join us for an interactive workshop where we will walk you through the ins and outs of botnet deployment and operation via a command and control web server. Geared towards beginners, this workshop offers a hands-on approach to understanding how botnets function. Youâll also learn an effective defense strategy against the botnet you have created. No experience needed we will give you everything you need!
-
-'.
-From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Capture The Packet', which is about 'Title: Capture The Packet
-Tags: Packet Hacking Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Come compete in the worldâs most challenging cyber defense competition based on the Aries Security Cyber Range. Tear through the challenges, traverse a hostile enterprise class network, and diligently analyze what is found in order to make it out unscathed. Not only glory, but prizes await those that emerge victorious from this upgraded labyrinth, so only the best prepared and battle hardened will escape the crucible.
-
-'.
-From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'RegEx Trainer', which is about 'Title: RegEx Trainer
-Tags: Packet Hacking Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Regular Expressions or RegEX are used everywhere! If you aspire to be a Pentester, Threat Hunter, Programmer, Network Engineer, DevOps or really anything in technology today, RegEx is a skill all the greats have and the majority of the industry are terrible at. Come learn or brush up on your RegEx skills in on our live trainer.
-
-'.
 From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Hardwired', which is about 'Title: Hardwired
 Tags: Packet Hacking Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
@@ -2864,15 +2841,6 @@ Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
 
 Description:
 Donât know how to make a network cable and want to learn? Has it been years? Or do you think youâre a pro? Come see if you canâ¦ make the best cable at con by cut/wire/crimp.
-
-'.
-From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Linux Trainer', which is about 'Title: Linux Trainer
-Tags: Packet Hacking Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Knowing how to use the Linux command line is a critical skill for any good security practitioner. This trainer will have 10+ problems covering some of the most fundamental Linux commands. This trainer is for people new to field and for those who want to hone their Linux command line-fu.
 
 '.
 From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'NetworkOS', which is about 'Title: NetworkOS
@@ -2884,15 +2852,6 @@ Description:
 The Network-OS workshop will take you into the mysterious world which underpins modern computing and allows people to talk across the globe. This of course being the network itself. In this workshop you will familiarize yourself with the command line of network devices. Step by step, you will configure devices to talk to each other, share information about the computers connected to them, and relay their network information and traffic between each other. No experience needed, know how to type and copy/paste.
 
 '.
-From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Password Lab', which is about 'Title: Password Lab
-Tags: Packet Hacking Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
-
-Description:
-Follow real world password attack steps against a mock target in order to better understand how to protect yourself and improve the security of your passwords!
-
-'.
 From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Packet AI', which is about 'Title: Packet AI
 Tags: Packet Hacking Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
@@ -2900,6 +2859,24 @@ Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
 
 Description:
 Use machine learning with Python to detect attacks in network packets including DNS tunneling, FTP brute force, and HTTP scanning. We will be using various Python tools such as iPython notebooks, scapy, and scikit-learn. Some Python experience is recommended, but if you donât know Python, come prepared to start with our Python tutorial!
+
+'.
+From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Packet Detective', which is about 'Title: Packet Detective
+Tags: Packet Hacking Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Looking to upgrade your skills or see how you would fare in Capture The Packet? Come check out what Packet Detective has to offer! A step up in difficulty from Packet Inspector, Packet Detective will put your network hunting abilities to the test with real-world scenarios at the intermediate level. Take the next step in your journey towards network mastery in a friendly environment still focused on learning and take another step closer to preparing yourself for the competitive environment of Capture The Packet
+
+'.
+From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Linux Trainer', which is about 'Title: Linux Trainer
+Tags: Packet Hacking Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Knowing how to use the Linux command line is a critical skill for any good security practitioner. This trainer will have 10+ problems covering some of the most fundamental Linux commands. This trainer is for people new to field and for those who want to hone their Linux command line-fu.
 
 '.
 From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Packet Inspector', which is about 'Title: Packet Inspector
@@ -2911,13 +2888,49 @@ Description:
 The perfect introduction to network analysis, sniffing, and forensics. Do you want to understand the techniques people use to tap into a network, steal passwords and listen to conversations? Packet Inspector is the place to develop these skills! For well over a decade, the Wall of Sheep has shown people how important it is to use end-to-end encryption to keep sensitive information like passwords private. Using a license of the world famous Capture The Packet engine from Aries Security, we have created a unique way to teach hands-on skills in a controlled real-time environment.
 
 '.
-From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Packet Detective', which is about 'Title: Packet Detective
+From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Password Lab', which is about 'Title: Password Lab
 Tags: Packet Hacking Village | Creator Event
 When: Saturday, Aug 9, 10:00 - 17:59 PDT
 Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
 
 Description:
-Looking to upgrade your skills or see how you would fare in Capture The Packet? Come check out what Packet Detective has to offer! A step up in difficulty from Packet Inspector, Packet Detective will put your network hunting abilities to the test with real-world scenarios at the intermediate level. Take the next step in your journey towards network mastery in a friendly environment still focused on learning and take another step closer to preparing yourself for the competitive environment of Capture The Packet
+Follow real world password attack steps against a mock target in order to better understand how to protect yourself and improve the security of your passwords!
+
+'.
+From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'BotNet', which is about 'Title: BotNet
+Tags: Packet Hacking Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Join us for an interactive workshop where we will walk you through the ins and outs of botnet deployment and operation via a command and control web server. Geared towards beginners, this workshop offers a hands-on approach to understanding how botnets function. Youâll also learn an effective defense strategy against the botnet you have created. No experience needed we will give you everything you need!
+
+'.
+From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'RegEx Trainer', which is about 'Title: RegEx Trainer
+Tags: Packet Hacking Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Regular Expressions or RegEX are used everywhere! If you aspire to be a Pentester, Threat Hunter, Programmer, Network Engineer, DevOps or really anything in technology today, RegEx is a skill all the greats have and the majority of the industry are terrible at. Come learn or brush up on your RegEx skills in on our live trainer.
+
+'.
+From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'WalkThrough Workshops', which is about 'Title: WalkThrough Workshops
+Tags: Packet Hacking Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Come sit down and take a self guided journey to learn something hands on with us. We have an array of skills to learn including FleetDM, Linux, NetworkOS, Botnets, and others as well! We have people there to help answer your questions if things get a little dicey and make sure you have the best time while picking up something new.
+
+'.
+From 10:00 to 17:59, Packet Hacking Village is hosting '' to present 'Capture The Packet', which is about 'Title: Capture The Packet
+Tags: Packet Hacking Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 3-W303-W310 (Packet Hacking Village) - Map
+
+Description:
+Come compete in the worldâs most challenging cyber defense competition based on the Aries Security Cyber Range. Tear through the challenges, traverse a hostile enterprise class network, and diligently analyze what is found in order to make it out unscathed. Not only glory, but prizes await those that emerge victorious from this upgraded labyrinth, so only the best prepared and battle hardened will escape the crucible.
 
 '.
 From 10:15 to 10:30, Payment Village is hosting 'Leigh-Anne Galloway' to present 'Intro to village', which is about 'Title: Intro to village
@@ -3185,6 +3198,15 @@ SpeakerBio:  Wes Thurner
 No BIO available
 
 '.
+From 10:00 to 17:59, Social Engineering Community Village is hosting '' to present 'Social Engineering Community Village - Village Open', which is about 'Title: Social Engineering Community Village - Village Open
+Tags: Social Engineering Community Village | Creator Event
+When: Saturday, Aug 9, 10:00 - 17:59 PDT
+Where: LVCC West-Level 3-W317-W319 (Social Engineering Community Village) - Map
+
+Description:
+We're kicking off right at 1000! Don't forget to check out our Merch table in the back of the village!
+
+'.
 From 10:00 to 10:25, Social Engineering Community Village is hosting 'Matt Holland,Enrico Faccioli' to present '10 Lessons from the Frontlines of AI Vishing: From Zero to (Almost) Hero', which is about 'Title: 10 Lessons from the Frontlines of AI Vishing: From Zero to (Almost) Hero
 Tags: Social Engineering Community Village | Creator Talk/Panel
 When: Saturday, Aug 9, 10:00 - 10:25 PDT
@@ -3201,15 +3223,6 @@ Matt Holland is a startup co-founder and CISO who builds security solutions desi
 SpeakerBio:  Enrico Faccioli
 Enrico Faccioli is a London-based entrepreneur tackling AI-driven social engineering. His latest venture, vishr.ai, uses conversational AI to provide employees with realistic vishing simulations and hands-on training. Following his MSc in Finance from Warwick Business School, he moved from overseeing the tech strategy for L&G's real assets funds (Â£28bn AUM), into startup leadership as COO of the geospatial AI startup Gyana, before a breach of his own fuelled a pivot into solving critical security challenges.
 
-
-'.
-From 10:00 to 17:59, Social Engineering Community Village is hosting '' to present 'Social Engineering Community Village - Village Open', which is about 'Title: Social Engineering Community Village - Village Open
-Tags: Social Engineering Community Village | Creator Event
-When: Saturday, Aug 9, 10:00 - 17:59 PDT
-Where: LVCC West-Level 3-W317-W319 (Social Engineering Community Village) - Map
-
-Description:
-We're kicking off right at 1000! Don't forget to check out our Merch table in the back of the village!
 
 '.
 From 10:30 to 10:55, Social Engineering Community Village is hosting 'Mansoor Ahmad,Brad Ammerman' to present 'Hacking the First Amendment: A press photographer's perspective on Red Teaming scenarios', which is about 'Title: Hacking the First Amendment: A press photographer's perspective on Red Teaming scenarios
@@ -3804,19 +3817,6 @@ If you've lost something, the only way to check on it (or reclaim it) is by goin
 The Lost & Found department plans to be open Thursday - Saturday, during all hours that the conference operates. On Sunday, the Lost & Found department will open with the venue at 08:00, but will close at the beginning of DEF CON 33 Closing Ceremonies (15:00). Shortly thereafter, all remaining lost items will be transferred to the LVCC. If you need to reach LVCC's Lost & Found, you may call LVCC Dispatch at +1 (702) 892-7400.
 
 '.
-From 10:00 to 01:59, Social Gatherings/Events is hosting '' to present 'Lost & Found', which is about 'Title: Lost & Found
-Tags: Misc
-When: Saturday, Aug 9, 10:00 - 01:59 PDT
-Where: LVCCW Level 2-W238 - Map
-
-Description:
-If you find something that seems to have been lost, please take that item to the nearest NFO Node. The item will enter the DEF CON Lost & Found system. 
-
-If you've lost something, the only way to check on it (or reclaim it) is by going to the Lost & Found department yourself. The Lost & Found department is in room LVCC - L2 - W238. You may also call Lost & Found at +1 (702) 477-5019.
-
-The Lost & Found department plans to be open Thursday - Saturday, during all hours that the conference operates. On Sunday, the Lost & Found department will open with the venue at 08:00, but will close at the beginning of DEF CON 33 Closing Ceremonies (15:00). Shortly thereafter, all remaining lost items will be transferred to the LVCC. If you need to reach LVCC's Lost & Found, you may call LVCC Dispatch at +1 (702) 892-7400.
-
-'.
 From 10:00 to 11:45, Telecom Village is hosting 'Vinod Shrimali' to present 'ONI: Shadow Surveillance  via VOLTE malware', which is about 'Title: ONI: Shadow Surveillance  via VOLTE malware
 Tags: Telecom Village | Creator Workshop
 When: Saturday, Aug 9, 10:00 - 11:45 PDT
@@ -4325,6 +4325,23 @@ Nishant Sharma is a seasoned cybersecurity professional with deep expertise in c
 
 
 '.
+From 11:00 to 11:59, Contests is hosting '' to present 'Radio Frequency Capture the Flag', which is about 'Title: Radio Frequency Capture the Flag
+Tags: Contest | Radio Frequency Village | Radio Frequency Capture the Flag
+When: Saturday, Aug 9, 11:00 - 11:59 PDT
+Where: Online
+
+Description:
+In this game capture the flag you will be presented with real configurations of real wireless and radio technologies to attack. Practice your skill and learn new ones from Radio Frequency IDentification (RFID) through Software Defined Radio (SDR) and up to Bluetooth and WiFi. There may even be Infrared, if you have the eye for it.
+
+RF Hackers Sanctuary is once again holding the Radio Frequency Capture the Flag (RFCTF) at DEF CON 32. RFHS runs this game to teach security concepts and to give people a safe and legal way to practice attacks against new and old wireless technologies.
+
+We cater to both those who are new to radio communications as well as to those who have been playing for a long time. We are looking for inexperienced players on up to the SIGINT secret squirrels to play our games. The RFCTF can be played with a little knowledge, a pen tester's determination, and $0 to $$$$$ worth of special equipment. Our virtual RFCTF can be played completely remotely without needing any specialized equipment at all, just using your web browser! The key is to read the clues, determine the goal of each challenge, and have fun learning.
+
+This game doesn't let you sit still either, as there are numerous fox hunts, testing your skill in tracking various signals. If running around the conference looking for WiFi, Bluetooth, or even a Tire Pressure Monitoring System (TPMS) device sounds like fun, we are your source of a higher step count.
+
+There will be clues everywhere, and we will provide periodic updates via discord and twitter. Make sure you pay attention to what's happening at the RFCTF desk, #rfctf on our discord, on Twitter @rf_ctf, @rfhackers, and the interwebz, etc. If you have a question - ASK! We may or may not answer, at our discretion.
+
+'.
 From 11:00 to 11:59, Crypto Privacy Village is hosting 'Patrick Walsh' to present 'Illuminating the Dark Corners of AI: Extracting Private Data from AI Models and Vector Embeddings', which is about 'Title: Illuminating the Dark Corners of AI: Extracting Private Data from AI Models and Vector Embeddings
 Tags: Crypto Privacy Village | Creator Talk/Panel
 When: Saturday, Aug 9, 11:00 - 11:59 PDT
@@ -4338,43 +4355,34 @@ Patrick Walsh has an over 20 year history of running threat research and enginee
 
 
 '.
-From 11:00 to 11:30, Cryptocurrency Community is hosting 'Chelsea Button,Nick "c7five" Percoco,Elaine Shi' to present 'Cryptocurrency Weekend Keynote', which is about 'Title: Cryptocurrency Weekend Keynote
+From 11:00 to 11:30, Cryptocurrency Community is hosting 'Chelsea Button,Elaine Shi,Afonso Tinoco' to present 'Oblivious computation, from theory to practice', which is about 'Title: Oblivious computation, from theory to practice
 Tags: Cryptocurrency Community | Creator Talk/Panel
 When: Saturday, Aug 9, 11:00 - 11:30 PDT
 Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C105 (Community Stage) - Map
 
 Description:
-Reporting on the state of affairs in Cryptocurrency trends, Nick and Elaine give insight from their esteemed positions in industry and academy. Additionally, we get a status report of workshops, showcases, and programs in the Cryptocurrency areas of DEF CON. We announce the teams competing in the Cryptocurrency Cyber Challenge, and give an overview of what's available in the vending area. Meet the organizers of years of cryptocurrency content at DEF CON and bring your questions to the Community Stage!
+Traditional encrypted databases encrypt only the data contents but do not hide accesses to the data. Such accesses can leak highly sensitive information in practical applications like contact discovery, blockchains, and large language models. In this talk, Elaine Shi will describe what is oblivious computation, and how to construct simple and provably secure algorithms for oblivious computation. She will also cover the broad applications of oblivious computation including in Signal and Ethereum's (intended) use cases.
 
-Speakers:Chelsea Button,Nick "c7five" Percoco,Elaine Shi
+Speakers:Chelsea Button,Elaine Shi,Afonso Tinoco
 
 SpeakerBio:  Chelsea Button, Cryptocurrency Education Initiative
 Chelsea is a lawyer specializing in consumer finance, data and technology. She advises clients on updates in the law and defends them in litigation. She is a cryptocurrency advocate, with multiple professional publications.
 
-SpeakerBio:  Nick "c7five" Percoco, CSO at Kraken
-Nick Percoco is the Chief Security Officer at Kraken, where he spearheads the frameworks and protocols that ensure a secure and seamless trading experience for clients. A recognized leader in the security and hacker community, Nick brings nearly 30 years of expertise in cybersecurity and technology, shaping the industry's approach to threat defense and risk mitigation. A dedicated contributor to the security community, he founded THOTCON, Chicagoâs premier non-profit hacking conference, and has been a contributor to secure infrastructure and network design at DEFCON, the worldâs largest hacking conference, since 2017. An accomplished speaker and researcher, Nick has presented groundbreaking work on cryptocurrency security, targeted malware, mobile security (iOS & Android), and IoT vulnerabilities at leading global forums, including Black Hat, RSA Conference, DEFCON, CfC St. Moritz, and SXSW.
-
 SpeakerBio:  Elaine Shi, Professor at Carnegie Mellon University
-Elaine Shi is a Packard Fellow, Sloan Fellow, ACM Fellow, and IACR Fellow. A Professor with a joint appointment in CSD and ECE at Carnegie Mellon University, Elaine is also an Adjunct Professor of Computer Science at the University of Maryland. Her research interests include cryptography, security, mechanism design, algorithms, foundations of blockchains, and programming languages. Elain is a co-founder of Oblivious Labs, Inc. My research on Oblivious RAM and differentially private algorithms have been adopted by Signal, Meta, and Google.
+Elaine Shi is a professor in Carnegie Mellon University.  Her research interests include cryptography, security, mechanism design, algorithms, foundations of blockchains, and programming languages. She is a co-founder of Oblivious Labs, Inc. Her research on Oblivious RAM and differentially private algorithms have been adopted by Signal, Meta, and Google. She is a Packard Fellow, a Sloan Fellow, an ACM Fellow, and an IACR Fellow.
+
+SpeakerBio:  Afonso Tinoco
+Afonso Tinoco is a PhD candidate currently on leave from Carnegie Mellon University and University of Lisbon. His research interests include Applied Cryptography and Distributed System Verification. He is a Co-Founder and a Research Engineer at Oblivious Labs, Inc. (https://obliviouslabs.com). Oblivious Labâs mission is to develop open-source toolchains for Oblivious Computation (https://github.com/obliviouslabs/), with the goal of accelerating the wide deployment of Oblivious Computations. He is also a co-captain of STT (https://sectt.github.io/) , the CTF team of University of Lisbon.
 
 
 '.
-From 11:30 to 11:59, Cryptocurrency Community is hosting 'Nick "c7five" Percoco,Kitboga' to present 'Anatomy of a Crypto Scam', which is about 'Title: Anatomy of a Crypto Scam
+From 11:30 to 11:59, Cryptocurrency Community is hosting '' to present 'Drain and Approval Attacks', which is about 'Title: Drain and Approval Attacks
 Tags: Cryptocurrency Community | Creator Talk/Panel
 When: Saturday, Aug 9, 11:30 - 11:59 PDT
 Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C105 (Community Stage) - Map
 
 Description:
-Nick and Kit team up to explain a story of fraud and scam as often reported in the news. A method of deceit with a unique financial angle is introduced, starting with a video to illustrate the problem. History of the actors involved in the analysis and security research reveals their complementary partnership, where they observe the scam to develop defense methods. A breakdown of the scam workflow follows its progress and funds are tracked as they move from the victim's posession. Finally, advice is given how to protect from becoming a victim of similar fraud.
-
-Speakers:Nick "c7five" Percoco,Kitboga
-
-SpeakerBio:  Nick "c7five" Percoco, CSO at Kraken
-Nick Percoco is the Chief Security Officer at Kraken, where he spearheads the frameworks and protocols that ensure a secure and seamless trading experience for clients. A recognized leader in the security and hacker community, Nick brings nearly 30 years of expertise in cybersecurity and technology, shaping the industry's approach to threat defense and risk mitigation. A dedicated contributor to the security community, he founded THOTCON, Chicagoâs premier non-profit hacking conference, and has been a contributor to secure infrastructure and network design at DEFCON, the worldâs largest hacking conference, since 2017. An accomplished speaker and researcher, Nick has presented groundbreaking work on cryptocurrency security, targeted malware, mobile security (iOS & Android), and IoT vulnerabilities at leading global forums, including Black Hat, RSA Conference, DEFCON, CfC St. Moritz, and SXSW.
-
-SpeakerBio:  Kitboga, Kraken
-With more than 3M subscribers on YouTube and beyond, Kit pioneered scambaiting. âEveryday there are scammers taking advantage of people. I call them to waste their time, walk people through their "script" and lies, report info when I can, and otherwise make light of a dark situation.â
-
+In this half hour overview, village residents Utvecklas and George explain the basics of how Drain and Approval Attacks work. Judging from attendance at yesterday's workshop of the same name, we get to hear if this particular attack is easy to identify, and how likely we are to be victims. A review of lessons learned in the workshop lead to sneak previews of Georg and Utvecklas' next generation of research and likely outcomes.
 
 '.
 From 11:00 to 11:59, DEF CON Groups VR (DCGVR) is hosting 'Manfred' to present 'From Cheat Engine to GPT: AI Hacks So Good, Youâll Get Banned IRL', which is about 'Title: From Cheat Engine to GPT: AI Hacks So Good, Youâll Get Banned IRL
@@ -4658,7 +4666,7 @@ Marius Muench is an assistant professor at the University of Birmingham. His res
 From 11:00 to 11:45, Ham Radio Village is hosting 'Nate "N8MOR" Moore' to present 'HAM RADIO VS. OPPRESSION â HOW THE AIRWAVES DEFY CENSORSHIP', which is about 'Title: HAM RADIO VS. OPPRESSION â HOW THE AIRWAVES DEFY CENSORSHIP
 Tags: Ham Radio Village | Creator Talk/Panel
 When: Saturday, Aug 9, 11:00 - 11:45 PDT
-Where: LVCC West-Level 3-W321 (Ham Radio Village) - Map
+Where: LVCC West-Level 3-W320 (Ham Radio Village) - Map
 
 Description:
 In this talk, we'll explore how Ham radio can help facilitate open and uncensored communications in situations where traditional communications strictly controlled or even blacked out.
@@ -5983,7 +5991,7 @@ Globe-trotting DJ, DJ Name, has made a name for himself/herself by igniting danc
 From 11:00 to 17:59, Social Gatherings/Events is hosting '' to present 'Free Ham Radio Exams', which is about 'Title: Free Ham Radio Exams
 Tags: Event | Ham Radio Village
 When: Saturday, Aug 9, 11:00 - 17:59 PDT
-Where: LVCC West-Level 3-W320 (Ham Radio Exams) - Map
+Where: LVCC West-Level 3-W321 (Ham Radio Exams) - Map
 
 Description:
 The Ham Radio Village is excited to return to DEF CON 33, offering you the opportunity "Access Everything" by gaining you access to the airwaves though free amateur radio license exams! Ham radio has a long history with ham radio operators being considered the original electronic hackers, innovating long before computers, integrated circuits, or even transistors were invented. The Ham Radio Village keeps this spirit alive by providing free ham radio license exams at DEF CON.
@@ -6722,7 +6730,7 @@ Cooper has many years of security research experience on tools of surveillance u
 From 12:00 to 12:30, Ham Radio Village is hosting 'Jon "K4CHN" Marler' to present 'What's new in amateur radio digital modes?', which is about 'Title: What's new in amateur radio digital modes?
 Tags: Ham Radio Village | Creator Talk/Panel
 When: Saturday, Aug 9, 12:00 - 12:30 PDT
-Where: LVCC West-Level 3-W321 (Ham Radio Village) - Map
+Where: LVCC West-Level 3-W320 (Ham Radio Village) - Map
 
 Description:
 This beginner-friendly presentation introduces amateur radio operators and enthusiasts to popular digital modes, highlighting recent advances and innovations. Attendees will learn the basics of well-known digital modes such as APRS, FT8, FT4, and JS8Call, and discover new and emerging technologies, including FreeDVâs RADE and the open-source M17 protocol. The session emphasizes accessible and affordable equipment and software solutions, ensuring that both new and returning participants leave with fresh insights and practical guidance for exploring digital amateur radio.
@@ -6899,6 +6907,18 @@ SpeakerBio:  Ray [REDACTED], Producer at Darknet Diaries
 No BIO available
 
 '.
+From 12:00 to 12:59, OWASP Community is hosting 'Spyros Gasteratos' to present 'Let's Play! OWASP Cornucopia Engineers and Exploits the Quest for Security', which is about 'Title: Let's Play! OWASP Cornucopia Engineers and Exploits the Quest for Security
+Tags: OWASP Community | Creator Event
+When: Saturday, Aug 9, 12:00 - 12:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C206 (OWASP Community) - Map
+
+Description:
+OWASP Cornucopia is a card game to assist software development teams identify security requirements in agile, conventional, and formal software development processes. It is language, platform, and technology agnostic. Having celebrated its 10th anniversary last year, Cornucopia has been refreshed including an updated full version of the game, a new Website App Edition updated with the OWASP ASVS 4.0 mapping and a Mobile App Edition with the OWASP MASVS 2.0 mapping for mobile development.
+
+SpeakerBio:  Spyros Gasteratos
+No BIO available
+
+'.
 From 12:00 to 12:30, OWASP Community is hosting 'Phillip Wylie' to present 'Oh hai! Meet Philip Wylie', which is about 'Title: Oh hai! Meet Philip Wylie
 Tags: OWASP Community | Creator Event
 When: Saturday, Aug 9, 12:00 - 12:30 PDT
@@ -6920,18 +6940,6 @@ As a passionate educator, Phillip served as an Adjunct Instructor at Dallas Coll
 
 Phillip is a sought-after conference speaker, hands-on workshop instructor, and dedicated mentor to cybersecurity professionals worldwide.
 
-
-'.
-From 12:00 to 12:59, OWASP Community is hosting 'Spyros Gasteratos' to present 'Let's Play! OWASP Cornucopia Engineers and Exploits the Quest for Security', which is about 'Title: Let's Play! OWASP Cornucopia Engineers and Exploits the Quest for Security
-Tags: OWASP Community | Creator Event
-When: Saturday, Aug 9, 12:00 - 12:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 4-Communities-C206 (OWASP Community) - Map
-
-Description:
-OWASP Cornucopia is a card game to assist software development teams identify security requirements in agile, conventional, and formal software development processes. It is language, platform, and technology agnostic. Having celebrated its 10th anniversary last year, Cornucopia has been refreshed including an updated full version of the game, a new Website App Edition updated with the OWASP ASVS 4.0 mapping and a Mobile App Edition with the OWASP MASVS 2.0 mapping for mobile development.
-
-SpeakerBio:  Spyros Gasteratos
-No BIO available
 
 '.
 From 12:30 to 14:30, OWASP Community is hosting 'Jason "jhaddix" Haddix' to present 'Hack Your Career with JHaddix', which is about 'Title: Hack Your Career with JHaddix
@@ -8102,23 +8110,6 @@ Gautam Peri is a Senior Security Engineer in EPSF SERPENT (Service Pentest) team
 
 
 '.
-From 13:30 to 15:30, Cloud Village is hosting 'Toni de la Fuente,Pedro Martin' to present 'Prowler - Maximize your Cloud Security Compliance Assessments with Open Source and a pinch of AI', which is about 'Title: Prowler - Maximize your Cloud Security Compliance Assessments with Open Source and a pinch of AI
-Tags: Cloud Village | Creator Event
-When: Saturday, Aug 9, 13:30 - 15:30 PDT
-Where: LVCC West-Level 3-W312 (Cloud Village Labs) - Map
-
-Description:
-Cloud security and compliance are no longer optionalâthey are essential for modern organizations operating in dynamic, multi-cloud environments. This hands-on workshop dives into Prowler, a powerful open-source tool designed to assess and improve your cloud security posture, with a special focus on AWS, Azure, GCP and Kubernetes environments.Over the course of two hours, participants will learn how to deploy and customize Prowler to perform automated compliance checks aligned with industry standards such as CIS, GDPR, HIPAA, and more. The session will also introduce practical techniques for extending Prowlerâs capabilities using scripting, integrations, and basic AI-assisted analysis to prioritize risks and surface actionable insights.
-
-Speakers:Toni de la Fuente,Pedro Martin
-
-SpeakerBio:  Toni de la Fuente
-Toni de la Fuente, Prowler Open Source creator and CEO, has profoundly impacted cybersecurity. His AWS background and passion for FLOSS, cloud computing, and information security have fueled contributions like phpRADmin and Alfresco BART. An esteemed speaker at BlackHat and DEFCON, de la Fuente champions open-source solutions and cloud security advancements.
-
-SpeakerBio:  Pedro Martin
-No BIO available
-
-'.
 From 13:30 to 14:45, Cloud Village is hosting 'Ryan Nolette,Albin Vattakattu,Kasimir Schulz,Justin,Wesley' to present 'Doing bad things for the right reasons: Vulnerability Disclosure at Amazon and AWS', which is about 'Title: Doing bad things for the right reasons: Vulnerability Disclosure at Amazon and AWS
 Tags: Cloud Village | Creator Event
 When: Saturday, Aug 9, 13:30 - 14:45 PDT
@@ -8148,6 +8139,23 @@ No BIO available
 SpeakerBio:  Justin
 No BIO available
 SpeakerBio:  Wesley
+No BIO available
+
+'.
+From 13:30 to 15:30, Cloud Village is hosting 'Toni de la Fuente,Pedro Martin' to present 'Prowler - Maximize your Cloud Security Compliance Assessments with Open Source and a pinch of AI', which is about 'Title: Prowler - Maximize your Cloud Security Compliance Assessments with Open Source and a pinch of AI
+Tags: Cloud Village | Creator Event
+When: Saturday, Aug 9, 13:30 - 15:30 PDT
+Where: LVCC West-Level 3-W312 (Cloud Village Labs) - Map
+
+Description:
+Cloud security and compliance are no longer optionalâthey are essential for modern organizations operating in dynamic, multi-cloud environments. This hands-on workshop dives into Prowler, a powerful open-source tool designed to assess and improve your cloud security posture, with a special focus on AWS, Azure, GCP and Kubernetes environments.Over the course of two hours, participants will learn how to deploy and customize Prowler to perform automated compliance checks aligned with industry standards such as CIS, GDPR, HIPAA, and more. The session will also introduce practical techniques for extending Prowlerâs capabilities using scripting, integrations, and basic AI-assisted analysis to prioritize risks and surface actionable insights.
+
+Speakers:Toni de la Fuente,Pedro Martin
+
+SpeakerBio:  Toni de la Fuente
+Toni de la Fuente, Prowler Open Source creator and CEO, has profoundly impacted cybersecurity. His AWS background and passion for FLOSS, cloud computing, and information security have fueled contributions like phpRADmin and Alfresco BART. An esteemed speaker at BlackHat and DEFCON, de la Fuente champions open-source solutions and cloud security advancements.
+
+SpeakerBio:  Pedro Martin
 No BIO available
 
 '.
@@ -9830,7 +9838,7 @@ Accesses to the blockchain's state and logs leak highly sensitive information su
 Speakers:Elaine Shi,Afonso Tinoco
 
 SpeakerBio:  Elaine Shi, Professor at Carnegie Mellon University
-Elaine Shi is a Packard Fellow, Sloan Fellow, ACM Fellow, and IACR Fellow. A Professor with a joint appointment in CSD and ECE at Carnegie Mellon University, Elaine is also an Adjunct Professor of Computer Science at the University of Maryland. Her research interests include cryptography, security, mechanism design, algorithms, foundations of blockchains, and programming languages. Elain is a co-founder of Oblivious Labs, Inc. My research on Oblivious RAM and differentially private algorithms have been adopted by Signal, Meta, and Google.
+Elaine Shi is a professor in Carnegie Mellon University.  Her research interests include cryptography, security, mechanism design, algorithms, foundations of blockchains, and programming languages. She is a co-founder of Oblivious Labs, Inc. Her research on Oblivious RAM and differentially private algorithms have been adopted by Signal, Meta, and Google. She is a Packard Fellow, a Sloan Fellow, an ACM Fellow, and an IACR Fellow.
 
 SpeakerBio:  Afonso Tinoco
 Afonso Tinoco is a PhD candidate currently on leave from Carnegie Mellon University and University of Lisbon. His research interests include Applied Cryptography and Distributed System Verification. He is a Co-Founder and a Research Engineer at Oblivious Labs, Inc. (https://obliviouslabs.com). Oblivious Labâs mission is to develop open-source toolchains for Oblivious Computation (https://github.com/obliviouslabs/), with the goal of accelerating the wide deployment of Oblivious Computations. He is also a co-captain of STT (https://sectt.github.io/) , the CTF team of University of Lisbon.
@@ -10323,7 +10331,7 @@ Andy Hull (he/him) has been abusing computers since they came with cassettes and
 From 14:00 to 14:59, Ham Radio Village is hosting 'Orv "W6BI" Beach' to present 'Creating a Ham Radio IP Network with AREDN Software', which is about 'Title: Creating a Ham Radio IP Network with AREDN Software
 Tags: Ham Radio Village | Creator Talk/Panel
 When: Saturday, Aug 9, 14:00 - 14:59 PDT
-Where: LVCC West-Level 3-W321 (Ham Radio Village) - Map
+Where: LVCC West-Level 3-W320 (Ham Radio Village) - Map
 
 Description:
 Orv W6BI will discuss how to create a ham radio IP network with off the shelf hardware and open source software.
@@ -11594,47 +11602,6 @@ BradÃ¡n graduated third grade with a degree in crayon. This, combined with his
 
 
 '.
-From 15:00 to 17:59, Biohacking Village is hosting '' to present 'Sector Down', which is about 'Title: Sector Down
-Tags: Biohacking Village | Creator Event
-When: Saturday, Aug 9, 15:00 - 17:59 PDT
-Where: LVCC West-Level 1-Exhibit Hall 2-606 (Biohacking Village)-Device Lab - Map
-
-Description:
-Sector Down is a high-stakes, immersive multiplayer card game where critical infrastructure and cybersecurity collide. Designed for teams of 5, 10, 15, or 20 players, this simulation pits defenders and attackers against each other in a race against the inevitable: The Doom Clock.
-
-ð¡ï¸Defend or Disrupt
-
-Players are divided into two sides:
-- Blue Team â Critical infrastructure defenders. Each Blue player manages a sector with three vital facilities: Physical, Network, and Financial. Their mission? Keep the systems alive and online while working together to run out the clock.
-- Red Team â Offensive disruptors. Red players attempt to take down facilities using calculated cyberattacks and chaos tactics. Their goal: force sector collapses and trigger the Doom Clock.
-
-â±ï¸ Time-Based Tactics
-
-The game progresses in strategic phases where players draw cards, take action using worker tokens, and discard based on hand limits. Watch out for unpredictable âWhite Playsâârandom game events that add surprise twists every few rounds.
-
-ð¥ The Doom Clock
-
-When half of all sectors or any core sectors go down, the Doom Clock starts ticking. Teams must respond fast: Blue must recover systems before the countdown hits zero, or Red claims victory.
-
-ð¤ Team Dynamics
-
-
-Worker Sharing: Blue teammates can lend each other resources in bonus phases.
-Overtime Mechanics: When the pressureâs on, Blue players can double down on effortâwith the tradeoff of worker exhaustion in future turns.
-
-
-ð® Why You Should Play
-
-
-Dive into a realistic cybersecurity crisis.
-Learn how interdependent systems behave under attack.
-Collaborate and compete with hackers, healthcare defenders, and critical infrastructure enthusiasts.
-Engage with a visually rich map interface and fast-paced card dynamics.
-
-
-Whether you're a strategist, a chaos agent, or just love competitive simulation, Sector Down challenges your mind and your teamwork. Can your team hold the line or will your sector go dark?â Come play during DEF CON 33.
-
-'.
 From 15:00 to 17:59, Biohacking Village is hosting 'Jack Voltaic' to present 'accessDenied: Step Into the Scenario. Deal the Consequences.', which is about 'Title: accessDenied: Step Into the Scenario. Deal the Consequences.
 Tags: Biohacking Village | Creator Event
 When: Saturday, Aug 9, 15:00 - 17:59 PDT
@@ -11675,6 +11642,47 @@ Unclassified
 
 With JV 4.0, ACIâs critical infrastructure resilience program will mature and transition. Through partnerships with other academic and policy communities, ACI seeks to foster the growth of JV-inspired practices. Multiple initiatives through 2025 will build upon the momentum and lessons of JV 1.0 - 3.0.
 
+
+'.
+From 15:00 to 17:59, Biohacking Village is hosting '' to present 'Sector Down', which is about 'Title: Sector Down
+Tags: Biohacking Village | Creator Event
+When: Saturday, Aug 9, 15:00 - 17:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 2-606 (Biohacking Village)-Device Lab - Map
+
+Description:
+Sector Down is a high-stakes, immersive multiplayer card game where critical infrastructure and cybersecurity collide. Designed for teams of 5, 10, 15, or 20 players, this simulation pits defenders and attackers against each other in a race against the inevitable: The Doom Clock.
+
+ð¡ï¸Defend or Disrupt
+
+Players are divided into two sides:
+- Blue Team â Critical infrastructure defenders. Each Blue player manages a sector with three vital facilities: Physical, Network, and Financial. Their mission? Keep the systems alive and online while working together to run out the clock.
+- Red Team â Offensive disruptors. Red players attempt to take down facilities using calculated cyberattacks and chaos tactics. Their goal: force sector collapses and trigger the Doom Clock.
+
+â±ï¸ Time-Based Tactics
+
+The game progresses in strategic phases where players draw cards, take action using worker tokens, and discard based on hand limits. Watch out for unpredictable âWhite Playsâârandom game events that add surprise twists every few rounds.
+
+ð¥ The Doom Clock
+
+When half of all sectors or any core sectors go down, the Doom Clock starts ticking. Teams must respond fast: Blue must recover systems before the countdown hits zero, or Red claims victory.
+
+ð¤ Team Dynamics
+
+
+Worker Sharing: Blue teammates can lend each other resources in bonus phases.
+Overtime Mechanics: When the pressureâs on, Blue players can double down on effortâwith the tradeoff of worker exhaustion in future turns.
+
+
+ð® Why You Should Play
+
+
+Dive into a realistic cybersecurity crisis.
+Learn how interdependent systems behave under attack.
+Collaborate and compete with hackers, healthcare defenders, and critical infrastructure enthusiasts.
+Engage with a visually rich map interface and fast-paced card dynamics.
+
+
+Whether you're a strategist, a chaos agent, or just love competitive simulation, Sector Down challenges your mind and your teamwork. Can your team hold the line or will your sector go dark?â Come play during DEF CON 33.
 
 '.
 From 15:00 to 15:30, Biohacking Village is hosting 'PamirAI' to present 'How AI + Hardware can Transforming Point-of-Care Workflows', which is about 'Title: How AI + Hardware can Transforming Point-of-Care Workflows
@@ -13382,6 +13390,18 @@ No BIO available
 SpeakerBio:  Michael Specter, Georgia Tech
 Dr. Michael specter is an Assistant Professor, Computer Science and in Cybersecurity & Privacy at Georgia Tech. His research focuses on systems security and applied cryptography, particularly in areas relevant to public policy. Topics of interest include surveillance, cryptographic accountability, content moderation, misinformation, and elections security. He is well-known in the election security community for his study and critiques of both the Voatz and Democracy Live Internet voting systems.
 
+
+'.
+From 16:30 to 17:15, AI Village is hosting 'Sven Cattell' to present 'âSecure AIâ is 20 years old', which is about 'Title: âSecure AIâ is 20 years old
+Tags: AI Village | Creator Talk/Panel
+When: Saturday, Aug 9, 16:30 - 17:15 PDT
+Where: LVCC West-Level 2-W231-W232-(Creator Stage 2) W232 - Map
+
+Description:
+Machine Learning (ML) security is far older than what most people think. The first documented "vulnerability" in a ML model dates back to 2004. There are several well oiled teams that have been managing AI risk for over a decade. A new wave of âAI red teamersâ who donât know the history and the purpose are here. Some are doing brand safety work by making it harder for LLMs to say bad things. Others are doing safety assessments, like bias testing. Both of these arenât really âred teamingâ as there isnât an adversary. The term is getting abused by many, including myself as I organized the misnamed Generative Red Team at DEFCON 31. There are new aspects to the field of ML Security, but itâs not that different. We will go over the history and how you should learn about the field to be most effective.
+
+SpeakerBio:  Sven Cattell
+No BIO available
 
 '.
 From 16:00 to 16:30, AppSec Village is hosting 'Uday' to present 'Desktop Applications: Yes, We Still Exist in the Era of AI!!!', which is about 'Title: Desktop Applications: Yes, We Still Exist in the Era of AI!!!
@@ -15203,6 +15223,24 @@ His background is security consulting and penetration testing for critical infra
 
 
 '.
+From 17:00 to 17:59, Cryptocurrency Community is hosting 'Nick "c7five" Percoco,Kitboga' to present 'Anatomy of a Crypto Scam', which is about 'Title: Anatomy of a Crypto Scam
+Tags: Cryptocurrency Community | Creator Talk/Panel
+When: Saturday, Aug 9, 17:00 - 17:59 PDT
+Where: LVCC West-Level 2-W228-W229-(Creator Stage 4) W228 - Map
+
+Description:
+Nick and Kit team up to explain a story of fraud and scam as often reported in the news. A method of deceit with a unique financial angle is introduced, starting with a video to illustrate the problem. History of the actors involved in the analysis and security research reveals their complementary partnership, where they observe the scam to develop defense methods. A breakdown of the scam workflow follows its progress and funds are tracked as they move from the victim's possession. Finally, advice is given how to protect from becoming a victim of similar fraud.
+
+Speakers:Nick "c7five" Percoco,Kitboga
+
+SpeakerBio:  Nick "c7five" Percoco, CSO at Kraken
+Nick Percoco is the Chief Security Officer at Kraken, where he spearheads the frameworks and protocols that ensure a secure and seamless trading experience for clients. A recognized leader in the security and hacker community, Nick brings nearly 30 years of expertise in cybersecurity and technology, shaping the industry's approach to threat defense and risk mitigation. A dedicated contributor to the security community, he founded THOTCON, Chicagoâs premier non-profit hacking conference, and has been a contributor to secure infrastructure and network design at DEFCON, the worldâs largest hacking conference, since 2017. An accomplished speaker and researcher, Nick has presented groundbreaking work on cryptocurrency security, targeted malware, mobile security (iOS & Android), and IoT vulnerabilities at leading global forums, including Black Hat, RSA Conference, DEFCON, CfC St. Moritz, and SXSW.
+
+SpeakerBio:  Kitboga, Kraken
+With more than 3M subscribers on YouTube and beyond, Kit pioneered scambaiting. âEveryday there are scammers taking advantage of people. I call them to waste their time, walk people through their "script" and lies, report info when I can, and otherwise make light of a dark situation.â
+
+
+'.
 From 17:00 to 17:59, DEF CON Groups VR (DCGVR) is hosting '' to present 'Fireside Chat - Lessons for the younger me.', which is about 'Title: Fireside Chat - Lessons for the younger me.
 Tags: DEF CON Groups VR (DCGVR) | Creator Talk/Panel
 When: Saturday, Aug 9, 17:00 - 17:59 PDT
@@ -16210,6 +16248,33 @@ None
 Pre-Qualification
 
 No
+
+'.
+From 20:00 to 23:59, Social Gatherings/Events is hosting '' to present 'Movie Night', which is about 'Title: Movie Night
+Tags: Event
+When: Saturday, Aug 9, 20:00 - 23:59 PDT
+Where: LVCC North-Level 2-N257 (Workshops) - Map
+
+Description:
+Friday
+
+Aniara
+
+Earth has been rendered uninhabitable, prompting mass migration from earth to mars. When one such routine trip veers off course, the passengers of the Aniara struggle to cope with their new lives.
+
+Prospect
+
+A teenage girl named Cee and her father Damon land on a poisonous forest moon to mine for valuable gems. A series of betrayals, alliances, and conflicts with mercenaries and rival prospectors make their quest increasingly perilous.
+
+Saturday
+
+Enemy of the State
+
+A labor lawyer becomes the target of a cover surveillance operation after unwittingly receiving evidence of a political assassination. Gene Hackmann co-stars as a former intelligence operative who helps him evade the rogue agents.
+
+Sunshine
+
+A group of Astronauts Aboard the Icarus II are sent on a dangerous mission to reignite the dying sun.
 
 '.
 From 20:00 to 21:59, Social Gatherings/Events is hosting '' to present 'Conference Planners Meetup', which is about 'Title: Conference Planners Meetup

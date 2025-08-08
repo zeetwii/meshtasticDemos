@@ -11,6 +11,19 @@ For DEF CON 33, the gathering point is "The Spot" by the North Entrance of the L
 Whether you're a seasoned runner or looking for something different, defcon.run offers a unique way to connect with other hackers and kick off your day. For more details and to sign up, visit defcon.run.
 
 '.
+From 08:00 to 16:59, Social Gatherings/Events is hosting '' to present 'Merch (formerly swag) Area Open -- README', which is about 'Title: Merch (formerly swag) Area Open -- README
+Tags: Misc
+When: Thursday, Aug 7, 08:00 - 16:59 PDT
+Where: LVCC West-Level 1-Exhibit Hall 4-902 (Merch) - Map
+
+Description:
+All merch sales are USD CASH ONLY. No cards will be accepted.
+
+The published hours for the merch area are only an approximation: supplies are limited, and when merch is sold out, the merch area will close for the year. (We intend to update this schedule to reflect their true operating status, but this is strictly best-effort.) 
+
+Note that the closing hours here are when sales must have ended. For example, if sales must end by 18:00, and we estimate that it will take 2 hours to clear the queue, doors are likely to close around 16:00. Because of this dynamic nature, we can't predict the length of the line or when doors will be closed.
+
+'.
 From 08:00 to 18:59, Social Gatherings/Events is hosting '' to present 'Human Registration Open', which is about 'Title: Human Registration Open
 Tags: Misc
 When: Thursday, Aug 7, 08:00 - 18:59 PDT
@@ -88,7 +101,7 @@ If you have questions about anything regarding human registration that are not a
 From 10:00 to 17:59, Contests is hosting '' to present 'Code Breaker Challenge', which is about 'Title: Code Breaker Challenge
 Tags: Contest | Code Breaker | Code Breaker Challenge
 When: Thursday, Aug 7, 10:00 - 17:59 PDT
-Where: Unknown
+Where: Online
 
 Description:
 The Code Breaker Challenge is an advanced cryptographic puzzle designed for DEF CON attendees who want to push their problem-solving skills to the limit. Anyone who successfully cracks the code will receive an exclusive invite to a private pool party, where they can celebrate their achievement alongside fellow codebreakers.
@@ -202,6 +215,36 @@ Where: LVCC West-Level 2-W219 (Hackers With Disabilities) - Map
 
 Description:
 
+
+'.
+From 18:58 to 19:57, Social Gatherings/Events is hosting '' to present 'Lost & Found', which is about 'Title: Lost & Found
+Tags: Misc
+When: Thursday, Aug 7, 18:58 - 19:57 PDT
+Where: 
+
+Description:
+If you find something that seems to have been lost, please take that item to the nearest NFO Node. The item will enter the DEF CON Lost & Found system. 
+
+If you've lost something, the only way to check on it (or reclaim it) is by going to the Lost & Found department yourself. The Lost & Found department is in room LVCC - L2 - W238. You may also call Lost & Found at +1 (702) 477-5019.
+
+The Lost & Found department plans to be open Thursday - Saturday, during all hours that the conference operates. On Sunday, the Lost & Found department will open with the venue at 08:00, but will close at the beginning of DEF CON 33 Closing Ceremonies (15:00). Shortly thereafter, all remaining lost items will be transferred to the LVCC. If you need to reach LVCC's Lost & Found, you may call LVCC Dispatch at +1 (702) 892-7400.
+
+'.
+From 19:02 to 20:01, Contests is hosting '' to present 'Radio Frequency Capture the Flag', which is about 'Title: Radio Frequency Capture the Flag
+Tags: Contest | Radio Frequency Village | Radio Frequency Capture the Flag
+When: Thursday, Aug 7, 19:02 - 20:01 PDT
+Where: 
+
+Description:
+In this game capture the flag you will be presented with real configurations of real wireless and radio technologies to attack. Practice your skill and learn new ones from Radio Frequency IDentification (RFID) through Software Defined Radio (SDR) and up to Bluetooth and WiFi. There may even be Infrared, if you have the eye for it.
+
+RF Hackers Sanctuary is once again holding the Radio Frequency Capture the Flag (RFCTF) at DEF CON 32. RFHS runs this game to teach security concepts and to give people a safe and legal way to practice attacks against new and old wireless technologies.
+
+We cater to both those who are new to radio communications as well as to those who have been playing for a long time. We are looking for inexperienced players on up to the SIGINT secret squirrels to play our games. The RFCTF can be played with a little knowledge, a pen tester's determination, and $0 to $$$$$ worth of special equipment. Our virtual RFCTF can be played completely remotely without needing any specialized equipment at all, just using your web browser! The key is to read the clues, determine the goal of each challenge, and have fun learning.
+
+This game doesn't let you sit still either, as there are numerous fox hunts, testing your skill in tracking various signals. If running around the conference looking for WiFi, Bluetooth, or even a Tire Pressure Monitoring System (TPMS) device sounds like fun, we are your source of a higher step count.
+
+There will be clues everywhere, and we will provide periodic updates via discord and twitter. Make sure you pay attention to what's happening at the RFCTF desk, #rfctf on our discord, on Twitter @rf_ctf, @rfhackers, and the interwebz, etc. If you have a question - ASK! We may or may not answer, at our discretion.
 
 '.
 From 19:30 to 22:30, Queercon Community Lounge is hosting '' to present 'Queercon at The KEVOPS Sellout Pool Party', which is about 'Title: Queercon at The KEVOPS Sellout Pool Party
