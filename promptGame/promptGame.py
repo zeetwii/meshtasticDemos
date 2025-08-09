@@ -49,7 +49,7 @@ class PromptGame:
 
         # Send a broadcast message to introduce the game
         self.interface.sendText("Hello from the AI Village Prompt Injection Game!  Send me a direct message to start your version of the game and score points.  Try different prompt exploits to get me to reveal the name of an endangered animal. ")
-        self.interface.sendText("The source code for the game can be found at https://github.com/zeetwii/meshtasticDemos.")
+        self.interface.sendText("The source code for the game can be found at https://github.com/zeetwii/meshtasticDemos.  If you encounter errors, message ZeeTwii or visit AI Village at room 314.")
 
 
     def onReceive(self, packet, interface):
@@ -172,8 +172,6 @@ class PromptGame:
             json.dump(log_entry, f, indent=4)
         print(f"Logged nodes to {log_file}")
         
-
-
 
 if __name__ == '__main__':
     promptGame = PromptGame()
