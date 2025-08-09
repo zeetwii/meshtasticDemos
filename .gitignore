@@ -209,3 +209,5 @@ __marimo__/
 # Stop logs from being tracked
 /promptGame/logs
 /hackerTracker/logs
+/cameraNode/logs
+/cameraNode/frame.jpg
