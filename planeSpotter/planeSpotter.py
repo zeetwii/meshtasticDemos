@@ -87,7 +87,7 @@ class PlaneSpotter:
         print(f"Replying with: {replyText}")
 
         # Send response back to user
-        self.interface.sendText(replyText, destination=packet['from'])
+        self.interface.sendText(replyText, destinationId=packet['from'])
 
     def fetchADSBData(self):
         """
