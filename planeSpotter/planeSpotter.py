@@ -6,6 +6,7 @@ from pubsub import pub # needed for meshtastic connection
 import requests # needed for ADS-B data fetching
 
 import ollama # needed for ollama models
+import textwrap # needed for formatting text
 
 class PlaneSpotter:
 
@@ -86,8 +87,14 @@ class PlaneSpotter:
         replyText = response.message.content
         print(f"Replying with: {replyText}")
 
+        # break reply into chunks if too long
+        replyLines = textwrap.wrap(replyText, width=220) # Meshtastic has a limit of 230 characters per message
+
         # Send response back to user
-        self.interface.sendText(replyText, destinationId=packet['from'])
+        #self.interface.sendText(replyText, destinationId=packet['from'])
+        for line in replyLines:
+            self.interface.sendText(line, destinationId=packet['from'])
+            time.sleep(1)  # brief pause between messages to avoid flooding
 
     def fetchADSBData(self):
         """
