@@ -40,6 +40,12 @@ class PlaneSpotter:
         pub.subscribe(self.onReceive, "meshtastic.receive.text")
         pub.subscribe(self.onConnection, "meshtastic.connection.established")
 
+    def onConnection(self, interface):
+        """
+        Callback function for connection established.
+        """
+        print("Meshtastic connection established.")
+
     def onReceive(self, packet, interface):
         """
         Callback function for receiving packets.
