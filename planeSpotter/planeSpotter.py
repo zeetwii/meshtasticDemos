@@ -129,7 +129,7 @@ class PlaneSpotter:
 
             count += 1 # count valid aircraft
 
-            callsign = (aircraft.get('flight') or aircraft.get('tisb') or "N/A").strip()
+            callsign = (aircraft.get('flight') or aircraft.get('tisb') or "Unknown").strip()
             hexID = aircraft.get('hex', 'N/A').upper()
 
             altitude = aircraft.get("alt_baro")

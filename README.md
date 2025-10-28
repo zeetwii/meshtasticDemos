@@ -2,6 +2,8 @@
 
 This is a series of demonstration scripts and examples for using locally running LLMs and other AI models to make sensors and systems more accessible over the Meshtastic mesh network.  Some of these demos were originally created for DEFCON 333's AI Village, while others have been added later as I found new ideas or use cases.  
 
+Each demo has its own subdirectory with a README file that explains how to set it up and use it.  Feel free to explore and modify the code as needed for your own projects!
+
 ## Background
 
 Meshtastic is an open-source mesh network built on top of inexpensive LoRa devices.  Unlike a lot of other mesh networks, meshtastic meshes are dynamic, meaning that nodes can join and leave the mesh at any time without any special configuration, and all nodes act as routers to help pass messages along.  This makes meshtastic a great choice for ad-hoc networks in remote areas, emergency situations, or just for fun outdoor activities like hiking or camping.
@@ -18,3 +20,14 @@ All of these demos are designed to run on a raspberry pi 5 or similar device wit
 
 This demo was created for DEFCON 333's AI Village, and demonstrates how to set up a basic chatbot using a locally running LLM and a meshtastic device.  The LLM plays a custom version of a prompt injection game, similar to the one made popular by Lakera.  The link to the demo code is here: [promptGame](./promptGame/README.md)
 
+### Plane Spotter over Meshtastic
+
+This demo was made to show how to use a locally running LLM to provide information about nearby aircraft using ADS-B data.  The LLM is used to interpret user queries and provide information about the aircraft in a natural language format.  The link to the demo code is here: [planeSpotter](./planeSpotter/README.md)
+
+### Hacker Tracker over Meshtastic
+
+This demo was created for DEFCON 333's AI Village, and demonstrates how to set up a basic interactive calendar and event tracker using a locally running LLM and a meshtastic device.  The LLM is used to interpret user queries and provide information about upcoming events in a natural language format.  The link to the demo code is here: [hackerTracker](./hackerTracker/README.md)
+
+### Camera Monitor over Meshtastic
+
+This demo was created to show how to use a locally running LLM to provide information about camera feeds and images.  The LLM is used to interpret user queries and provide information about the images in a natural language format.  The link to the demo code is here: [cameraMonitor](./cameraNode/README.md)
