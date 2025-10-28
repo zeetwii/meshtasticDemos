@@ -133,3 +133,13 @@ class PlaneSpotter:
         summaries.append(f"Total aircraft currently monitoring: {count}")
 
         return summaries
+
+
+if __name__ == "__main__":
+    planeSpotter = PlaneSpotter()
+
+    try:
+        while True:
+            time.sleep(10)  # keep the main thread alive
+    except KeyboardInterrupt:
+        print("Exiting Plane Spotter Node...")
