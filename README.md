@@ -25,7 +25,7 @@ Depending on the demo, you may also need additional sensors or peripherals, such
 
 ### DEFCON33 AI Village Demos
 
-These demos were created for DEFCON 33 as a part of the AI Village, and act as fun proof of concepts for using locally running LLMs to make tools and sensors more accessible over the meshtastic mesh network.  The demos include a chatbot, an interactive calendar and event tracker, and a camera monitor.  The link to the demo code is here: [defcon_demos](./defcon_demos/README.md)
+These demos were created for DEFCON 33 as a part of the AI Village, and act as fun proof of concepts for using locally running LLMs to make tools and sensors more accessible over the meshtastic mesh network.  The demos include a chatbot, an interactive calendar and event tracker, and a camera monitor.  The link to the demo code is here: [defconDemos](./defconDemos/README.md)
 
 ### Plane Spotter over Meshtastic
 
