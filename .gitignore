@@ -207,7 +207,10 @@ marimo/_lsp/
 __marimo__/
 
 # Stop logs from being tracked
-/promptGame/logs
-/hackerTracker/logs
-/cameraNode/logs
-/cameraNode/frame.jpg
+/defconDemos/promptGame/logs
+/defconDemos/hackerTracker/logs
+/defconDemos/cameraNode/logs
+/defconDemos/cameraNode/frame.jpg
+
+# Don't upload any config files
+config.yaml
