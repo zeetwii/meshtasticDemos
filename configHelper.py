@@ -1,17 +1,23 @@
-# config_helper.py
-import sys
-from pathlib import Path
+import sys # needed for command-line arguments
+from pathlib import Path # needed for path processing
 
-import yaml
-import questionary
+import yaml # needed to read and write YAML files
+import questionary # needed for multiple choice selections
 
-import meshtastic
-import meshtastic.serial_interface
-import meshtastic.util
-from meshtastic.protobuf import channel_pb2
+import meshtastic # needed for Meshtastic functionality
+import meshtastic.serial_interface # needed for meshtastic serial interface
+import meshtastic.util # needed for meshtastic utility functions
+from meshtastic.protobuf import channel_pb2 # needed for meshtastic stuff
 
 
 def find_or_choose_port():
+    """
+    Checks for any meshtastic devices connected, and if more than one asks the user to select one.
+
+    Returns:
+        str: The selected serial port path.
+    """
+
     ports = meshtastic.util.findPorts()
     if len(ports) == 1:
         return ports[0]
@@ -24,6 +30,16 @@ def find_or_choose_port():
 
 
 def snapshot(port):
+    """
+    Gets all the meshtastic stats from a device connected to a given port
+
+    Args:
+        port (str): The serial port path to the Meshtastic device.
+
+    Returns:
+        dict: A dictionary containing the snapshot data.
+    """
+
     iface = meshtastic.serial_interface.SerialInterface(devPath=port)
     try:
         local = iface.getNode("^local")
@@ -66,6 +82,15 @@ def snapshot(port):
 
 
 def load_existing(path):
+    """
+    Loads an existing configuration file.
+
+    Args:
+        path (Path): The path to the configuration file.
+
+    Returns:
+        dict: The loaded configuration data.
+    """
     if not path.exists():
         return {}
     with path.open() as f:
@@ -73,6 +98,17 @@ def load_existing(path):
 
 
 def pick_channels(snap, existing):
+    """
+    Selects which channels if any to use for admin purposes.
+
+    Args:
+        snap (dict): The snapshot data.
+        existing (dict): The existing configuration data.
+
+    Returns:
+        list: A list of selected channels.
+    """
+
     already = {c["index"] for c in existing.get("channels", [])}
     choices = [
         questionary.Choice(
@@ -88,6 +124,17 @@ def pick_channels(snap, existing):
 
 
 def pick_contacts(snap, existing):
+    """
+    Selects which contacts if any to use for admin purposes.
+
+    Args:
+        snap (dict): The snapshot data.
+        existing (dict): The existing configuration data.
+
+    Returns:
+        list: A list of selected contacts.
+    """
+
     already = {c["id"]: c.get("alias") for c in existing.get("contacts", [])}
 
     choices = []
@@ -117,6 +164,11 @@ def pick_contacts(snap, existing):
 
 
 def main():
+    """
+    The main entry point for the configuration helper.
+
+    """
+
     out_path = Path(sys.argv[1] if len(sys.argv) > 1 else "config.yaml")
     existing = load_existing(out_path)
 
