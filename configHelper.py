@@ -9,6 +9,8 @@ import meshtastic.serial_interface # needed for meshtastic serial interface
 import meshtastic.util # needed for meshtastic utility functions
 from meshtastic.protobuf import channel_pb2 # needed for meshtastic stuff
 
+import ollama # needed for using Ollama to host models
+
 
 def find_or_choose_port():
     """
@@ -163,6 +165,37 @@ def pick_contacts(snap, existing):
     return contacts
 
 
+def pick_model(existing):
+    """
+    Lists locally installed Ollama models and prompts the user to select one.
+
+    Args:
+        existing (dict): The existing configuration data (used to pre-select the current model).
+
+    Returns:
+        str: The selected model name, or None if no models are found.
+    """
+    try:
+        models = ollama.list().models
+    except Exception as e:
+        print(f"Warning: could not reach Ollama ({e}). Skipping model selection.")
+        return existing.get("model")
+
+    if not models:
+        print("No Ollama models installed. Run 'ollama pull <model>' to add one.")
+        return existing.get("model")
+
+    names = [m.model for m in models]
+    current = existing.get("model")
+    default = current if current in names else names[0]
+
+    return questionary.select(
+        "Which Ollama model should this project use?",
+        choices=names,
+        default=default,
+    ).ask()
+
+
 def main():
     """
     The main entry point for the configuration helper.
@@ -180,12 +213,15 @@ def main():
 
     channels = pick_channels(snap, existing)
     contacts = pick_contacts(snap, existing)
+    model = pick_model(existing)
 
-    # Preserve any project-specific keys the user added by hand (model, prompts, etc.)
+    # Preserve any project-specific keys the user added by hand (prompts, etc.)
     cfg = dict(existing)
     cfg["device"] = {"id": snap["local"]["id"], "long_name": snap["local"]["long_name"]}
     cfg["channels"] = channels
     cfg["contacts"] = contacts
+    if model:
+        cfg["model"] = model
 
     if out_path.exists() and not questionary.confirm(f"Overwrite {out_path}?", default=True).ask():
         print("Aborted.")
