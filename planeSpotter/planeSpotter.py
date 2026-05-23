@@ -1,4 +1,6 @@
 import time # needed for sleep
+import os # needed for file paths
+import yaml # needed for config file parsing
 from meshtastic.serial_interface import SerialInterface # needed for physical connection to meshtastic
 from meshtastic.util import findPorts # helper to find ports
 import meshtastic # needed for random meshtastic stuff
@@ -15,12 +17,21 @@ class PlaneSpotter:
         Basic init function
         """
 
+        # Load config
+        config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.yaml')
+        with open(config_path, 'r') as f:
+            config = yaml.safe_load(f)
+
+        self.model = config.get('model', 'gemma3:latest')
+        self.channels = config.get('channels', [])
+        self.contacts = config.get('contacts', [])
+
         # URL for ADS-B data (assume readsb is running locally)
         self.adsbPath = "http://localhost/tar1090/data/aircraft.json"
-        #self.maxAircraft = 5  # maximum number of aircraft to report at once 
+        #self.maxAircraft = 5  # maximum number of aircraft to report at once
         self.aircraftTimeout = 300  # seconds before an aircraft is considered "gone"
 
-         # set up meshtastic connection
+        # set up meshtastic connection
         print("Initializing Plane Spotter Node...")
         ports = findPorts(eliminate_duplicates=True)  # returns ['/dev/ttyUSB0', '/dev/ttyUSB2', …]
 
@@ -33,8 +44,8 @@ class PlaneSpotter:
             exit(1)
 
         # preload the ollama model
-        print("Preloading Ollama model...")
-        response = ollama.chat(model='gemma3:latest', messages=[{'role': 'system', 'content': f'Say boot up successful'}])
+        print(f"Preloading Ollama model ({self.model})...")
+        response = ollama.chat(model=self.model, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
         print(response.message.content)
 
         # Subscribe to receive and connection events
@@ -46,6 +57,19 @@ class PlaneSpotter:
         Callback function for connection established.
         """
         print("Meshtastic connection established.")
+        startup_msg = "Plane Spotter node online and connected."
+
+        for channel in self.channels:
+            idx = channel.get('index', 0)
+            print(f"Sending startup message to channel {channel.get('name', idx)} (index {idx})")
+            self.interface.sendText(startup_msg, channelIndex=idx)
+            time.sleep(1)
+
+        for contact in self.contacts:
+            dest = contact.get('id')
+            print(f"Sending startup message to contact {contact.get('alias', dest)}")
+            self.interface.sendText(startup_msg, destinationId=dest)
+            time.sleep(1)
 
     def onReceive(self, packet, interface):
         """
@@ -83,7 +107,7 @@ class PlaneSpotter:
             {'role': 'user', 'content': packet['decoded']['text']}
         ]
 
-        response = ollama.chat(model='gemma3:latest', messages=messages)
+        response = ollama.chat(model=self.model, messages=messages)
         replyText = response.message.content
         print(f"Replying with: {replyText}")
 

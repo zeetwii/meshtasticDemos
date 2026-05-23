@@ -213,4 +213,4 @@ __marimo__/
 /defconDemos/cameraNode/frame.jpg
 
 # Don't upload any config files
-config.yaml
+*config.yaml
