@@ -25,6 +25,7 @@ class PlaneSpotter:
         self.model = config.get('model', 'gemma3:latest')
         self.channels = config.get('channels', [])
         self.contacts = config.get('contacts', [])
+        self.device_id = config.get('device', {}).get('id')
 
         # URL for ADS-B data (assume readsb is running locally)
         self.adsbPath = "http://localhost/tar1090/data/aircraft.json"
@@ -35,13 +36,30 @@ class PlaneSpotter:
         print("Initializing Plane Spotter Node...")
         ports = findPorts(eliminate_duplicates=True)  # returns ['/dev/ttyUSB0', '/dev/ttyUSB2', …]
 
-        if len(ports) == 1:  # if only one port found, assume it's the defcon radio
-            self.interface = SerialInterface(ports[0])  # connect to the first port
-            print("Connected to Meshtastic node on port:", ports[0])
-            print(f"Node ID: {self.interface.getMyNodeInfo()['num']}")
-        else:
-            print("Multiple or no Meshtastic devices found. Please check your connections.")
+        if len(ports) == 0:
+            print("No Meshtastic devices found. Please check your connections.")
             exit(1)
+        elif len(ports) == 1:
+            self.interface = SerialInterface(ports[0])
+            print("Connected to Meshtastic node on port:", ports[0])
+            print(f"Node ID: {self.interface.getMyNodeInfo()['user']['id']}")
+        else:
+            print(f"Multiple Meshtastic devices found. Looking for configured device {self.device_id}...")
+            self.interface = None
+            for port in ports:
+                try:
+                    iface = SerialInterface(port)
+                    node_id = iface.getMyNodeInfo()['user']['id']
+                    if node_id == self.device_id:
+                        self.interface = iface
+                        print(f"Connected to {self.device_id} on port {port}")
+                        break
+                    iface.close()
+                except Exception as e:
+                    print(f"Could not check port {port}: {e}")
+            if self.interface is None:
+                print(f"Device {self.device_id} not found among available ports. Please check your config.")
+                exit(1)
 
         # preload the ollama model
         print(f"Preloading Ollama model ({self.model})...")
