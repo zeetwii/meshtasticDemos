@@ -35,6 +35,11 @@ class PlaneSpotter:
         #self.maxAircraft = 5  # maximum number of aircraft to report at once
         self.aircraftTimeout = 300  # seconds before an aircraft is considered "gone"
 
+        # Track unique aircraft seen over the check-in window: hex -> last_seen epoch
+        self.seen_aircraft = {}
+        self.seen_lock = threading.Lock()
+        self.poll_interval = 30  # seconds between background polls of aircraft.json
+
         # set up meshtastic connection
         print("Initializing Plane Spotter Node...")
         ports = findPorts(eliminate_duplicates=True)  # returns ['/dev/ttyUSB0', '/dev/ttyUSB2', …]
@@ -93,9 +98,33 @@ class PlaneSpotter:
             time.sleep(1)
 
         if self.checkin_interval:
-            t = threading.Thread(target=self.checkinLoop, daemon=True)
-            t.start()
+            threading.Thread(target=self.pollAircraftLoop, daemon=True).start()
+            threading.Thread(target=self.checkinLoop, daemon=True).start()
             print(f"Check-in thread started (every {self.checkin_interval}h)")
+            print(f"Aircraft poller started (every {self.poll_interval}s)")
+
+    def pollAircraftLoop(self):
+        """
+        Background thread that polls readsb's aircraft.json and records the last time
+        each unique hex was observed. Entries older than the check-in window are pruned.
+        """
+        window_seconds = self.checkin_interval * 3600
+        while True:
+            aircraftList = self.fetchADSBData()
+            now = time.time()
+            with self.seen_lock:
+                for aircraft in aircraftList:
+                    hexID = aircraft.get('hex')
+                    if not hexID:
+                        continue
+                    # only count aircraft readsb has heard from recently
+                    if aircraft.get('seen', 0) > self.aircraftTimeout:
+                        continue
+                    self.seen_aircraft[hexID.lower()] = now
+                # prune anything outside the check-in window
+                cutoff = now - window_seconds
+                self.seen_aircraft = {h: t for h, t in self.seen_aircraft.items() if t >= cutoff}
+            time.sleep(self.poll_interval)
 
     def checkinLoop(self):
         """
@@ -104,7 +133,12 @@ class PlaneSpotter:
         interval_seconds = self.checkin_interval * 3600
         while True:
             time.sleep(interval_seconds)
-            msg = "Plane Spotter node is running and monitoring aircraft."
+            now = time.time()
+            cutoff = now - interval_seconds
+            with self.seen_lock:
+                unique_count = sum(1 for t in self.seen_aircraft.values() if t >= cutoff)
+            msg = (f"Plane Spotter check-in: {unique_count} unique aircraft seen "
+                   f"in the last {self.checkin_interval}h.")
             print("Sending scheduled check-in message...")
             for channel in self.channels:
                 idx = channel.get('index', 0)
