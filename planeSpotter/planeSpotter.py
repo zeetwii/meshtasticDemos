@@ -40,6 +40,13 @@ class PlaneSpotter:
         self.seen_lock = threading.Lock()
         self.poll_interval = 30  # seconds between background polls of aircraft.json
 
+        # Subscribe before creating the interface — the connection.established event fires
+        # during SerialInterface.__init__() from a background thread, so subscribing after
+        # the constructor would always miss it.
+        self.interface = None
+        pub.subscribe(self.onReceive, "meshtastic.receive.text")
+        pub.subscribe(self.onConnection, "meshtastic.connection.established")
+
         # set up meshtastic connection
         print("Initializing Plane Spotter Node...")
         ports = findPorts(eliminate_duplicates=True)  # returns ['/dev/ttyUSB0', '/dev/ttyUSB2', …]
@@ -74,27 +81,30 @@ class PlaneSpotter:
         response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
         print(response.message.content)
 
-        # Subscribe to receive and connection events
-        pub.subscribe(self.onReceive, "meshtastic.receive.text")
-        pub.subscribe(self.onConnection, "meshtastic.connection.established")
-
     def onConnection(self, interface):
         """
         Callback function for connection established.
         """
+        # In multi-port mode we probe each port, which fires this callback for every
+        # device found. Skip anything that isn't the configured target.
+        node_id = interface.getMyNodeInfo()['user']['id']
+        if self.device_id and node_id != self.device_id:
+            return
+
+        self.interface = interface
         print("Meshtastic connection established.")
         startup_msg = "Plane Spotter node online and connected."
 
         for channel in self.channels:
             idx = channel.get('index', 0)
             print(f"Sending startup message to channel {channel.get('name', idx)} (index {idx})")
-            self.interface.sendText(startup_msg, channelIndex=idx)
+            interface.sendText(startup_msg, channelIndex=idx)
             time.sleep(1)
 
         for contact in self.contacts:
             dest = contact.get('id')
             print(f"Sending startup message to contact {contact.get('alias', dest)}")
-            self.interface.sendText(startup_msg, destinationId=dest)
+            interface.sendText(startup_msg, destinationId=dest)
             time.sleep(1)
 
         if self.checkin_interval:
