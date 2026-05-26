@@ -1,6 +1,7 @@
 import time # needed for sleep
 import os # needed for file paths
 import yaml # needed for config file parsing
+import threading
 from meshtastic.serial_interface import SerialInterface # needed for physical connection to meshtastic
 from meshtastic.util import findPorts # helper to find ports
 import meshtastic # needed for random meshtastic stuff
@@ -26,6 +27,8 @@ class PlaneSpotter:
         self.channels = config.get('channels', [])
         self.contacts = config.get('contacts', [])
         self.device_id = config.get('device', {}).get('id')
+        self.keep_alive = -1 if config.get('disable_model_timeout', False) else None
+        self.checkin_interval = config.get('checkin_interval_hours') or 0
 
         # URL for ADS-B data (assume readsb is running locally)
         self.adsbPath = "http://localhost/tar1090/data/aircraft.json"
@@ -63,7 +66,7 @@ class PlaneSpotter:
 
         # preload the ollama model
         print(f"Preloading Ollama model ({self.model})...")
-        response = ollama.chat(model=self.model, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
+        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
         print(response.message.content)
 
         # Subscribe to receive and connection events
@@ -88,6 +91,29 @@ class PlaneSpotter:
             print(f"Sending startup message to contact {contact.get('alias', dest)}")
             self.interface.sendText(startup_msg, destinationId=dest)
             time.sleep(1)
+
+        if self.checkin_interval:
+            t = threading.Thread(target=self.checkinLoop, daemon=True)
+            t.start()
+            print(f"Check-in thread started (every {self.checkin_interval}h)")
+
+    def checkinLoop(self):
+        """
+        Background thread that sends a periodic status message to all channels and contacts.
+        """
+        interval_seconds = self.checkin_interval * 3600
+        while True:
+            time.sleep(interval_seconds)
+            msg = "Plane Spotter node is running and monitoring aircraft."
+            print("Sending scheduled check-in message...")
+            for channel in self.channels:
+                idx = channel.get('index', 0)
+                self.interface.sendText(msg, channelIndex=idx)
+                time.sleep(1)
+            for contact in self.contacts:
+                dest = contact.get('id')
+                self.interface.sendText(msg, destinationId=dest)
+                time.sleep(1)
 
     def onReceive(self, packet, interface):
         """
@@ -125,7 +151,7 @@ class PlaneSpotter:
             {'role': 'user', 'content': packet['decoded']['text']}
         ]
 
-        response = ollama.chat(model=self.model, messages=messages)
+        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages)
         replyText = response.message.content
         print(f"Replying with: {replyText}")
 
