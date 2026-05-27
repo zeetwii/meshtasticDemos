@@ -1,0 +1,6 @@
+meshtastic
+ollama
+pypubsub
+pyyaml
+questionary
+requests
