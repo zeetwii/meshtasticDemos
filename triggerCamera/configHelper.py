@@ -11,6 +11,13 @@ from meshtastic.protobuf import channel_pb2 # needed for meshtastic stuff
 
 import ollama # needed for using Ollama to host models
 
+try:
+    import tkinter as tk
+    from tkinter import filedialog as tk_filedialog
+    _TKINTER_AVAILABLE = True
+except ImportError:
+    _TKINTER_AVAILABLE = False
+
 
 def find_or_choose_port():
     """
@@ -226,6 +233,90 @@ def pick_model(existing):
     ).ask()
 
 
+def pick_yolo_model_path(existing):
+    """
+    Prompts the user to select a local YOLO model file via a file dialog (or
+    manual text entry if tkinter is unavailable).
+
+    Args:
+        existing (dict): The existing configuration data.
+
+    Returns:
+        str: The absolute path to the selected YOLO model file, or the existing
+             value if the user cancels.
+    """
+    current = existing.get("yolo_model_path", "")
+
+    if _TKINTER_AVAILABLE:
+        root = tk.Tk()
+        root.withdraw()
+        root.attributes("-topmost", True)
+        chosen = tk_filedialog.askopenfilename(
+            title="Select your YOLO model file",
+            filetypes=[
+                ("YOLO model files", "*.pt *.onnx *.torchscript *.tflite *.pb"),
+                ("All files", "*.*"),
+            ],
+            initialfile=current if current else None,
+        )
+        root.destroy()
+        if chosen:
+            return str(Path(chosen).resolve())
+        # User cancelled the dialog — fall through to text prompt
+        print("No file selected in dialog, falling back to text entry.")
+
+    def validate_path(val):
+        if not val.strip():
+            return "Path cannot be empty."
+        if not Path(val.strip()).is_file():
+            return f"File not found: {val.strip()}"
+        return True
+
+    result = questionary.text(
+        "Path to YOLO model file (.pt, .onnx, ...):",
+        default=current,
+        validate=validate_path,
+    ).ask()
+
+    return str(Path(result.strip()).resolve()) if result else current
+
+
+def pick_yolo_trigger_classes(model_path, existing):
+    """
+    Loads the YOLO model at model_path with ultralytics to enumerate its class
+    names, then lets the user pick which classes should act as camera triggers.
+
+    Args:
+        model_path (str): Path to the YOLO model file.
+        existing (dict): The existing configuration data.
+
+    Returns:
+        list[str]: The selected class name strings.
+    """
+    if not model_path:
+        print("No YOLO model path set — skipping trigger class selection.")
+        return existing.get("yolo_trigger_classes", [])
+
+    try:
+        from ultralytics import YOLO
+        model = YOLO(model_path)
+        class_names = list(model.names.values())
+    except Exception as e:
+        print(f"Warning: could not load YOLO model ({e}). Skipping trigger class selection.")
+        return existing.get("yolo_trigger_classes", [])
+
+    already = set(existing.get("yolo_trigger_classes", []))
+    choices = [
+        questionary.Choice(title=name, value=name, checked=(name in already))
+        for name in class_names
+    ]
+    selected = questionary.checkbox(
+        "Which detected object classes should trigger the camera?",
+        choices=choices,
+    ).ask()
+    return selected if selected is not None else list(already)
+
+
 def pick_model_timeout(existing):
     """
     Asks whether to disable Ollama's model timeout.
@@ -263,6 +354,8 @@ def main():
     checkin_interval = pick_checkin_interval(existing)
     model = pick_model(existing)
     disable_model_timeout = pick_model_timeout(existing)
+    yolo_model_path = pick_yolo_model_path(existing)
+    yolo_trigger_classes = pick_yolo_trigger_classes(yolo_model_path, existing)
 
     # Preserve any project-specific keys the user added by hand (prompts, etc.)
     cfg = dict(existing)
@@ -273,6 +366,9 @@ def main():
     if model:
         cfg["model"] = model
     cfg["disable_model_timeout"] = disable_model_timeout
+    if yolo_model_path:
+        cfg["yolo_model_path"] = yolo_model_path
+    cfg["yolo_trigger_classes"] = yolo_trigger_classes
 
     if out_path.exists() and not questionary.confirm(f"Overwrite {out_path}?", default=True).ask():
         print("Aborted.")
