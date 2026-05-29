@@ -1,0 +1,7 @@
+meshtastic
+ollama
+opencv-python
+pypubsub
+pyyaml
+questionary
+ultralytics
