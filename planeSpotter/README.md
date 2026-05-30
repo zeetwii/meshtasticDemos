@@ -27,3 +27,11 @@ pip install -r requirements.txt
 ```
 
 You will also need to have an Ollama model set up for this demo.  The recommended model is `gemma4:e2b`, but you can use any model that supports the required functionality.  Make sure to have the Ollama CLI installed and configured on your raspberry pi.
+
+[configHelper.py](./configHelper.py) is a helper script that can be used to generate a config file for this demo.  You can run it using:
+
+```bash
+python configHelper.py
+```
+
+This will prompt you for the necessary configuration values, such as the meshtastic device ID, the Ollama model name, and if or how often you want the system to check in.  
