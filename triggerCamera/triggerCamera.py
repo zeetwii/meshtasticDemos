@@ -70,6 +70,7 @@ class TriggerCamera:
 
         yolo_model_path = config.get('yolo_model_path', 'yolo11n.pt')
         self.trigger_classes = [c.lower() for c in config.get('yolo_trigger_classes', [])]
+        self.yolo_confidence = config.get('yolo_confidence', 0.75)
 
         self._last_trigger_time = 0
         self._trigger_lock = threading.Lock()
@@ -163,7 +164,7 @@ class TriggerCamera:
                 time.sleep(0.05)
                 continue
 
-            results = self.yolo.predict(frame, conf=0.5, verbose=False)
+            results = self.yolo.predict(frame, conf=self.yolo_confidence, verbose=False)
             detected = {
                 results[0].names[int(cls)].lower()
                 for cls in results[0].boxes.cls
@@ -217,7 +218,7 @@ class TriggerCamera:
             self.interface.sendText("No camera frame available.", destinationId=packet['from'])
             return
 
-        results = self.yolo.predict(frame, conf=0.5, verbose=False)
+        results = self.yolo.predict(frame, conf=self.yolo_confidence, verbose=False)
         detected = [results[0].names[int(cls)] for cls in results[0].boxes.cls]
 
         description = self._describeFrame(frame, detected)

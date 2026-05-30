@@ -317,6 +317,38 @@ def pick_yolo_trigger_classes(model_path, existing):
     return selected if selected is not None else list(already)
 
 
+def pick_yolo_confidence(existing):
+    """
+    Prompts the user to enter a YOLO detection confidence threshold (0.0–1.0).
+    A higher value (e.g. 0.75) reduces false positives; lower values catch
+    more detections at the risk of noise.
+
+    Args:
+        existing (dict): The existing configuration data.
+
+    Returns:
+        float: The chosen confidence threshold.
+    """
+    current = existing.get("yolo_confidence", 0.75)
+
+    def validate_conf(val):
+        try:
+            v = float(val)
+            if 0.0 < v <= 1.0:
+                return True
+            return "Please enter a value between 0 and 1 (exclusive)."
+        except ValueError:
+            return "Please enter a valid number (e.g. 0.75)."
+
+    result = questionary.text(
+        "YOLO detection confidence threshold (0–1). Higher values mean fewer false positives — 0.75 recommended for best results:",
+        default=str(current),
+        validate=validate_conf,
+    ).ask()
+
+    return float(result) if result is not None else current
+
+
 def pick_model_timeout(existing):
     """
     Asks whether to disable Ollama's model timeout.
@@ -356,6 +388,7 @@ def main():
     disable_model_timeout = pick_model_timeout(existing)
     yolo_model_path = pick_yolo_model_path(existing)
     yolo_trigger_classes = pick_yolo_trigger_classes(yolo_model_path, existing)
+    yolo_confidence = pick_yolo_confidence(existing)
 
     # Preserve any project-specific keys the user added by hand (prompts, etc.)
     cfg = dict(existing)
@@ -369,6 +402,7 @@ def main():
     if yolo_model_path:
         cfg["yolo_model_path"] = yolo_model_path
     cfg["yolo_trigger_classes"] = yolo_trigger_classes
+    cfg["yolo_confidence"] = yolo_confidence
 
     if out_path.exists() and not questionary.confirm(f"Overwrite {out_path}?", default=True).ask():
         print("Aborted.")
