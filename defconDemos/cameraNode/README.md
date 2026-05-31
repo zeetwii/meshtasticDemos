@@ -6,14 +6,45 @@ By default, Meshtastic is a text only mesh network, so sending images directly o
 
 ## Setup Instructions
 
-You will need to install the Ollama and Meshtastic Python libraries to run this demo. You can do this by running the following commands:
+These scripts require Python 3.  Check your version with:
+
+```bash
+python3 --version
+```
+
+Install the required Python packages:
 
 ```bash
 pip install ollama meshtastic
 ```
 
-You will also need to have a Meshtastic device set up and connected to your Raspberry Pi or similar device. You can find instructions for setting up a Meshtastic device [here](https://meshtastic.org/docs/getting-started/).
+Install Ollama on your Raspberry Pi if you haven't already:
 
-You will also need to use an Ollama model that is capable of both image and text processing.  The `gemma3:4b` model is the one we used for this demo, but you can experiment with other models as well.  Note that image capable models may require more RAM and processing power, so make sure your device meets the requirements.
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
 
-Once you have the necessary libraries installed and your Meshtastic device set up, you can run the cameraNode.py script to start the camera node. The script will capture images at regular intervals, analyze them using the LLM, and send descriptive messages over the Meshtastic network when prompted.
+This demo requires an Ollama model that supports both image and text processing.  Image-capable models use more RAM than text-only models — check that you have at least 4GB free before pulling:
+
+```bash
+free -h
+ollama pull gemma3:4b
+```
+
+Connect your Meshtastic radio to the Raspberry Pi over USB.  It will appear as a serial port, typically `/dev/ttyACM0` or `/dev/ttyUSB0`.  You can confirm which port with:
+
+```bash
+ls /dev/ttyACM* /dev/ttyUSB*
+```
+
+The meshtastic Python library will automatically detect the device on the most likely port.  If it can't find it, you can pass the port explicitly — see the [Meshtastic Python API docs](https://python.meshtastic.org/) for details.
+
+You will also need a camera connected to your Raspberry Pi.  A USB webcam or the Raspberry Pi Camera Module both work.  If you're using the Camera Module, make sure it is enabled in `raspi-config` under Interface Options.
+
+Once everything is set up, run the script:
+
+```bash
+python3 cameraNode.py
+```
+
+The script will capture images at regular intervals, analyze them using the LLM, and send descriptive messages over the Meshtastic network when prompted.

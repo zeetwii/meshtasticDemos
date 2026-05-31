@@ -16,18 +16,50 @@ For this specific demo, you will also need a camera that is compatible with the 
 
 ## Setup Instructions
 
-To install all the required Python packages, you can use pip:
+These scripts require Python 3.  Check your version with:
+
+```bash
+python3 --version
+```
+
+Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-You will also need to have an Ollama model set up for this demo.  The recommended model is `gemma4:e2b`, but you can use any model that supports the required functionality.  Make sure to have the Ollama CLI installed and configured on your raspberry pi.
-
-[configHelper.py](./configHelper.py) is a helper script that can be used to generate a config file for this demo.  You can run it using:
+Install Ollama if you haven't already:
 
 ```bash
-python configHelper.py
+curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-This will prompt you for the necessary configuration values, such as the meshtastic device ID, the Ollama and YOLO model names, the list of target objects to trigger on, and if or how often you want the system to check in.  The config file will then be generated based on your inputs, and you can proceed to run [triggerCamera.py](./triggerCamera.py) to start the demo.  Whenever the YOLO model detects an object of interest, it will trigger the camera to take a picture, and then the LLM will process the image and send a summary message over the mesh.
+Pull the recommended model (check you have at least 4GB free RAM first with `free -h`):
+
+```bash
+ollama pull gemma4:e2b
+```
+
+Connect your Meshtastic radio to the Raspberry Pi over USB.  It will appear as a serial port, typically `/dev/ttyACM0` or `/dev/ttyUSB0`.  You can confirm which port with:
+
+```bash
+ls /dev/ttyACM* /dev/ttyUSB*
+```
+
+Connect your USB webcam.  You can verify the camera is detected by checking for `/dev/video0` or running `v4l2-ctl --list-devices`.
+
+**Configuration:** [configHelper.py](./configHelper.py) is a helper script that generates a config file for this demo.  Run it and follow the prompts:
+
+```bash
+python3 configHelper.py
+```
+
+It will ask for your Meshtastic device's node ID, the Ollama and YOLO model names, the list of target objects that should trigger the camera (e.g. `car`, `person`), and how often you want the system to send check-in messages.
+
+**Run the demo:**
+
+```bash
+python3 triggerCamera.py
+```
+
+Whenever the YOLO model detects an object of interest, it will trigger the camera to capture an image.  The LLM will then process the image and send a summary message over the mesh.

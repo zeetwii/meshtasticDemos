@@ -16,10 +16,49 @@ Technically, you could use cloud based LLMs for this purpose, but this would req
 
 ## Equipment Needed
 
-For all of these demos, you will need a raspberry pi 5 or similar device with at least 4GB of free RAM.  You will also need a Meshtastic-compatible device, of which there are many options.  The [Meshtastic Device List](https://meshtastic.org/docs/hardware/devices/) is a good place to start, you can also look through the list of maintained devices on the [web flasher](https://flasher.meshtastic.org) for a list of currently supported devices.
+For all of these demos, you will need a raspberry pi 5 or similar device with at least 4GB of free RAM.  You will also need a Meshtastic-compatible device connected to the Raspberry Pi over USB serial — the scripts use a serial connection to communicate with the radio.  There are many compatible devices; the [Meshtastic Device List](https://meshtastic.org/docs/hardware/devices/) is a good place to start, and the [web flasher](https://flasher.meshtastic.org) lists all currently supported devices.  These demos were developed and tested using a [Seeed Studio XIAO ESP32S3 with SX1262 LoRa module](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html), but any Meshtastic-compatible device with a USB serial connection should work.
 
 Depending on the demo, you may also need additional sensors or peripherals, such as a camera, an ADS-B receiver, or a GPS module.  Each demo's README file will specify any additional equipment needed and provide instructions for setting it up.
 
+## Prerequisites
+
+Before running any of the demos, make sure you have the following set up on your Raspberry Pi.
+
+**Python 3:** All scripts require Python 3.  Check your version with:
+
+```bash
+python3 --version
+```
+
+If `pip` defaults to Python 2 on your system, use `pip3` in place of `pip` for all package install commands.
+
+**Available RAM:** LLM models consume a significant amount of RAM.  Check how much you have free before starting:
+
+```bash
+free -h
+```
+
+You will need at least 4GB free for image-capable models, and at least 2GB for text-only models.
+
+**Ollama:** All of the demos use Ollama to run LLMs locally.  Install it on your Raspberry Pi with:
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+After installing, pull the model recommended by whichever demo you're running.  Each demo's README specifies the model to use.  For example:
+
+```bash
+ollama pull gemma3:4b
+```
+
+**Meshtastic Device:** When you plug in your Meshtastic radio over USB, it will appear as a serial port — typically `/dev/ttyACM0` or `/dev/ttyUSB0`.  Confirm which port your device is using with:
+
+```bash
+ls /dev/ttyACM* /dev/ttyUSB*
+```
+
+If you haven't set up your Meshtastic device yet, follow the [Meshtastic Getting Started Guide](https://meshtastic.org/docs/getting-started/) to flash firmware and configure it before running any of these demos.
 
 ## Projects
 

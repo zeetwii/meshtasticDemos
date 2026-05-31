@@ -4,15 +4,43 @@ This is a simple game that allows the user to play a prompt injection game over 
 
 ## Setup Instructions
 
-You will need to install Ollama and Meshtastic Python libraries to run this demo. You can do this by running the following commands:
+These scripts require Python 3.  Check your version with:
+
+```bash
+python3 --version
+```
+
+Install the required Python packages:
 
 ```bash
 pip install ollama meshtastic
-``` 
+```
 
-You will also need to have a Meshtastic device set up and connected to your Raspberry Pi or similar device. You can find instructions for setting up a Meshtastic device [here](https://meshtastic.org/docs/getting-started/).
+Install Ollama on your Raspberry Pi if you haven't already:
 
-Once you have the necessary libraries installed and your Meshtastic device set up, you can run the promptGame.py script to start the game. The AI will listen for messages on the Meshtastic network and respond to user inputs.
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Pull the model used by this demo:
+
+```bash
+ollama pull gemma3:4b
+```
+
+Connect your Meshtastic radio to the Raspberry Pi over USB.  It will appear as a serial port, typically `/dev/ttyACM0` or `/dev/ttyUSB0`.  You can confirm which port with:
+
+```bash
+ls /dev/ttyACM* /dev/ttyUSB*
+```
+
+Once everything is set up, run the script:
+
+```bash
+python3 promptGame.py
+```
+
+The AI will listen for messages on the Meshtastic network and respond to user inputs.
 
 ## How to Play
 

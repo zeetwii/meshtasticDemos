@@ -18,20 +18,55 @@ For this specific demo, you will also need an ADS-B receiver.  The most common a
 
 ## Setup Instructions
 
-Follow the instructions to get readsb set up on your raspberry pi: [readsb Automatic installation for readsb](https://github.com/wiedehopf/adsb-scripts/wiki/Automatic-installation-for-readsb).  After that you should be able to access the readsb web interface at `http://<your-raspberry-pi-ip>/tar1090`.  Once you have that set up, you can proceed to set up the LLM and Meshtastic integration.
+These scripts require Python 3.  Check your version with:
 
-The code for this demo is located in the `planeSpotter` directory.  You will need to install the required Python packages, which can be done using pip:
+```bash
+python3 --version
+```
+
+**RTL-SDR setup:** Before installing readsb, you need to prevent the default DVB-T kernel module from claiming the RTL-SDR dongle.  Run the following, then reboot:
+
+```bash
+echo 'blacklist dvb_usb_rtl28xxu' | sudo tee /etc/modprobe.d/blacklist-rtl.conf
+sudo reboot
+```
+
+**readsb:** Follow the instructions to get readsb set up on your Raspberry Pi: [readsb Automatic installation](https://github.com/wiedehopf/adsb-scripts/wiki/Automatic-installation-for-readsb).  After setup you should be able to access the readsb web interface at `http://<your-raspberry-pi-ip>/tar1090` and see aircraft being tracked.
+
+**Python packages:**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-You will also need to have an Ollama model set up for this demo.  The recommended model is `gemma4:e2b`, but you can use any model that supports the required functionality.  Make sure to have the Ollama CLI installed and configured on your raspberry pi.
-
-[configHelper.py](./configHelper.py) is a helper script that can be used to generate a config file for this demo.  You can run it using:
+**Ollama:** Install Ollama if you haven't already:
 
 ```bash
-python configHelper.py
+curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-This will prompt you for the necessary configuration values, such as the meshtastic device ID, the Ollama model name, and if or how often you want the system to check in.  
+Pull the recommended model (check you have at least 4GB free RAM first with `free -h`):
+
+```bash
+ollama pull gemma4:e2b
+```
+
+**Meshtastic device:** Connect your Meshtastic radio to the Raspberry Pi over USB.  It will appear as a serial port, typically `/dev/ttyACM0` or `/dev/ttyUSB0`.  You can confirm which port with:
+
+```bash
+ls /dev/ttyACM* /dev/ttyUSB*
+```
+
+**Configuration:** [configHelper.py](./configHelper.py) is a helper script that generates a config file for this demo.  Run it and follow the prompts:
+
+```bash
+python3 configHelper.py
+```
+
+It will ask for your Meshtastic device's node ID, the Ollama model name, and how often you want the system to send check-in messages.
+
+**Run the demo:**
+
+```bash
+python3 planeSpotter.py
+```
