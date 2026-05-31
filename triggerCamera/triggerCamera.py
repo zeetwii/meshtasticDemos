@@ -53,9 +53,6 @@ class TriggerCamera:
     describes the scene and the summary is broadcast over the mesh.
     """
 
-    # Minimum seconds between automatic trigger messages to avoid flooding the mesh
-    TRIGGER_COOLDOWN = 60
-
     def __init__(self):
         config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.yaml')
         with open(config_path, 'r') as f:
@@ -68,10 +65,18 @@ class TriggerCamera:
         self.keep_alive = -1 if config.get('disable_model_timeout', False) else None
         self.checkin_interval = config.get('checkin_interval_hours') or 0
 
+        self.trigger_cooldown = config.get('trigger_cooldown_seconds', 60)
+
         yolo_model_path = config.get('yolo_model_path', 'yolo11n.pt')
         self.trigger_classes = [c.lower() for c in config.get('yolo_trigger_classes', [])]
         self.yolo_confidence = config.get('yolo_confidence', 0.75)
 
+        # Preloading the Ollama model with a dummy query to avoid latency on the first real inference later
+        print(f"Preloading Ollama model ({self.model})...")
+        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
+        print(response.message.content)
+
+        # State for rate-limiting trigger messages
         self._last_trigger_time = 0
         self._trigger_lock = threading.Lock()
 
@@ -115,10 +120,6 @@ class TriggerCamera:
             if self.interface is None:
                 print(f"Device {self.device_id} not found among available ports. Please check your config.")
                 exit(1)
-
-        print(f"Preloading Ollama model ({self.model})...")
-        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
-        print(response.message.content)
 
     def onConnection(self, interface):
         """
@@ -176,7 +177,7 @@ class TriggerCamera:
 
             now = time.time()
             with self._trigger_lock:
-                if now - self._last_trigger_time < self.TRIGGER_COOLDOWN:
+                if now - self._last_trigger_time < self.trigger_cooldown:
                     continue
                 self._last_trigger_time = now
 

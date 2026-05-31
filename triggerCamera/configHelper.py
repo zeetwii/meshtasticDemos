@@ -349,6 +349,36 @@ def pick_yolo_confidence(existing):
     return float(result) if result is not None else current
 
 
+def pick_trigger_cooldown(existing):
+    """
+    Asks how many seconds must pass between automatic trigger messages.
+
+    Args:
+        existing (dict): The existing configuration data.
+
+    Returns:
+        int: The cooldown period in seconds.
+    """
+    current = existing.get("trigger_cooldown_seconds", 60)
+
+    def validate_seconds(val):
+        try:
+            v = int(val)
+            if v >= 0:
+                return True
+            return "Please enter a non-negative integer."
+        except ValueError:
+            return "Please enter a whole number of seconds (e.g. 60)."
+
+    result = questionary.text(
+        "Minimum seconds between automatic trigger messages (0 = no cooldown):",
+        default=str(current),
+        validate=validate_seconds,
+    ).ask()
+
+    return int(result) if result is not None else current
+
+
 def pick_model_timeout(existing):
     """
     Asks whether to disable Ollama's model timeout.
@@ -386,6 +416,7 @@ def main():
     checkin_interval = pick_checkin_interval(existing)
     model = pick_model(existing)
     disable_model_timeout = pick_model_timeout(existing)
+    trigger_cooldown = pick_trigger_cooldown(existing)
     yolo_model_path = pick_yolo_model_path(existing)
     yolo_trigger_classes = pick_yolo_trigger_classes(yolo_model_path, existing)
     yolo_confidence = pick_yolo_confidence(existing)
@@ -399,6 +430,7 @@ def main():
     if model:
         cfg["model"] = model
     cfg["disable_model_timeout"] = disable_model_timeout
+    cfg["trigger_cooldown_seconds"] = trigger_cooldown
     if yolo_model_path:
         cfg["yolo_model_path"] = yolo_model_path
     cfg["yolo_trigger_classes"] = yolo_trigger_classes
