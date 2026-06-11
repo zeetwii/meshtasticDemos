@@ -1,510 +1,384 @@
-from scapy.all import * # needed for reading the packets
-from threading import Thread # needed for multithreading
-import pandas # used for pretty print to screen
 import time # needed for sleep
-import os # needed to run commands
-import sys # needed for system
-import subprocess # needed for subprocess calls
-
+import os # needed for file paths and system commands
+import sys # needed for platform checks and exit
 import csv # needed for manufacturer lookup
-import pickle # needed for data writing / reading
+import yaml # needed for config file parsing
+import threading
+import subprocess # needed for channel enumeration
 
-import pika # needed for rabbitMQ
+from scapy.all import sniff, Dot11, Dot11Beacon, Dot11Elt # needed for reading wifi beacons
 
-# Note, must run as root for wifi stuff
+from meshtastic.serial_interface import SerialInterface # needed for physical connection to meshtastic
+from meshtastic.util import findPorts # helper to find ports
+import meshtastic # needed for random meshtastic stuff
+from pubsub import pub # needed for meshtastic connection
 
-class WifiTarget:
-    ''' Class that handles the wifi targets found by the sweeper '''
+import ollama # needed for ollama models
+import textwrap # needed for formatting text
 
-    def __init__(self, bssid, ssid, dBm, ch, crypto):
-        ''' init method '''
 
-        self.maxTimeout = 3
+class WifiNetwork:
+    """
+    Represents a single wifi access point seen by the scanner, along with the
+    last time its beacon was observed so stale networks can be aged out.
+    """
 
+    def __init__(self, bssid, ssid, dBm, channel, crypto, vendor="Unknown"):
         self.bssid = bssid
         self.ssid = ssid
         self.dBm = dBm
-        self.ch = ch
+        self.channel = channel
         self.crypto = crypto
-        self.timeOut = self.maxTimeout
-
-        # Key used for vendor lookup
-        self.key = str(self.bssid).replace(':','').upper()[0:6]
-        self.vendor = "Unknown"
-
-    def setVendor(self, vendor):
-        ''' Updates the vendor '''
-
         self.vendor = vendor
+        self.last_seen = time.time()
 
-    def updateTimeout(self, ch):
-        ''' updates the timeout of the target object, \n ch: the channel currently being scanned \n Return True when timeout hits zero '''
+    def update(self, ssid, dBm, channel, crypto):
+        """Refresh this network's details and last-seen timestamp from a new beacon."""
+        self.ssid = ssid
+        self.dBm = dBm
+        self.channel = channel
+        self.crypto = crypto
+        self.last_seen = time.time()
 
-        # if the channel being scanned is the channel the target should be on
-        if ch == self.ch :
-            self.timeOut = self.timeOut - 1
-            
-            # if the timout has been reduced to zero
-            if self.timeOut <= 0 : 
-                return True
-            else: 
-                return False
+
+class WifiSpotter:
+
+    def __init__(self):
+        """
+        Basic init function
+        """
+
+        # Load config
+        config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.yaml')
+        with open(config_path, 'r') as f:
+            config = yaml.safe_load(f)
+
+        self.model = config.get('model', 'gemma3:latest')
+        self.channels = config.get('channels', [])
+        self.contacts = config.get('contacts', [])
+        self.device_id = config.get('device', {}).get('id')
+        self.keep_alive = -1 if config.get('disable_model_timeout', False) else None
+        self.checkin_interval = config.get('checkin_interval_hours') or 0
+        self.wifi_interface = config.get('wifi_interface')
+
+        # how long since a beacon was last heard before a network is considered "gone"
+        self.networkTimeout = 300  # seconds
+
+        # Track unique networks seen: bssid -> WifiNetwork
+        self.seen_networks = {}
+        self.seen_lock = threading.Lock()
+
+        # Load the IEEE OUI -> vendor lookup tables
+        self.vendorDict = {}
+        self.loadVendorDict()
+
+        # Subscribe before creating the interface — the connection.established event fires
+        # during SerialInterface.__init__() from a background thread, so subscribing after
+        # the constructor would always miss it.
+        self.interface = None
+        pub.subscribe(self.onReceive, "meshtastic.receive.text")
+        pub.subscribe(self.onConnection, "meshtastic.connection.established")
+
+        # set up meshtastic connection
+        print("Initializing WiFi Spotter Node...")
+        ports = findPorts(eliminate_duplicates=True)  # returns ['/dev/ttyUSB0', '/dev/ttyUSB2', …]
+
+        if len(ports) == 0:
+            print("No Meshtastic devices found. Please check your connections.")
+            exit(1)
+        elif len(ports) == 1:
+            self.interface = SerialInterface(ports[0])
+            print("Connected to Meshtastic node on port:", ports[0])
+            print(f"Node ID: {self.interface.getMyNodeInfo()['user']['id']}")
         else:
-            return False
+            print(f"Multiple Meshtastic devices found. Looking for configured device {self.device_id}...")
+            self.interface = None
+            for port in ports:
+                try:
+                    iface = SerialInterface(port)
+                    node_id = iface.getMyNodeInfo()['user']['id']
+                    if node_id == self.device_id:
+                        self.interface = iface
+                        print(f"Connected to {self.device_id} on port {port}")
+                        break
+                    iface.close()
+                except Exception as e:
+                    print(f"Could not check port {port}: {e}")
+            if self.interface is None:
+                print(f"Device {self.device_id} not found among available ports. Please check your config.")
+                exit(1)
 
-    def matchTarget(self, other):
-        ''' Compares the BSSID of two objects to see if they match '''
+        # preload the ollama model
+        print(f"Preloading Ollama model ({self.model})...")
+        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
+        print(response.message.content)
 
-        if self.bssid == other.bssid : 
-            
-            self.ch = other.ch
-            self.crypto = other.crypto
-            self.ssid = other.ssid
-            self.dBm = other.dBm
-
-            self.timeOut = self.maxTimeout
-
-            return True
-
-        else:
-            return False
-
-class WifiScanner:
-    ''' Class that handles independently searching wifi frequencies for wifi networks '''
-
-    def setupInterface(self):
-        ''' Puts the interface into monitor mode '''
-
-        print(f"Placing {self.interface} into monitor mode")
-        os.system('ifconfig ' + self.interface + ' down')
-        try:
-            os.system('iwconfig ' + self.interface + ' mode monitor')
-        except:
-            print("Failed to setup monitor mode")
-            return False
-
-        os.system('ifconfig ' + self.interface + ' up')
-        
-        return True
-
-    def rabbitCallback(self, ch, method, properties, body):
-        """Callback method for rabbitMQ
-
-        Args:
-            ch ([type]): [description]
-            method ([type]): [description]
-            properties ([type]): [description]
-            body (String): The message body as a string
+    def loadVendorDict(self):
+        """
+        Builds the OUI -> vendor lookup from the three IEEE registry CSVs. Files are read
+        relative to this script so it works regardless of the current working directory.
+        Missing files are skipped so the node still runs (vendors just show as Unknown).
         """
 
-        data = body.split( )
-        newFreqs = []
-
-        for i in range(0, len(data), 2):
-            newFreqs.append(data[i].decode("utf-8"))
-
-        #print(f"New Freqs: {len(newFreqs)}")
-        self.updateChannels(newFreqs)
-
-
-    def __init__(self, interface):
-        ''' init method '''
-
-        self.interface = str(interface)
-        self.ch = 1
-        self.targetList = []
-        self.quickList = []
-        self.loadDictionary()
-        self.setupInterface()
-        #self.validChannel = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '36', '38', '40', '42', '44', '46', '48', '52', '54', '56', '58', '60', '62', '64', '100', '102', '104', '106'}
-        self.validChannel = self.getValidChannels(interface)
-        self.loadTargets()
-        self.channelList = []
-
-    def getValidChannels(self, interface):
-        """
-        Generates list of valid channels for the interface using iwlist
-
-        Args:
-            interface (str): the interface name to look for
-
-        Returns:
-            set: a set of strings representing all valid channels
-        """
-
-        channelText = subprocess.run(['iwlist', str(interface) ,'freq'], capture_output=True, text=True).stdout
-        
-        # start with classic 2.4GHz Channels
-        validChannel = {'01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14'}
-        for line in channelText.splitlines():
-            #print(line)
-            if "Channel" in line and "Current" not in line:
-                validChannel.add(line.split()[1])
-        #print(f"{str(len(validChannel))} : {str(validChannel)}")
-        return validChannel
-
-
-    def loadDictionary(self):
-        ''' Handles setting up the dictionary that will give the vendor identification'''
-
-        with open('oui.csv', mode='r') as infile: # large registry
-            reader = csv.reader(infile)
-
-            self.vendorDict = {rows[1]:rows[2] for rows in reader}
-
-            #print(f"{len(self.vendorDict)}")
-
-        with open('mam.csv', mode='r') as infile: # medium registry
-            reader = csv.reader(infile)
-
-            midDict = {rows[1]:rows[2] for rows in reader}
-
-            self.vendorDict.update(midDict)
-
-            #print(f"{len(self.vendorDict)}")
-
-        with open('oui36.csv', mode='r') as infile: # small registry
-            reader = csv.reader(infile)
-
-            smallDict = {rows[1]:rows[2] for rows in reader}
-
-            self.vendorDict.update(smallDict)
-
-            #print(f"{len(self.vendorDict)}")
-
-    def callback(self, packet):
-        ''' method to parse out the packet data and add it to the target list '''
-        if packet.haslayer(Dot11Beacon): # else do nothing
-            # extract the MAC address of the network
-            bssid = packet[Dot11].addr2
-            # get the name of it
-            ssid = packet[Dot11Elt].info.decode()
+        base = os.path.dirname(os.path.abspath(__file__))
+        for filename in ('oui.csv', 'mam.csv', 'oui36.csv'):
+            path = os.path.join(base, filename)
             try:
-                dbm_signal = packet.dBm_AntSignal
-            except:
-                dbm_signal = "N/A"
-            # extract network stats
-            stats = packet[Dot11Beacon].network_stats()
-            # get the channel of the AP
-            channel = stats.get("channel")
-            # get the crypto
-            crypto = stats.get("crypto")
-            
-            newTarget = WifiTarget(bssid, ssid, dbm_signal, channel, crypto)
-            newTarget.setVendor(self.vendorDict.get(newTarget.key))
+                with open(path, mode='r', encoding='utf-8', errors='replace') as infile:
+                    reader = csv.reader(infile)
+                    self.vendorDict.update({rows[1]: rows[2] for rows in reader if len(rows) >= 3})
+            except FileNotFoundError:
+                print(f"Vendor registry {filename} not found — run macUpdater.py to download it.")
+        print(f"Loaded {len(self.vendorDict)} vendor OUI entries.")
 
-            self.quickList.append(newTarget)
+    def onConnection(self, interface):
+        """
+        Callback function for connection established.
+        """
+        # In multi-port mode we probe each port, which fires this callback for every
+        # device found. Skip anything that isn't the configured target.
+        node_id = interface.getMyNodeInfo()['user']['id']
+        if self.device_id and node_id != self.device_id:
+            return
 
-            # Adding Target to Target List
-            matched = False
-            for target in self.targetList: 
-                
-                if target.matchTarget(newTarget) : 
-                    matched = True
-                    break # found match, exit loop
+        self.interface = interface
+        print("Meshtastic connection established.")
+        startup_msg = "WiFi Spotter node online and connected."
 
-            if not matched : 
-
-                self.targetList.append(newTarget)
-
-    def updateChannels(self, freqList):
-        ''' updates the scanner list based off of seen frequencies from the wide sweeper '''
-
-        channelSet = set()
-        #print(str(freqList) + '\n')
-
-        for freq in freqList: # check each frequency
-
-            if (int(freq) >= 2401000000) and (int(freq) <= 2495000000): # in the 2.4GHz band
-                if abs(int(freq) - 2412000000) <= 11000000:
-                    channelSet.add('01')
-                if abs(int(freq) - 2417000000) <= 11000000:
-                    channelSet.add('02')
-                if abs(int(freq) - 2422000000) <= 11000000:
-                    channelSet.add('03')
-                if abs(int(freq) - 2427000000) <= 11000000:
-                    channelSet.add('04')
-                if abs(int(freq) - 2432000000) <= 11000000:
-                    channelSet.add('05')
-                if abs(int(freq) - 2437000000) <= 11000000:
-                    channelSet.add('06')
-                if abs(int(freq) - 2442000000) <= 11000000:
-                    channelSet.add('07')
-                if abs(int(freq) - 2447000000) <= 11000000:
-                    channelSet.add('08')
-                if abs(int(freq) - 2452000000) <= 11000000:
-                    channelSet.add('09')
-                if abs(int(freq) - 2457000000) <= 11000000:
-                    channelSet.add('10')
-                if abs(int(freq) - 2462000000) <= 11000000:
-                    channelSet.add('11')
-                if abs(int(freq) - 2467000000) <= 11000000:
-                    channelSet.add('12')
-                if abs(int(freq) - 2472000000) <= 11000000:
-                    channelSet.add('13')
-                if abs(int(freq) - 2484000000) <= 11000000:
-                    channelSet.add('14')
-            elif (int(freq) >= 5150000000) and (int(freq) <= 5835000000): # in the 5GHz range
-                if abs(int(freq) - 5160000000) <= 10000000 and '32' in self.validChannel : 
-                    channelSet.add('32')
-                if abs(int(freq) - 5170000000) <= 20000000 and '34' in self.validChannel :
-                    channelSet.add('34')
-                if abs(int(freq) - 5180000000) <= 10000000 and '36' in self.validChannel :
-                    channelSet.add('36')
-                if abs(int(freq) - 5190000000) <= 20000000 and '38' in self.validChannel :
-                    channelSet.add('38')
-                if abs(int(freq) - 5200000000) <= 10000000 and '40' in self.validChannel :
-                    channelSet.add('40')
-                if abs(int(freq) - 5210000000) <= 40000000 and '42' in self.validChannel :
-                    channelSet.add('42')
-                if abs(int(freq) - 5220000000) <= 10000000 and '44' in self.validChannel :
-                    channelSet.add('44')
-                if abs(int(freq) - 5230000000) <= 20000000 and '46' in self.validChannel :
-                    channelSet.add('46')
-                if abs(int(freq) - 5240000000) <= 10000000 and '48' in self.validChannel :
-                    channelSet.add('48')
-                if abs(int(freq) - 5250000000) <= 80000000 and '50' in self.validChannel :
-                    channelSet.add('50')
-                if abs(int(freq) - 5260000000) <= 10000000 and '52' in self.validChannel :
-                    channelSet.add('52')
-                if abs(int(freq) - 5270000000) <= 20000000 and '54' in self.validChannel :
-                    channelSet.add('54')
-                if abs(int(freq) - 5280000000) <= 10000000 and '56' in self.validChannel :
-                    channelSet.add('56')
-                if abs(int(freq) - 5290000000) <= 40000000 and '58' in self.validChannel :
-                    channelSet.add('58')
-                if abs(int(freq) - 5300000000) <= 10000000 and '60' in self.validChannel :
-                    channelSet.add('60')
-                if abs(int(freq) - 5310000000) <= 20000000 and '62' in self.validChannel :
-                    channelSet.add('62')
-                if abs(int(freq) - 5320000000) <= 10000000 and '64' in self.validChannel :
-                    channelSet.add('64')
-                if abs(int(freq) - 5340000000) <= 10000000 and '68' in self.validChannel :
-                    channelSet.add('68')
-                if abs(int(freq) - 5480000000) <= 10000000 and '96' in self.validChannel :
-                    channelSet.add('96')
-                if abs(int(freq) - 5500000000) <= 10000000 and '100' in self.validChannel :
-                    channelSet.add('100')
-                if abs(int(freq) - 5510000000) <= 20000000 and '102' in self.validChannel :
-                    channelSet.add('102')
-                if abs(int(freq) - 5520000000) <= 10000000 and '104' in self.validChannel :
-                    channelSet.add('104')
-                if abs(int(freq) - 5530000000) <= 40000000 and '106' in self.validChannel :
-                    channelSet.add('106')
-                if abs(int(freq) - 5540000000) <= 10000000 and '108' in self.validChannel :
-                    channelSet.add('108')
-                if abs(int(freq) - 5550000000) <= 20000000 and '110' in self.validChannel :
-                    channelSet.add('110')
-                if abs(int(freq) - 5560000000) <= 10000000 and '112' in self.validChannel :
-                    channelSet.add('112')
-                if abs(int(freq) - 5570000000) <= 80000000 and '114' in self.validChannel :
-                    channelSet.add('114')
-                if abs(int(freq) - 5580000000) <= 10000000 and '116' in self.validChannel :
-                    channelSet.add('116')
-                if abs(int(freq) - 5590000000) <= 20000000 and '118' in self.validChannel :
-                    channelSet.add('118')
-                if abs(int(freq) - 5600000000) <= 10000000 and '120' in self.validChannel :
-                    channelSet.add('120')
-                if abs(int(freq) - 5610000000) <= 40000000 and '122' in self.validChannel :
-                    channelSet.add('122')
-                if abs(int(freq) - 5620000000) <= 10000000 and '124' in self.validChannel :
-                    channelSet.add('124')
-                if abs(int(freq) - 5630000000) <= 20000000 and '126' in self.validChannel :
-                    channelSet.add('126')
-                if abs(int(freq) - 5640000000) <= 10000000 and '128' in self.validChannel :
-                    channelSet.add('128')
-                if abs(int(freq) - 5660000000) <= 10000000 and '132' in self.validChannel :
-                    channelSet.add('132')
-                if abs(int(freq) - 5670000000) <= 20000000 and '134' in self.validChannel :
-                    channelSet.add('134')
-                if abs(int(freq) - 5680000000) <= 10000000 and '136' in self.validChannel :
-                    channelSet.add('136')
-                if abs(int(freq) - 5690000000) <= 40000000 and '138' in self.validChannel :
-                    channelSet.add('138')
-                if abs(int(freq) - 5700000000) <= 10000000 and '140' in self.validChannel :
-                    channelSet.add('140')
-                if abs(int(freq) - 5710000000) <= 20000000 and '142' in self.validChannel :
-                    channelSet.add('142')
-                if abs(int(freq) - 5720000000) <= 10000000 and '144' in self.validChannel :
-                    channelSet.add('144')
-                if abs(int(freq) - 5745000000) <= 10000000 and '149' in self.validChannel :
-                    channelSet.add('149')
-                if abs(int(freq) - 5755000000) <= 20000000 and '151' in self.validChannel :
-                    channelSet.add('151')
-                if abs(int(freq) - 5765000000) <= 10000000 and '153' in self.validChannel :
-                    channelSet.add('153')
-                if abs(int(freq) - 5775000000) <= 40000000 and '155' in self.validChannel :
-                    channelSet.add('155')
-                if abs(int(freq) - 5785000000) <= 10000000 and '157' in self.validChannel :
-                    channelSet.add('157')
-                if abs(int(freq) - 5795000000) <= 20000000 and '159' in self.validChannel :
-                    channelSet.add('159')
-                if abs(int(freq) - 5805000000) <= 10000000 and '161' in self.validChannel :
-                    channelSet.add('161')
-                if abs(int(freq) - 5825000000) <= 10000000 and '165' in self.validChannel :
-                    channelSet.add('165')
-                if abs(int(freq) - 5845000000) <= 10000000 and '169' in self.validChannel :
-                    channelSet.add('169')
-                if abs(int(freq) - 5865000000) <= 10000000 and '173' in self.validChannel :
-                    channelSet.add('173')
-                
-        self.channelList = list(channelSet)
-
-        #print(self.channelList)
-
-    def loop_channels(self):
-        ''' loops through the possible wifi channels \n needs to be a separate thread'''
-
-        while True:
-
-            #print(f"Channel List len: {len(self.channelList)}")
-
-            if not self.channelList: # if channel list is empty sweep sequentially
-                print("Empty Target list, using default scan")
-                for channel in self.validChannel:
-                    self.ch = channel
-                    #print(self.ch)
-                    os.system(f"iwconfig {self.interface} channel {self.ch}")
-                    time.sleep(0.2) # scanning time
-            else:
-                tempList = self.channelList.copy()
-                self.channelList.clear() # clear out the old list
-                print(f"{str(len(tempList))} : {str(tempList)}")
-                for channel in tempList:
-                    self.ch = channel
-                    #print(self.ch)
-                    os.system(f"iwconfig {self.interface} channel {self.ch}")
-                    time.sleep(0.2) # scanning time
-                
-            
-
-    def printTarget(self):
-        ''' prints out the currently tracked targets to the screen \n needs to be a separate thread'''
-
-        # initialize the networks dataframe that will contain all access points nearby 
-        pandas.set_option('display.max_rows', None)
-        networks = pandas.DataFrame(columns=["BSSID", "SSID", "Vendor", "dBm_Signal", "Channel", "Crypto"])
-        # set the index BSSID (MAC address of the AP)
-        networks.set_index("BSSID", inplace=True)
-
-        while True:
-
-            os.system("clear")
-
-            for target in self.quickList: 
-                networks.loc[target.bssid] = (target.ssid, target.vendor, target.dBm, target.ch, target.crypto)
-
-            # clear the quicklist so that old signals go away
-            self.quickList = []
-            print(networks)
-            print(f"Total length: {len(self.targetList)}\n")
-
+        for channel in self.channels:
+            idx = channel.get('index', 0)
+            print(f"Sending startup message to channel {channel.get('name', idx)} (index {idx})")
+            interface.sendText(startup_msg, channelIndex=idx)
             time.sleep(1)
 
-    def saveTargets(self):
-        ''' Regularly saves the targets to a file for storage '''
+        for contact in self.contacts:
+            dest = contact.get('id')
+            print(f"Sending startup message to contact {contact.get('alias', dest)}")
+            interface.sendText(startup_msg, destinationId=dest)
+            time.sleep(1)
 
-        while True:
+        # Always start sniffing so query responses have live data, even if check-ins are off.
+        threading.Thread(target=self.startSniffer, daemon=True).start()
+        threading.Thread(target=self.channelHopper, daemon=True).start()
+        print(f"WiFi sniffer started on interface {self.wifi_interface}")
 
-            saveFile = open('wifiLog.pkl', 'wb')
-            pickle.dump(self.targetList, saveFile, -1)
-            saveFile.close()
+        if self.checkin_interval:
+            threading.Thread(target=self.checkinLoop, daemon=True).start()
+            print(f"Check-in thread started (every {self.checkin_interval}h)")
 
-            print("Writing to log")
-
-            time.sleep(60)
-
-    def loadTargets(self):
-        ''' Loads the old target list from a pickle '''
-        try:
-            f = open('wifiLog.pkl', 'rb')
-            print("Loading old Target List")
-            self.targetList = pickle.load(f)
-            #print(str(self.targetList))
-            f.close()
-        except:
-            print("Load file does not exist")
-
-    def linkRabbit(self):
-        """Setup and start listening for RabbitMQ messages
+    def setupInterface(self):
+        """
+        Puts the interface into monitor mode (Linux only). Returns True on success.
         """
 
-        print("Listening for RabbitMQ messages")
+        if not self.wifi_interface:
+            print("No wifi_interface configured. Skipping monitor mode setup.")
+            return False
 
-         # RabbitMQ setup
-        connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host='localhost'))
-        channel = connection.channel()
+        if not sys.platform.startswith('linux'):
+            print(f"Monitor mode setup skipped on {sys.platform}; relying on the adapter being in monitor mode already.")
+            return True
 
-        channel.exchange_declare(exchange='scanSweep', exchange_type='fanout')
+        print(f"Placing {self.wifi_interface} into monitor mode")
+        os.system('ifconfig ' + self.wifi_interface + ' down')
+        try:
+            os.system('iwconfig ' + self.wifi_interface + ' mode monitor')
+        except Exception:
+            print("Failed to setup monitor mode")
+            return False
+        os.system('ifconfig ' + self.wifi_interface + ' up')
+        return True
 
-        result = channel.queue_declare(queue='', exclusive=True)
-        queue_name = result.method.queue
+    def getValidChannels(self):
+        """
+        Generates the list of valid channels for the interface using iwlist (Linux). Falls
+        back to the standard 2.4GHz channels if iwlist is unavailable.
 
-        channel.queue_bind(exchange='scanSweep', queue=queue_name)
-        channel.basic_consume(queue=queue_name, on_message_callback=self.rabbitCallback, auto_ack=True)
-        channel.start_consuming()
+        Returns:
+            list: channel numbers (as strings) to hop through.
+        """
+
+        validChannel = {'01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14'}
+        try:
+            channelText = subprocess.run(['iwlist', str(self.wifi_interface), 'freq'], capture_output=True, text=True).stdout
+            for line in channelText.splitlines():
+                if "Channel" in line and "Current" not in line:
+                    validChannel.add(line.split()[1])
+        except FileNotFoundError:
+            pass  # iwlist not present (e.g. non-Linux) — stick with the 2.4GHz defaults
+        return sorted(validChannel)
+
+    def channelHopper(self):
+        """
+        Background thread that sweeps the interface across all valid channels so beacons on
+        every channel get a chance to be heard. No-op on platforms without iwconfig.
+        """
+
+        self.setupInterface()
+
+        if not sys.platform.startswith('linux'):
+            return  # channel hopping needs iwconfig; the adapter handles its own channel otherwise
+
+        validChannel = self.getValidChannels()
+        while True:
+            for channel in validChannel:
+                os.system(f"iwconfig {self.wifi_interface} channel {channel}")
+                time.sleep(0.2)  # dwell time per channel
 
     def startSniffer(self):
-        ''' Starts and runs the packet sniffer \n note: because this is blocking, it must be its own thread '''
-        # start sniffing
+        """
+        Runs scapy's blocking beacon sniffer. Restarts itself if scapy throws, so a transient
+        error doesn't permanently kill data collection.
+        """
+
         try:
-            sniff(prn=self.callback, iface=self.interface)
-        except TypeError:
-            print("Scapy ran into a type error")
-            # Restart thread
-            self.snifferThread = Thread(target=self.startSniffer, daemon=False)
-            self.snifferThread.start()
+            sniff(prn=self.beaconCallback, iface=self.wifi_interface, store=False)
+        except Exception as e:
+            print(f"Sniffer error ({e}); restarting in 5s...")
+            time.sleep(5)
+            self.startSniffer()
 
-    def close(self):
-        self.snifferThread.setDaemon(True)
-        sys.exit()
-                    
-    def startScanner(self):
-        ''' starts the channel hopper and display before starting the packet sniffer loops '''
+    def beaconCallback(self, packet):
+        """
+        Parses a captured beacon frame and records/updates the network in seen_networks.
+        """
 
-        self.snifferThread = Thread(target=self.startSniffer, daemon=False)
-        self.snifferThread.start()
-        
-        self.printerThread = Thread(target=self.printTarget, daemon=True)
-        self.printerThread.start()
+        if not packet.haslayer(Dot11Beacon):
+            return  # only interested in access point beacons
 
-        self.channelHopper = Thread(target=self.loop_channels, daemon=True)
-        self.channelHopper.start()
+        bssid = packet[Dot11].addr2
+        try:
+            ssid = packet[Dot11Elt].info.decode(errors='replace') or "(hidden)"
+        except Exception:
+            ssid = "(hidden)"
 
-        self.saveThread = Thread(target=self.saveTargets, daemon=True)
-        self.saveThread.start()
+        try:
+            dbm_signal = packet.dBm_AntSignal
+        except Exception:
+            dbm_signal = "N/A"
 
-        self.rabbitThread = Thread(target=self.linkRabbit, daemon=True)
-        self.rabbitThread.start()
+        stats = packet[Dot11Beacon].network_stats()
+        channel = stats.get("channel")
+        crypto = stats.get("crypto")
 
-def check_root():
-    ''' Checks to see if the system is running as root, wifi will break if not '''
+        # OUI key for vendor lookup: first 6 hex chars of the MAC, no separators, uppercase
+        key = str(bssid).replace(':', '').upper()[0:6]
+        vendor = self.vendorDict.get(key, "Unknown")
 
-    if not os.geteuid() == 0 : 
-        print("Run as root.")
-        exit(1)
+        with self.seen_lock:
+            existing = self.seen_networks.get(bssid)
+            if existing:
+                existing.update(ssid, dbm_signal, channel, crypto)
+            else:
+                self.seen_networks[bssid] = WifiNetwork(bssid, ssid, dbm_signal, channel, crypto, vendor)
+
+    def activeNetworks(self):
+        """
+        Returns the list of networks heard within the timeout window, pruning anything older
+        from the tracking dict so it doesn't grow unbounded.
+
+        Returns:
+            list: WifiNetwork objects currently considered active.
+        """
+
+        now = time.time()
+        cutoff = now - self.networkTimeout
+        with self.seen_lock:
+            self.seen_networks = {b: n for b, n in self.seen_networks.items() if n.last_seen >= cutoff}
+            return list(self.seen_networks.values())
+
+    def summarizeNetworks(self, networks):
+        """
+        Creates a madlib string summary of each network, both for debugging and to pass into
+        the LLM as context.
+
+        Args:
+            networks (list): the list of WifiNetwork objects to summarize
+
+        Returns:
+            list: human readable summary strings, ending with a total count.
+        """
+
+        summaries = []
+        for net in networks:
+            summary = (f"Network '{net.ssid}' (BSSID: {net.bssid}, vendor: {net.vendor}) "
+                       f"is on channel {net.channel}, signal {net.dBm} dBm, security: {net.crypto}.")
+            print(summary)
+            summaries.append(summary)
+
+        summaries.append(f"Total networks currently detected: {len(networks)}")
+        return summaries
+
+    def checkinLoop(self):
+        """
+        Background thread that sends a periodic status message to all channels and contacts.
+        """
+
+        interval_seconds = self.checkin_interval * 3600
+        while True:
+            time.sleep(interval_seconds)
+            unique_count = len(self.activeNetworks())
+            msg = (f"WiFi Spotter check-in: {unique_count} unique networks currently "
+                   f"detected nearby.")
+            print("Sending scheduled check-in message...")
+            for channel in self.channels:
+                idx = channel.get('index', 0)
+                self.interface.sendText(msg, channelIndex=idx)
+                time.sleep(1)
+            for contact in self.contacts:
+                dest = contact.get('id')
+                self.interface.sendText(msg, destinationId=dest)
+                time.sleep(1)
+
+    def onReceive(self, packet, interface):
+        """
+        Callback function for receiving packets.
+        """
+
+        # double check to make sure that we are only responding to text messages
+        if packet['decoded']['portnum'] != 'TEXT_MESSAGE_APP':
+            return  # not a text message, so we do nothing
+
+        # check if broadcast or other non-direct message
+        if packet['to'] != self.interface.getMyNodeInfo()['num']:
+            return  # not a direct message, so we don't want to spam
+
+        # check that its not an echo
+        if packet['from'] == self.interface.getMyNodeInfo()['num']:
+            return  # stops echo loop
+
+        print(f"User ID: {packet['from']} \nMessage: {packet['decoded']['text']}")
+
+        # Gather the currently visible wifi networks
+        networks = self.activeNetworks()
+        summaries = self.summarizeNetworks(networks)
+
+        # Create response message
+        messages = [
+            {'role': 'system', 'content': 'You are an automated sensor node that provides real-time information about nearby WiFi networks based on 802.11 beacon scanning. You communicate with users over a Meshtastic network and respond to their queries in a concise and informative manner.'},
+            {'role': 'system', 'content': f'Here is the current data from the WiFi scanner: {str(summaries)}'},
+            {'role': 'system', 'content': 'Using the provided WiFi scan data, respond to the user\'s query in a concise manner. If no networks are nearby, inform the user accordingly.'},
+            {'role': 'user', 'content': packet['decoded']['text']}
+        ]
+
+        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages)
+        replyText = response.message.content
+        print(f"Replying with: {replyText}")
+
+        # break reply into chunks if too long
+        replyLines = textwrap.wrap(replyText, width=220)  # Meshtastic has a limit of 230 characters per message
+
+        # Send response back to user
+        for line in replyLines:
+            self.interface.sendText(line, destinationId=packet['from'])
+            time.sleep(1)  # brief pause between messages to avoid flooding
+
 
 if __name__ == "__main__":
-    
-    print("Starting scanner: ")
-
-    # check to see if running as root
-    check_root()
-
-    # default interface
-    interface = "wlx9cefd5fd14f7"
-    #interface = "wlx9cefd5fcd2ba"
-
-    # looks for custom arguments
-    if len(sys.argv) > 1 :
-        interface = str(sys.argv[1])
-
-    print(f"Using interface: {interface}")
+    wifiSpotter = WifiSpotter()
 
     try:
-        scanner = WifiScanner(interface)
-        scanner.startScanner()
-    except (KeyboardInterrupt, SystemExit):
-        print("shutting Down")
-        scanner.close()
+        while True:
+            time.sleep(10)  # keep the main thread alive
+    except KeyboardInterrupt:
+        print("Exiting WiFi Spotter Node...")

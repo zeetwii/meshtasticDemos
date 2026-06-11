@@ -5,6 +5,7 @@ from macUpdater import download_mac_files # needed for updating MAC address file
 
 import yaml # needed to read and write YAML files
 import questionary # needed for multiple choice selections
+from scapy.all import get_if_list # needed for OS-neutral interface enumeration
 
 import meshtastic # needed for Meshtastic functionality
 import meshtastic.serial_interface # needed for meshtastic serial interface
@@ -198,6 +199,80 @@ def pick_model(existing):
     ).ask()
 
 
+def pick_checkin_interval(existing):
+    """
+    Asks how often the bot should check in, entered in hours.
+
+    Args:
+        existing (dict): The existing configuration data.
+
+    Returns:
+        float: The check-in interval in hours.
+    """
+    current = existing.get("checkin_interval_hours", 1)
+
+    def validate_hours(val):
+        try:
+            v = float(val)
+            if v > 0:
+                return True
+            return "Please enter a positive number."
+        except ValueError:
+            return "Please enter a valid number (e.g. 1, 0.5, 24)."
+
+    result = questionary.text(
+        "How often should the bot check in? (in hours — e.g. 1 = hourly, 24 = daily):",
+        default=str(current),
+        validate=validate_hours,
+    ).ask()
+
+    return float(result) if result is not None else current
+
+
+def pick_model_timeout(existing):
+    """
+    Asks whether to disable Ollama's model timeout.
+
+    Args:
+        existing (dict): The existing configuration data.
+
+    Returns:
+        bool: True if the model timeout should be disabled, False otherwise.
+    """
+    current = existing.get("disable_model_timeout", False)
+    return questionary.confirm(
+        "Disable Ollama's model timeout?",
+        default=current,
+    ).ask()
+
+
+def pick_wifi_interface(existing):
+    """
+    Lists available network interfaces and prompts the user to select which one
+    the WiFi scanner should use.
+
+    Args:
+        existing (dict): The existing configuration data (used to pre-select the current interface).
+
+    Returns:
+        str: The selected interface name, or None if none are available.
+    """
+
+    interfaces = get_if_list()
+    if not interfaces:
+        print("No network interfaces found. Skipping WiFi interface selection.")
+        return existing.get("wifi_interface")
+
+    current = existing.get("wifi_interface")
+    default = current if current in interfaces else interfaces[0]
+
+    return questionary.select(
+        "Which interface should the WiFi scanner use?",
+        choices=interfaces,
+        default=default,
+    ).ask()
+
+
 def main():
     """
     The main entry point for the configuration helper.
@@ -215,15 +290,22 @@ def main():
 
     channels = pick_channels(snap, existing)
     contacts = pick_contacts(snap, existing)
+    checkin_interval = pick_checkin_interval(existing)
     model = pick_model(existing)
+    disable_model_timeout = pick_model_timeout(existing)
+    wifi_interface = pick_wifi_interface(existing)
 
     # Preserve any project-specific keys the user added by hand (prompts, etc.)
     cfg = dict(existing)
     cfg["device"] = {"id": snap["local"]["id"], "long_name": snap["local"]["long_name"]}
     cfg["channels"] = channels
     cfg["contacts"] = contacts
+    cfg["checkin_interval_hours"] = checkin_interval
     if model:
         cfg["model"] = model
+    cfg["disable_model_timeout"] = disable_model_timeout
+    if wifi_interface:
+        cfg["wifi_interface"] = wifi_interface
 
     if out_path.exists() and not questionary.confirm(f"Overwrite {out_path}?", default=True).ask():
         print("Aborted.")

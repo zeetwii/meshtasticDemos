@@ -214,3 +214,8 @@ __marimo__/
 
 # Don't upload any config files
 *config.yaml
+
+# don't upload the mac files since we auto gen them on config generation
+*mam.csv
+*oui.csv
+*oui36.csv
