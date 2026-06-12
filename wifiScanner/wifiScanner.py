@@ -157,6 +157,12 @@ class WifiSpotter:
             interface.sendText(startup_msg, destinationId=dest)
             time.sleep(1)
 
+        # Put the interface into monitor mode before starting the sniffer thread.
+        # Doing this concurrently (e.g. inside channelHopper) races scapy's sniff(),
+        # which can open its socket while ifconfig has briefly taken the interface
+        # down, failing with "Network is down" and exiting without retrying.
+        self.setupInterface()
+
         # Always start sniffing so query responses have live data, even if check-ins are off.
         threading.Thread(target=self.startSniffer, daemon=True).start()
         threading.Thread(target=self.channelHopper, daemon=True).start()
@@ -213,8 +219,6 @@ class WifiSpotter:
         Background thread that sweeps the interface across all valid channels so beacons on
         every channel get a chance to be heard. No-op on platforms without iwconfig.
         """
-
-        self.setupInterface()
 
         if not sys.platform.startswith('linux'):
             return  # channel hopping needs iwconfig; the adapter handles its own channel otherwise
