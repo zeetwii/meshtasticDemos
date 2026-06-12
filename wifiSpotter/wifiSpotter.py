@@ -43,6 +43,47 @@ class WifiNetwork:
 
 class WifiSpotter:
 
+    # Tool the LLM can call to pull a filtered slice of the currently detected networks,
+    # instead of every network being dumped into context up front.
+    WIFI_SEARCH_TOOL = {
+        'type': 'function',
+        'function': {
+            'name': 'search_wifi_networks',
+            'description': (
+                'Search the WiFi networks currently detected by this sensor, optionally '
+                'filtering by channel, SSID, security type, vendor, or minimum signal '
+                'strength. Call this to look up details about specific networks instead '
+                'of guessing.'
+            ),
+            'parameters': {
+                'type': 'object',
+                'properties': {
+                    'channel': {
+                        'type': 'integer',
+                        'description': 'Only return networks broadcasting on this WiFi channel number.',
+                    },
+                    'ssid': {
+                        'type': 'string',
+                        'description': 'Only return networks whose name (SSID) contains this text, case-insensitive.',
+                    },
+                    'security': {
+                        'type': 'string',
+                        'description': 'Only return networks whose security info contains this text, e.g. "WPA2".',
+                    },
+                    'vendor': {
+                        'type': 'string',
+                        'description': 'Only return networks whose hardware vendor contains this text.',
+                    },
+                    'min_dbm': {
+                        'type': 'integer',
+                        'description': 'Only return networks with signal strength at or above this dBm value (closer to 0 is stronger).',
+                    },
+                },
+                'required': [],
+            },
+        },
+    }
+
     def __init__(self):
         """
         Basic init function
@@ -291,26 +332,48 @@ class WifiSpotter:
             self.seen_networks = {b: n for b, n in self.seen_networks.items() if n.last_seen >= cutoff}
             return list(self.seen_networks.values())
 
-    def summarizeNetworks(self, networks):
+    def summarizeNetworks(self, networks, channel=None, ssid=None, security=None, vendor=None, min_dbm=None):
         """
-        Creates a madlib string summary of each network, both for debugging and to pass into
-        the LLM as context.
+        Creates a madlib string summary of each network matching the given filters, both for
+        debugging and to pass into the LLM as context. All filters are optional and combine
+        with AND; call with no filters to summarize every network.
 
         Args:
             networks (list): the list of WifiNetwork objects to summarize
+            channel (int, optional): only include networks on this channel
+            ssid (str, optional): only include networks whose SSID contains this text (case-insensitive)
+            security (str, optional): only include networks whose security info contains this text (case-insensitive)
+            vendor (str, optional): only include networks whose vendor contains this text (case-insensitive)
+            min_dbm (int, optional): only include networks with signal strength >= this value
 
         Returns:
-            list: human readable summary strings, ending with a total count.
+            list: human readable summary strings, ending with a match count.
         """
 
+        filtered = networks
+        if channel is not None:
+            filtered = [n for n in filtered if str(n.channel) == str(channel)]
+        if ssid:
+            filtered = [n for n in filtered if ssid.lower() in n.ssid.lower()]
+        if security:
+            filtered = [n for n in filtered if security.lower() in (n.crypto or '').lower()]
+        if vendor:
+            filtered = [n for n in filtered if vendor.lower() in (n.vendor or '').lower()]
+        if min_dbm is not None:
+            try:
+                min_dbm = float(min_dbm)
+                filtered = [n for n in filtered if isinstance(n.dBm, (int, float)) and n.dBm >= min_dbm]
+            except (TypeError, ValueError):
+                pass
+
         summaries = []
-        for net in networks:
+        for net in filtered:
             summary = (f"Network '{net.ssid}' (BSSID: {net.bssid}, vendor: {net.vendor}) "
                        f"is on channel {net.channel}, signal {net.dBm} dBm, security: {net.crypto}.")
             print(summary)
             summaries.append(summary)
 
-        summaries.append(f"Total networks currently detected: {len(networks)}")
+        summaries.append(f"{len(filtered)} of {len(networks)} total networks match this filter.")
         return summaries
 
     def checkinLoop(self):
@@ -353,20 +416,38 @@ class WifiSpotter:
 
         print(f"User ID: {packet['from']} \nMessage: {packet['decoded']['text']}")
 
-        # Gather the currently visible wifi networks
+        # Gather the currently visible wifi networks. We don't dump them all into the prompt --
+        # the model can call search_wifi_networks to pull a filtered slice as needed.
         networks = self.activeNetworks()
-        summaries = self.summarizeNetworks(networks)
 
-        # Create response message
         messages = [
-            {'role': 'system', 'content': 'You are an automated sensor node that provides real-time information about nearby WiFi networks based on 802.11 beacon scanning. You communicate with users over a Meshtastic network and respond to their queries in a concise and informative manner.'},
-            {'role': 'system', 'content': f'Here is the current data from the WiFi scanner: {str(summaries)}'},
-            {'role': 'system', 'content': 'Using the provided WiFi scan data, respond to the user\'s query in a concise manner. If no networks are nearby, inform the user accordingly.'},
+            {'role': 'system', 'content': (
+                'You are an automated sensor node that provides real-time information about nearby '
+                'WiFi networks based on 802.11 beacon scanning. You communicate with users over a '
+                'Meshtastic network and respond to their queries in a concise and informative manner. '
+                f'There are currently {len(networks)} networks detected nearby. Use the '
+                'search_wifi_networks tool to look up details (filtering by channel, SSID, security, '
+                'vendor, or signal strength) before answering -- do not guess at details you have not '
+                "looked up. If no networks are nearby or match the user's request, say so."
+            )},
             {'role': 'user', 'content': packet['decoded']['text']}
         ]
 
-        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages)
-        replyText = response.message.content
+        response = None
+        for _ in range(3):  # cap tool-call rounds in case the model gets stuck calling tools
+            response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages, tools=[self.WIFI_SEARCH_TOOL])
+            messages.append(response.message)
+
+            if not response.message.tool_calls:
+                break
+
+            for call in response.message.tool_calls:
+                args = {k: v for k, v in (call.function.arguments or {}).items()
+                        if k in ('channel', 'ssid', 'security', 'vendor', 'min_dbm')}
+                results = self.summarizeNetworks(networks, **args)
+                messages.append({'role': 'tool', 'tool_name': call.function.name, 'content': '\n'.join(results)})
+
+        replyText = response.message.content or "Sorry, I couldn't come up with a response to that."
         print(f"Replying with: {replyText}")
 
         # break reply into chunks if too long
