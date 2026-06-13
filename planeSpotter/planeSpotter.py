@@ -13,6 +13,46 @@ import textwrap # needed for formatting text
 
 class PlaneSpotter:
 
+    # Tool the LLM can call to pull a filtered slice of the currently tracked aircraft,
+    # instead of every aircraft being dumped into context up front.
+    PLANE_SEARCH_TOOL = {
+        'type': 'function',
+        'function': {
+            'name': 'search_aircraft',
+            'description': (
+                'Search the aircraft currently tracked by this sensor via ADS-B, optionally '
+                'filtering by callsign, hex ID, altitude range, or minimum ground speed. Call '
+                'this to look up details about specific aircraft instead of guessing.'
+            ),
+            'parameters': {
+                'type': 'object',
+                'properties': {
+                    'callsign': {
+                        'type': 'string',
+                        'description': 'Only return aircraft whose flight callsign contains this text, case-insensitive.',
+                    },
+                    'hex_id': {
+                        'type': 'string',
+                        'description': 'Only return aircraft whose ICAO hex ID contains this text, case-insensitive.',
+                    },
+                    'min_altitude': {
+                        'type': 'integer',
+                        'description': 'Only return aircraft at or above this altitude in feet.',
+                    },
+                    'max_altitude': {
+                        'type': 'integer',
+                        'description': 'Only return aircraft at or below this altitude in feet.',
+                    },
+                    'min_speed': {
+                        'type': 'integer',
+                        'description': 'Only return aircraft moving at or above this ground speed in knots.',
+                    },
+                },
+                'required': [],
+            },
+        },
+    }
+
     def __init__(self):
         """
         Basic init function
@@ -183,20 +223,39 @@ class PlaneSpotter:
         
         print(f"User ID: {packet['from']} \nMessage: {packet['decoded']['text']}")
 
-        # Fetch ADS-B data
+        # Fetch ADS-B data. We don't dump every aircraft into the prompt -- the model can call
+        # search_aircraft to pull a filtered slice as needed.
         aircraftList = self.fetchADSBData()
-        summaries = self.summarizeAircraft(aircraftList)
+        total = sum(1 for a in aircraftList if a.get('seen', 0) <= self.aircraftTimeout)
 
-        # Create response message
         messages = [
-            {'role': 'system', 'content': 'You are an automated sensor node that provides real-time information about nearby aircraft based on ADS-B data. You communicate with users over a Meshtastic network and respond to their queries in a concise and informative manner.'},
-            {'role': 'system', 'content': f'Here is the current data from the ADS-B sensor: {str(summaries)}'},
-            {'role': 'system', 'content': 'Using the provided ADS-B data, respond to the user\'s query in a concise manner. If no aircraft are nearby, inform the user accordingly.'},
+            {'role': 'system', 'content': (
+                'You are an automated sensor node that provides real-time information about nearby '
+                'aircraft based on ADS-B data. You communicate with users over a Meshtastic network '
+                'and respond to their queries in a concise and informative manner. '
+                f'There are currently {total} aircraft being tracked nearby. Use the search_aircraft '
+                'tool to look up details (filtering by callsign, hex ID, altitude range, or minimum '
+                'ground speed) before answering -- do not guess at details you have not looked up. '
+                "If no aircraft are nearby or match the user's request, say so."
+            )},
             {'role': 'user', 'content': packet['decoded']['text']}
         ]
 
-        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages)
-        replyText = response.message.content
+        response = None
+        for _ in range(3):  # cap tool-call rounds in case the model gets stuck calling tools
+            response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages, tools=[self.PLANE_SEARCH_TOOL])
+            messages.append(response.message)
+
+            if not response.message.tool_calls:
+                break
+
+            for call in response.message.tool_calls:
+                args = {k: v for k, v in (call.function.arguments or {}).items()
+                        if k in ('callsign', 'hex_id', 'min_altitude', 'max_altitude', 'min_speed')}
+                results = self.summarizeAircraft(aircraftList, **args)
+                messages.append({'role': 'tool', 'tool_name': call.function.name, 'content': '\n'.join(results)})
+
+        replyText = response.message.content or "Sorry, I couldn't come up with a response to that."
         print(f"Replying with: {replyText}")
 
         # break reply into chunks if too long
@@ -222,26 +281,46 @@ class PlaneSpotter:
             print("Error fetching ADS-B data:", e)
             return []
         
-    def summarizeAircraft(self, aircraftList):
+    def summarizeAircraft(self, aircraftList, callsign=None, hex_id=None, min_altitude=None, max_altitude=None, min_speed=None):
         """
-        Creates a madlib string summery of each aircraft for both debugging and to pass into llm
+        Creates a madlib string summary of each aircraft matching the given filters, both for
+        debugging and to pass into the LLM as context. All filters are optional and combine
+        with AND; call with no filters to summarize every currently-tracked aircraft.
 
         Args:
             aircraftList (list): the list of aircraft data dictionaries
+            callsign (str, optional): only include aircraft whose callsign contains this text (case-insensitive)
+            hex_id (str, optional): only include aircraft whose hex ID contains this text (case-insensitive)
+            min_altitude (int, optional): only include aircraft at or above this altitude (feet)
+            max_altitude (int, optional): only include aircraft at or below this altitude (feet)
+            min_speed (int, optional): only include aircraft at or above this ground speed (knots)
+
+        Returns:
+            list: human readable summary strings, ending with a match count.
         """
 
+        def toFloat(value):
+            try:
+                return float(value) if value is not None else None
+            except (TypeError, ValueError):
+                return None
+
+        min_altitude = toFloat(min_altitude)
+        max_altitude = toFloat(max_altitude)
+        min_speed = toFloat(min_speed)
+
         summaries = []
-        count = 0
+        total = 0
 
         for aircraft in aircraftList:
-            
+
             seen = aircraft.get('seen', 0)
             if seen > self.aircraftTimeout:
                 continue  # skip aircraft that haven't been seen recently
 
-            count += 1 # count valid aircraft
+            total += 1  # count valid aircraft
 
-            callsign = (aircraft.get('flight') or aircraft.get('tisb') or "Unknown").strip()
+            flightCallsign = (aircraft.get('flight') or aircraft.get('tisb') or "Unknown").strip()
             hexID = aircraft.get('hex', 'N/A').upper()
 
             altitude = aircraft.get("alt_baro")
@@ -251,11 +330,23 @@ class PlaneSpotter:
             speed = aircraft.get('gs')  # ground speed
             lat = aircraft.get('lat')
             lon = aircraft.get('lon')
-            summary = f"Flight {callsign} (Hex ID: {hexID}) is at an altitude of {altitude} feet, moving at {speed} knots, located at coordinates ({lat}, {lon})."
+
+            if callsign and callsign.lower() not in flightCallsign.lower():
+                continue
+            if hex_id and hex_id.lower() not in hexID.lower():
+                continue
+            if min_altitude is not None and not (isinstance(altitude, (int, float)) and altitude >= min_altitude):
+                continue
+            if max_altitude is not None and not (isinstance(altitude, (int, float)) and altitude <= max_altitude):
+                continue
+            if min_speed is not None and not (isinstance(speed, (int, float)) and speed >= min_speed):
+                continue
+
+            summary = f"Flight {flightCallsign} (Hex ID: {hexID}) is at an altitude of {altitude} feet, moving at {speed} knots, located at coordinates ({lat}, {lon})."
             print(summary)
             summaries.append(summary)
 
-        summaries.append(f"Total aircraft currently monitoring: {count}")
+        summaries.append(f"{len(summaries)} of {total} total aircraft match this filter.")
 
         return summaries
 
