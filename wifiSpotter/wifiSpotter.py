@@ -146,6 +146,11 @@ class WifiSpotter:
         self.vendorDict = {}
         self.loadVendorDict()
 
+        # preload the ollama model
+        print(f"Preloading Ollama model ({self.model})...")
+        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
+        print(response.message.content)
+
         # Subscribe before creating the interface — the connection.established event fires
         # during SerialInterface.__init__() from a background thread, so subscribing after
         # the constructor would always miss it.
@@ -181,11 +186,6 @@ class WifiSpotter:
             if self.interface is None:
                 print(f"Device {self.device_id} not found among available ports. Please check your config.")
                 exit(1)
-
-        # preload the ollama model
-        print(f"Preloading Ollama model ({self.model})...")
-        response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=[{'role': 'system', 'content': 'Say boot up successful'}])
-        print(response.message.content)
 
     def loadVendorDict(self):
         """
