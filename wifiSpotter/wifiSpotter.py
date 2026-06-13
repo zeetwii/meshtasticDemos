@@ -84,6 +84,30 @@ class WifiSpotter:
         },
     }
 
+    # Tool the LLM can call to register a one-shot alert for a network that isn't currently
+    # visible, so the user is notified the next time a matching beacon is seen.
+    WIFI_ALERT_TOOL = {
+        'type': 'function',
+        'function': {
+            'name': 'add_wifi_alert',
+            'description': (
+                'Register an alert for a WiFi network. The requesting user will be notified '
+                'the next time a beacon is seen whose SSID (network name) or hardware vendor '
+                'contains the given text, after which the alert is automatically removed.'
+            ),
+            'parameters': {
+                'type': 'object',
+                'properties': {
+                    'search_string': {
+                        'type': 'string',
+                        'description': "Text to match against a network's SSID or vendor, case-insensitive.",
+                    },
+                },
+                'required': ['search_string'],
+            },
+        },
+    }
+
     def __init__(self):
         """
         Basic init function
@@ -108,6 +132,10 @@ class WifiSpotter:
         # Track unique networks seen: bssid -> WifiNetwork
         self.seen_networks = {}
         self.seen_lock = threading.Lock()
+
+        # Pending one-shot alerts: list of {'search_string': str, 'requester_id': <meshtastic node num>}
+        self.alert_list = []
+        self.alert_lock = threading.Lock()
 
         # Load the IEEE OUI -> vendor lookup tables
         self.vendorDict = {}
@@ -317,6 +345,8 @@ class WifiSpotter:
             else:
                 self.seen_networks[bssid] = WifiNetwork(bssid, ssid, dbm_signal, channel, crypto, vendor)
 
+        self.checkAlerts(ssid, vendor)
+
     def activeNetworks(self):
         """
         Returns the list of networks heard within the timeout window, pruning anything older
@@ -376,6 +406,61 @@ class WifiSpotter:
         summaries.append(f"{len(filtered)} of {len(networks)} total networks match this filter.")
         return summaries
 
+    def addAlert(self, search_string, requester_id):
+        """
+        Registers a one-shot alert for the given search string. The next beacon whose SSID or
+        vendor contains this text (case-insensitive) will trigger a notification to the
+        requester, after which the alert is removed.
+
+        Args:
+            search_string (str): text to match against a network's SSID or vendor.
+            requester_id: the Meshtastic node ID to notify when a match is seen.
+
+        Returns:
+            str: confirmation message for the LLM to relay back to the user.
+        """
+
+        search_string = (search_string or '').strip()
+        if not search_string:
+            return "No search text was provided, so no alert was registered."
+
+        with self.alert_lock:
+            self.alert_list.append({'search_string': search_string, 'requester_id': requester_id})
+
+        print(f"Registered WiFi alert for '{search_string}' on behalf of {requester_id}")
+        return f"Alert registered. You'll be notified when a network matching '{search_string}' is seen."
+
+    def checkAlerts(self, ssid, vendor):
+        """
+        Checks pending alerts against a beacon's SSID/vendor. Any alerts whose search string is
+        found (case-insensitive) in either field are sent to their requester and removed from
+        the alert list, so each alert fires at most once.
+
+        Args:
+            ssid (str): the SSID from the beacon just seen.
+            vendor (str): the vendor looked up for the beacon's BSSID.
+        """
+
+        with self.alert_lock:
+            if not self.alert_list:
+                return
+
+            remaining = []
+            matched = []
+            for alert in self.alert_list:
+                needle = alert['search_string'].lower()
+                if needle in (ssid or '').lower() or needle in (vendor or '').lower():
+                    matched.append(alert)
+                else:
+                    remaining.append(alert)
+            self.alert_list = remaining
+
+        for alert in matched:
+            msg = (f"WiFi Spotter alert: a network matching '{alert['search_string']}' was just "
+                   f"seen (SSID: '{ssid}', vendor: {vendor}).")
+            print(f"Sending alert to {alert['requester_id']}: {msg}")
+            self.interface.sendText(msg, destinationId=alert['requester_id'])
+
     def checkinLoop(self):
         """
         Background thread that sends a periodic status message to all channels and contacts.
@@ -428,20 +513,29 @@ class WifiSpotter:
                 f'There are currently {len(networks)} networks detected nearby. Use the '
                 'search_wifi_networks tool to look up details (filtering by channel, SSID, security, '
                 'vendor, or signal strength) before answering -- do not guess at details you have not '
-                "looked up. If no networks are nearby or match the user's request, say so."
+                "looked up. If the user asks to be alerted, notified, or pinged when a network with a "
+                'particular name or vendor shows up, use the add_wifi_alert tool to register that '
+                "alert instead of searching for it yourself. If no networks are nearby or match the "
+                "user's request, say so."
             )},
             {'role': 'user', 'content': packet['decoded']['text']}
         ]
 
         response = None
         for _ in range(3):  # cap tool-call rounds in case the model gets stuck calling tools
-            response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages, tools=[self.WIFI_SEARCH_TOOL])
+            response = ollama.chat(model=self.model, keep_alive=self.keep_alive, messages=messages, tools=[self.WIFI_SEARCH_TOOL, self.WIFI_ALERT_TOOL])
             messages.append(response.message)
 
             if not response.message.tool_calls:
                 break
 
             for call in response.message.tool_calls:
+                if call.function.name == 'add_wifi_alert':
+                    search_string = (call.function.arguments or {}).get('search_string', '')
+                    result = self.addAlert(search_string, packet['from'])
+                    messages.append({'role': 'tool', 'tool_name': call.function.name, 'content': result})
+                    continue
+
                 args = {k: v for k, v in (call.function.arguments or {}).items()
                         if k in ('channel', 'ssid', 'security', 'vendor', 'min_dbm')}
                 results = self.summarizeNetworks(networks, **args)
