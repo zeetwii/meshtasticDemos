@@ -229,6 +229,37 @@ def pick_checkin_interval(existing):
     return float(result) if result is not None else current
 
 
+def pick_message_delay(existing):
+    """
+    Asks how long to wait between parts of a multi-message reply.
+
+    Args:
+        existing (dict): The existing configuration data.
+
+    Returns:
+        int: The delay in seconds between message parts.
+    """
+    current = existing.get("message_delay_seconds", 5)
+
+    def validate_seconds(val):
+        try:
+            v = int(val)
+            if v > 0:
+                return True
+            return "Please enter a positive whole number."
+        except ValueError:
+            return "Please enter a valid whole number (e.g. 5, 10)."
+
+    result = questionary.text(
+        "Seconds to wait between parts of a multi-message reply "
+        "(increase if later parts of long replies aren't arriving on the radio):",
+        default=str(current),
+        validate=validate_seconds,
+    ).ask()
+
+    return int(result) if result is not None else current
+
+
 def pick_model_timeout(existing):
     """
     Asks whether to disable Ollama's model timeout.
@@ -291,6 +322,7 @@ def main():
     channels = pick_channels(snap, existing)
     contacts = pick_contacts(snap, existing)
     checkin_interval = pick_checkin_interval(existing)
+    message_delay = pick_message_delay(existing)
     model = pick_model(existing)
     disable_model_timeout = pick_model_timeout(existing)
     wifi_interface = pick_wifi_interface(existing)
@@ -301,6 +333,7 @@ def main():
     cfg["channels"] = channels
     cfg["contacts"] = contacts
     cfg["checkin_interval_hours"] = checkin_interval
+    cfg["message_delay_seconds"] = message_delay
     if model:
         cfg["model"] = model
     cfg["disable_model_timeout"] = disable_model_timeout

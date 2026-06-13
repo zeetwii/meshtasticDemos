@@ -126,6 +126,11 @@ class WifiSpotter:
         self.checkin_interval = config.get('checkin_interval_hours') or 0
         self.wifi_interface = config.get('wifi_interface')
 
+        # Delay between parts of a multi-message reply. LoRa duty-cycle limits in many
+        # regions mean a transmission sent too soon after a previous one can be silently
+        # dropped by the radio firmware, so later parts of a long reply never arrive.
+        self.message_delay = config.get('message_delay_seconds', 5)
+
         # how long since a beacon was last heard before a network is considered "gone"
         self.networkTimeout = 300  # seconds
 
@@ -516,7 +521,10 @@ class WifiSpotter:
                 "looked up. If the user asks to be alerted, notified, or pinged when a network with a "
                 'particular name or vendor shows up, use the add_wifi_alert tool to register that '
                 "alert instead of searching for it yourself. If no networks are nearby or match the "
-                "user's request, say so."
+                "user's request, say so. Keep replies short, ideally a single sentence or two under "
+                '200 characters, and never use markdown formatting (no asterisks, bullet points, or '
+                'numbered lists) -- messages are sent over a slow LoRa mesh and long replies may be '
+                'split into multiple radio transmissions that can be dropped.'
             )},
             {'role': 'user', 'content': packet['decoded']['text']}
         ]
@@ -547,10 +555,12 @@ class WifiSpotter:
         # break reply into chunks if too long
         replyLines = textwrap.wrap(replyText, width=220)  # Meshtastic has a limit of 230 characters per message
 
-        # Send response back to user
-        for line in replyLines:
+        # Send response back to user. The delay between parts must be long enough for the
+        # radio to clear LoRa duty-cycle limits, or later parts can be silently dropped.
+        for i, line in enumerate(replyLines, 1):
+            print(f"Sending part {i}/{len(replyLines)}: {line}")
             self.interface.sendText(line, destinationId=packet['from'])
-            time.sleep(1)  # brief pause between messages to avoid flooding
+            time.sleep(self.message_delay)
 
 
 if __name__ == "__main__":
