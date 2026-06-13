@@ -198,7 +198,7 @@ class TriggerCamera:
             print("Sending scheduled check-in message...")
             self._broadcast(msg)
 
-    def onReceive(self, packet, _):
+    def onReceive(self, packet, interface):
         """
         Callback for incoming Meshtastic text messages. Responds to direct
         messages with a live description of the current camera view.
