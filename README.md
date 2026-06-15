@@ -73,3 +73,7 @@ This demo was made to show how to use a locally running LLM to provide informati
 ### Trigger Camera over Meshtastic
 
 This demo shows how to use a locally running LLM to share images taken by a camera over a Meshtastic network.  The camera is triggered by a YOLO model whenever it sees an object of interest from the targets list in the config file.  The LLM is then passed the image, and summerizes it into a concise text message that is sent over the mesh.  This allows users on the Meshtastic network to get real-time data from a camera, even though the mesh itself only supports text messages.  The link to the demo code is here: [triggerCamera](./triggerCamera/README.md)
+
+### WiFi Spotter over Meshtastic
+
+This demo uses a locally running LLM to provide information about nearby WiFi networks.  The LLM is used to interpret user queries and provide information about the WiFi networks in a natural language format.  Additionally, you can ask to be alerted when certain WiFi networks are detected, allowing for a basic CUAS capability.  The link to the demo code is here: [wifiSpotter](./wifiSpotter/README.md)
