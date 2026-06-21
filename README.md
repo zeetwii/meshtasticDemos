@@ -4,6 +4,8 @@ This is a collection of projects and demonstration scripts for using locally run
 
 Each project has its own subdirectory with a README file that explains how to set it up and use it.  Feel free to explore and modify the code as needed for your own projects!
 
+If you want to see a video demonstration of some of these projects in action, check out my YouTube video here: [Adding local LLMs to Meshtastic](https://youtu.be/VdiFa-AjYGg)
+
 ## Background
 
 Meshtastic is an open-source mesh network built on top of inexpensive LoRa devices.  Unlike a lot of other mesh networks, meshtastic meshes are dynamic and self organizing, meaning that nodes can join and leave the mesh at any time without any special configuration, and all nodes act as routers to help pass messages along.  This makes meshtastic a great choice for ad-hoc networks in remote areas, emergency situations, or just for fun outdoor activities like hiking or camping.  
